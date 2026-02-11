@@ -13,15 +13,14 @@ class FormFiller:
         Fill a form field with retry logic
         """
         try:
-            # Get element using XPath
-            xpath = element_info['dom']['xpath']
-            if not xpath:
+            locator = self._resolve_locator(element_info)
+            if locator is None:
                 return False
 
-            locator = self.page.locator(f"xpath={xpath}").first
-            attrs = element_info.get('dom', {}).get('attributes', {})
+            dom_info = element_info.get('dom', {})
+            attrs = dom_info.get('attributes', {})
             input_type = str(attrs.get('type', '')).lower()
-            dom_type = str(element_info.get('dom', {}).get('type', '')).lower()
+            dom_type = str(dom_info.get('type', '')).lower()
 
             # Bring element into viewport before interaction.
             self._scroll_into_view(locator)
@@ -62,7 +61,11 @@ class FormFiller:
 
             # Tel fields are often masked and more reliable with keyboard typing.
             if input_type in ['tel', 'phone']:
-                if not self._type_phone(locator, value):
+                if not self.handle_input_mask(locator, value, "phone"):
+                    if not self._type_phone(locator, value):
+                        return False
+            elif input_type in ['date']:
+                if not self.handle_input_mask(locator, value, "date"):
                     return False
             else:
                 # Prefer fill; fallback to type for stubborn/React-controlled fields.
@@ -93,6 +96,39 @@ class FormFiller:
         except Exception as e:
             print(f"Failed to fill field: {e}")
             return False
+
+    def _resolve_locator(self, element_info):
+        dom_info = element_info.get("dom", {})
+        selector = (dom_info.get("selector") or "").strip()
+        xpath = (dom_info.get("xpath") or "").strip()
+        frame_url = (dom_info.get("frame_url") or "").strip()
+        frame_name = (dom_info.get("frame_name") or "").strip()
+
+        context = self.page
+        if frame_url or frame_name:
+            for fr in self.page.frames:
+                if frame_url and fr.url == frame_url:
+                    context = fr
+                    break
+                if frame_name and fr.name == frame_name:
+                    context = fr
+                    break
+
+        if selector:
+            try:
+                loc = context.locator(selector).first
+                if loc.count() > 0:
+                    return loc
+            except Exception:
+                pass
+        if xpath:
+            try:
+                loc = context.locator(f"xpath={xpath}").first
+                if loc.count() > 0:
+                    return loc
+            except Exception:
+                pass
+        return None
 
     def _select_option(self, locator, value):
         value_str = str(value).strip()
@@ -150,6 +186,46 @@ class FormFiller:
             locator.press("Control+A", timeout=2000)
             locator.press("Delete", timeout=2000)
             locator.type(digits, delay=40, timeout=5000)
+            return True
+        except Exception:
+            return False
+
+    def handle_input_mask(self, locator, value, mask_type):
+        """Handle common masks (phone/date/zip/ssn) before generic typing."""
+        masks = {
+            "phone": r"(\d{3})(\d{3})(\d{4})",
+            "date": r"(\d{2})(\d{2})(\d{4})",
+            "ssn": r"(\d{3})(\d{2})(\d{4})",
+            "zip": r"(\d{5})(\d{4})?",
+        }
+        if mask_type not in masks:
+            return False
+
+        raw = str(value or "").strip()
+        digits = re.sub(r"\D", "", raw)
+        if not digits:
+            return False
+
+        try:
+            locator.click(timeout=3000)
+            locator.press("Control+A", timeout=2000)
+            locator.press("Delete", timeout=2000)
+
+            if mask_type == "phone":
+                digits = digits[-10:]
+                if len(digits) == 10:
+                    formatted = f"({digits[:3]}) {digits[3:6]}-{digits[6:]}"
+                    locator.type(formatted, delay=35, timeout=5000)
+                    return True
+                locator.type(digits, delay=35, timeout=5000)
+                return True
+
+            if mask_type == "date" and len(digits) >= 8:
+                formatted = f"{digits[:2]}/{digits[2:4]}/{digits[4:8]}"
+                locator.type(formatted, delay=35, timeout=5000)
+                return True
+
+            locator.type(digits, delay=35, timeout=5000)
             return True
         except Exception:
             return False

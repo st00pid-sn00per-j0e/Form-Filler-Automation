@@ -275,6 +275,69 @@ class AutomatedFormFiller:
                         trace_ref["status"] = "fill_failed"
                         trace_ref["reason"] = "fill action failed"
 
+            # 7b. Detect and process dynamic fields that appear after interactions.
+            dynamic_elements, dynamic_shot = self.detect_dynamic_fields(
+                page,
+                seen_elements=elements + fillable_elements
+            )
+            if dynamic_elements:
+                verifier_dynamic = VerificationEngine(page, dynamic_shot)
+                base_idx = len(live_trace["fields"])
+                for offset, element in enumerate(dynamic_elements):
+                    idx = base_idx + offset
+                    xpath = element.get('dom', {}).get('xpath', '')
+                    try:
+                        text, confidence = self.ocr.extract_with_context(dynamic_shot, element['box'])
+                    except Exception:
+                        text, confidence = "", 0
+
+                    adv = self.config.get("advanced", {})
+                    field_type, field_confidence = FieldClassifier.classify(
+                        text,
+                        element['dom']['type'],
+                        element['dom'].get('attributes', {}),
+                        use_minilm=bool(adv.get("use_minilm", True)),
+                        log_unknown=bool(adv.get("log_unknown_patterns", True)),
+                    )
+                    entry = {
+                        "index": idx,
+                        "xpath": xpath,
+                        "dom_type": element.get("dom", {}).get("type", ""),
+                        "attributes": element.get("dom", {}).get("attributes", {}),
+                        "box": [int(v) for v in element.get("box", (0, 0, 0, 0))],
+                        "source": element.get("detection_source", "dynamic"),
+                        "ocr_confidence": float(confidence),
+                        "ocr_text": text[:500],
+                        "classified_as": field_type,
+                        "classification_confidence": float(field_confidence),
+                        "status": "classified",
+                        "reason": "dynamic field",
+                    }
+                    live_trace["fields"].append(entry)
+                    if FieldClassifier.should_skip_field(field_type, element):
+                        entry["status"] = "skipped"
+                        entry["reason"] = "non-fillable dynamic field"
+                        result["non_fillable_skips"] += 1
+                        continue
+
+                    value = self._resolve_prefill_value(field_type, element.get("dom", {}).get("attributes", {}))
+                    if value is None:
+                        entry["status"] = "skipped"
+                        entry["reason"] = "no prefill data"
+                        result["prefill_miss_skips"] += 1
+                        continue
+
+                    entry["status"] = "ready_to_fill"
+                    result["fill_attempts"] += 1
+                    if filler.fill_field(element, value) and verifier_dynamic.verify_fill(element, value):
+                        filled_count += 1
+                        entry["status"] = "filled"
+                        entry["reason"] = "dynamic fill verified"
+                    else:
+                        entry["status"] = "fill_failed"
+                        entry["reason"] = "dynamic fill failed"
+                        result["fill_action_failed"] += 1
+
             result["fields_filled"] = filled_count
             post_fill_shot = f"screenshots/{datetime.now().strftime('%Y%m%d_%H%M%S')}_post_fill.png"
             self._capture_form_preferred_screenshot(page, post_fill_shot)
@@ -463,6 +526,61 @@ class AutomatedFormFiller:
             return last_name or (full_name.split()[-1] if len(full_name.split()) > 1 else full_name)
 
         return None
+
+    def detect_dynamic_fields(self, page, seen_elements=None, after_action=None):
+        """
+        Detect fields that appear after interaction and return only new ones.
+        """
+        seen_elements = seen_elements or []
+        seen_keys = {self._element_identity(e) for e in seen_elements}
+
+        initial_count = self._count_dom_fields(page)
+        if after_action:
+            try:
+                after_action()
+            except Exception:
+                pass
+            time.sleep(1)
+        else:
+            time.sleep(0.5)
+
+        current_count = self._count_dom_fields(page)
+        if current_count <= initial_count:
+            return [], ""
+
+        screenshot_path = f"screenshots/{datetime.now().strftime('%Y%m%d_%H%M%S')}_dynamic.png"
+        shot_meta = self._capture_form_preferred_screenshot(page, screenshot_path)
+        boxes = self.detector.detect_form_elements(screenshot_path)
+        discovered = DOMMapper.find_form_elements(
+            page,
+            screenshot_path,
+            boxes,
+            screenshot_origin_px=shot_meta.get("origin_px", (0, 0)),
+        )
+        new_elements = [e for e in discovered if self._element_identity(e) not in seen_keys]
+        if new_elements:
+            logger.info(f"Detected {len(new_elements)} dynamic fields")
+        return new_elements, screenshot_path
+
+    def _count_dom_fields(self, page):
+        count = 0
+        selector = "input, textarea, select, [contenteditable='true']"
+        for frame in page.frames:
+            try:
+                count += len(frame.query_selector_all(selector))
+            except Exception:
+                continue
+        return count
+
+    def _element_identity(self, element):
+        dom = element.get("dom", {}) if isinstance(element, dict) else {}
+        return (
+            dom.get("frame_url", ""),
+            dom.get("frame_name", ""),
+            dom.get("selector", ""),
+            dom.get("xpath", ""),
+            dom.get("type", ""),
+        )
 
     def _load_config(self, config_path):
         if not config_path or not os.path.exists(config_path):

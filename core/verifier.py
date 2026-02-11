@@ -13,11 +13,10 @@ class VerificationEngine:
         Verify that a field was filled correctly
         """
         try:
-            xpath = element_info['dom']['xpath']
-            if not xpath:
+            locator = self._resolve_locator(element_info)
+            if locator is None:
                 return False
 
-            locator = self.page.locator(f"xpath={xpath}").first
             try:
                 locator.scroll_into_view_if_needed(timeout=3000)
             except Exception:
@@ -25,8 +24,16 @@ class VerificationEngine:
 
             actual_value = None
             dom_type = str(element_info.get('dom', {}).get('type', '')).lower()
+            if dom_type == "select":
+                try:
+                    actual_value = locator.evaluate(
+                        "el => (el.options && el.selectedIndex >= 0) ? (el.options[el.selectedIndex].text || el.value || '') : (el.value || '')"
+                    )
+                except Exception:
+                    actual_value = None
             try:
-                actual_value = locator.input_value()
+                if actual_value is None:
+                    actual_value = locator.input_value()
             except Exception:
                 pass
 
@@ -42,6 +49,39 @@ class VerificationEngine:
         except Exception as e:
             print(f"Failed to verify field: {e}")
             return False
+
+    def _resolve_locator(self, element_info):
+        dom_info = element_info.get("dom", {})
+        selector = (dom_info.get("selector") or "").strip()
+        xpath = (dom_info.get("xpath") or "").strip()
+        frame_url = (dom_info.get("frame_url") or "").strip()
+        frame_name = (dom_info.get("frame_name") or "").strip()
+
+        context = self.page
+        if frame_url or frame_name:
+            for fr in self.page.frames:
+                if frame_url and fr.url == frame_url:
+                    context = fr
+                    break
+                if frame_name and fr.name == frame_name:
+                    context = fr
+                    break
+
+        if selector:
+            try:
+                loc = context.locator(selector).first
+                if loc.count() > 0:
+                    return loc
+            except Exception:
+                pass
+        if xpath:
+            try:
+                loc = context.locator(f"xpath={xpath}").first
+                if loc.count() > 0:
+                    return loc
+            except Exception:
+                pass
+        return None
 
     @staticmethod
     def _normalize_text(value):

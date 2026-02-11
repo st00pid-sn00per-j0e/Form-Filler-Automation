@@ -115,6 +115,10 @@ class FieldClassifier:
             elif attr_type in ['checkbox', 'radio']:
                 return "choice", 95
 
+        # 2a. Native textarea is almost always free-form message/details.
+        if element_type == 'textarea':
+            return "message", 95
+
         # 2b. Native select should stay select/dropdown and not be hijacked
         # by option text (e.g., "Email" in a "How did you hear" menu).
         if element_type == 'select':
