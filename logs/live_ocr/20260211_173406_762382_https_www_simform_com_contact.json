@@ -1,0 +1,454 @@
+{
+  "url": "https://www.simform.com/contact/",
+  "timestamp": "2026-02-11T17:33:40.767322",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_173347_343781_www_simform_com.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_173347_343781_www_simform_com_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_173359_707967_www_simform_com_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_173359_707967_www_simform_com_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_173405_431225_www_simform_com_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": null,
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "reference",
+        "id": "creference",
+        "class": "label-input-field textarea",
+        "placeholder": "How Did You hear About Us?",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        719,
+        785,
+        132
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 95.23076923076923,
+      "ocr_text": "3. where did you hear about us? how did you hear about us?",
+      "classified_as": "message",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": null,
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "projectDescription",
+        "id": "cdescription",
+        "class": "label-input-field textarea",
+        "placeholder": "Describe Your Project Briefly*",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        333,
+        785,
+        132
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 94.08333333333333,
+      "ocr_text": "2. tell us more about your project describe your project briefly* the",
+      "classified_as": "message",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "/html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[2]/div[4]/div/label",
+      "dom_type": "label",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Drag images or browse to upload (optional) Upload"
+      },
+      "box": [
+        9,
+        560,
+        777,
+        75
+      ],
+      "source": "cv",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "dropdown",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"cwebsite\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "website",
+        "id": "cwebsite",
+        "class": "label-input-field ",
+        "placeholder": "Company Name or Website",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        194,
+        785,
+        55
+      ],
+      "source": "dom",
+      "ocr_confidence": 95.75,
+      "ocr_text": "company name or website",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": null,
+      "dom_type": "select",
+      "attributes": {
+        "name": "budget",
+        "id": "cbudget",
+        "class": "label-input-field fill ",
+        "label_text": "",
+        "nearby_text": "Please Choose the Budget* $25K to $50K $50K to $200K $200K to $500K $500K + Not Sure"
+      },
+      "box": [
+        0,
+        485,
+        785,
+        55
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 88.8,
+      "ocr_text": "| please choose the budget*",
+      "classified_as": "dropdown",
+      "classification_confidence": 95.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 5,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "name",
+        "id": "cname",
+        "class": "label-input-field",
+        "placeholder": "Your Name*",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        44,
+        785,
+        55
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 83.94444444444444,
+      "ocr_text": "to azure tion deliver analytics, governance, and al readiness industries al accelerators » resources whysimform + about us",
+      "classified_as": "name",
+      "classification_confidence": 92.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 6,
+      "xpath": "//*[@id=\"cemail\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "email",
+        "id": "cemail",
+        "class": "label-input-field",
+        "placeholder": "Your Email*",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        119,
+        380,
+        55
+      ],
+      "source": "dom",
+      "ocr_confidence": 82.0,
+      "ocr_text": "industries al accelerators resources",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 7,
+      "xpath": "//*[@id=\"cphone\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "tel",
+        "name": "phone",
+        "id": "cphone",
+        "class": "label-input-field ",
+        "placeholder": "Your Phone Number",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        405,
+        119,
+        380,
+        55
+      ],
+      "source": "dom",
+      "ocr_confidence": 66.4,
+      "ocr_text": "whysimform v about us, con",
+      "classified_as": "phone",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 8,
+      "xpath": "/html/body/div/div[2]/p",
+      "dom_type": "p",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Accelerate Your Move to Azure Make your Azure migration deliver analytics, governance, and AI readiness"
+      },
+      "box": [
+        0,
+        48,
+        425,
+        18
+      ],
+      "source": "cv",
+      "ocr_confidence": 94.55555555555556,
+      "ocr_text": "to azure tion deliver analytics, governance, and al readiness",
+      "classified_as": "name",
+      "classification_confidence": 77.77777777777779,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 9,
+      "xpath": "/html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[2]/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "title",
+        "label_text": "",
+        "nearby_text": "2. Tell us more about your project Please Choose the Budget* $25K to $50K $50K to $200K $200K to $500K $500K + Not Sure Drag images or browse to upload (optional) Upload"
+      },
+      "box": [
+        31,
+        292,
+        289,
+        20
+      ],
+      "source": "cv",
+      "ocr_confidence": 95.42857142857143,
+      "ocr_text": "2. tell us more about your project",
+      "classified_as": "phone",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 10,
+      "xpath": "/html/body/div/div[3]/a",
+      "dom_type": "a",
+      "attributes": {
+        "class": "white-bg-button",
+        "label_text": "",
+        "nearby_text": "Register Now"
+      },
+      "box": [
+        653,
+        22,
+        133,
+        43
+      ],
+      "source": "cv",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "phone",
+      "classification_confidence": 66.66666666666667,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 11,
+      "xpath": "//*[@id=\"timezone-search\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "id": "timezone-search",
+        "class": "timezone-input",
+        "placeholder": "Search timezone...",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        79,
+        1022,
+        225,
+        24
+      ],
+      "source": "dom",
+      "ocr_confidence": 76.0,
+      "ocr_text": "nezone -",
+      "classified_as": "subject",
+      "classification_confidence": 66.66666666666667,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 12,
+      "xpath": "/html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[3]/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "title",
+        "label_text": "",
+        "nearby_text": "3. Where did you hear about us?"
+      },
+      "box": [
+        31,
+        678,
+        278,
+        19
+      ],
+      "source": "cv",
+      "ocr_confidence": 95.42857142857143,
+      "ocr_text": "3. where did you hear about us?",
+      "classified_as": "subject",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 13,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "timeSlot",
+        "id": "cmeeting",
+        "class": "selected-timeslot",
+        "label_text": "",
+        "nearby_text": "06:00 AM - 07:00 AM 07:00 AM - 08:00 AM 08:00 AM - 09:00 AM 09:00 AM - 10:00 AM 10:00 AM - 11:00 AM 11:00 AM - 12:00 PM 12:00 PM - 01:00 PM 01:00 PM - 02:00 PM 02:00 PM - 03:00 PM 03:00 PM - 04:00 PM 04:00 PM - 05:00 PM 05:00 PM - 06:00 PM 06:00 PM - 07:00 PM 07:00 PM - 08:00 PM 08:00 PM - 09:00 PM "
+      },
+      "box": [
+        474,
+        1022,
+        213,
+        24
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 81.8,
+      "ocr_text": "06:00 am - 07:00 am",
+      "classified_as": "dropdown",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 14,
+      "xpath": "/html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[2]/div[4]/div/label/div[2]/div[2]",
+      "dom_type": "div",
+      "attributes": {
+        "class": "primary-btn",
+        "label_text": "",
+        "nearby_text": "Drag images or browse to upload (optional) Upload"
+      },
+      "box": [
+        662,
+        578,
+        116,
+        40
+      ],
+      "source": "cv",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "dropdown",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 15,
+      "xpath": "/html/body/div/div[2]/h4",
+      "dom_type": "h4",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Accelerate Your Move to Azure Make your Azure migration deliver analytics, governance, and AI readiness"
+      },
+      "box": [
+        0,
+        21,
+        184,
+        20
+      ],
+      "source": "cv",
+      "ocr_confidence": 85.28571428571429,
+      "ocr_text": "‘move to azure tion deliver analytics, govert",
+      "classified_as": "name",
+      "classification_confidence": 77.77777777777779,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 16,
+      "xpath": "/html/body/header/div/div[2]/a",
+      "dom_type": "a",
+      "attributes": {
+        "class": "primary-btn",
+        "label_text": "",
+        "nearby_text": "Contact Us"
+      },
+      "box": [
+        728,
+        105,
+        58,
+        54
+      ],
+      "source": "cv",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "name",
+      "classification_confidence": 80.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": false,
+    "ocr_failure": false,
+    "current_url": "https://www.simform.com/contact/",
+    "ocr_excerpt": "conf=87.2 s_score=0 f_score=1 success=[] failure=['please_choose'] text='1. tell us about your company john@example.com (123) 456-7890 to azure register n deliver analytics, governance, and al readiness industries al accelerators v v us. ¢ please choose the budget* 3. wher...'",
+    "ocr_success_matches": [],
+    "ocr_failure_matches": [
+      "please_choose"
+    ]
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    399,
+    450
+  ],
+  "form_bbox": {
+    "x": 399.5,
+    "y": 450.0,
+    "width": 785.0,
+    "height": 1112.0
+  }
+}

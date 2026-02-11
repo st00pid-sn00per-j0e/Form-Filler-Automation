@@ -1,0 +1,139 @@
+{
+  "url": "https://geniusee.com/#contact",
+  "timestamp": "2026-02-11T16:26:49.026656",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_162653.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_162653_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_162656_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_162656_post_fill_post_fill.png",
+  "post_submit_screenshot": "",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "/html/body/div/section/div[2]/svg/path",
+      "dom_type": "path",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "clouds_shape"
+      },
+      "box": [
+        0,
+        583,
+        1280,
+        137
+      ],
+      "source": "cv",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "phone",
+      "classification_confidence": 66.66666666666667,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 1,
+      "xpath": "/html/body/div/section/div/div[2]/div[2]/svg/rect[2]",
+      "dom_type": "rect",
+      "attributes": {
+        "class": "st3",
+        "label_text": "",
+        "nearby_text": ".st0{fill:#E4F5FA;} .st1{fill:#226D7A;} .st2{fill:#FFFFFF;} .st3{fill:#22B8D1;}"
+      },
+      "box": [
+        525,
+        108,
+        230,
+        204
+      ],
+      "source": "cv",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "dropdown",
+      "classification_confidence": 57.14285714285714,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 2,
+      "xpath": "/html/body/div/section/div/p",
+      "dom_type": "p",
+      "attributes": {
+        "class": "title title--subtitle title--size-semimedium title--weight-normal",
+        "label_text": "",
+        "nearby_text": "403 - Forbidden Access to this page is forbidden."
+      },
+      "box": [
+        491,
+        451,
+        298,
+        22
+      ],
+      "source": "cv",
+      "ocr_confidence": 89.85714285714286,
+      "ocr_text": "‘tv access to this page is forbidden.",
+      "classified_as": "subject",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 3,
+      "xpath": "/html/body/div/section/div/h1",
+      "dom_type": "h1",
+      "attributes": {
+        "class": "title title--regular title--size-large title--weight-bold",
+        "label_text": "",
+        "nearby_text": "403 - Forbidden Access to this page is forbidden."
+      },
+      "box": [
+        607,
+        388,
+        160,
+        27
+      ],
+      "source": "cv",
+      "ocr_confidence": 82.0,
+      "ocr_text": "3 - forbidden to thic nage ic farhiddan",
+      "classified_as": "subject",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 4,
+      "xpath": "/html/body/div/section/div/div/svg/path[8]",
+      "dom_type": "path",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "bg_error_lines"
+      },
+      "box": [
+        42,
+        412,
+        61,
+        34
+      ],
+      "source": "cv",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "company",
+      "classification_confidence": 66.66666666666667,
+      "status": "skipped",
+      "reason": "non-fillable"
+    }
+  ],
+  "submit": {
+    "attempted": false,
+    "clicked": false,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "",
+    "ocr_excerpt": ""
+  },
+  "screenshot_mode": "full",
+  "screenshot_origin_px": [
+    0,
+    0
+  ],
+  "form_bbox": null
+}

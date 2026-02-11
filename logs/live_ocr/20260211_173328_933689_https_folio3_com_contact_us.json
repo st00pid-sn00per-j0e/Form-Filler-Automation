@@ -1,0 +1,188 @@
+{
+  "url": "https://folio3.com/contact-us/",
+  "timestamp": "2026-02-11T17:33:04.285470",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_173317_042355_folio3_com.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_173317_042355_folio3_com_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_173322_818911_folio3_com_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_173322_818911_folio3_com_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_173328_377156_folio3_com_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "phone",
+        "class": "wpcf7-form-control wpcf7-text wpcf7-validates-as-required teleNumber",
+        "placeholder": "Phone Number",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        276,
+        230,
+        270,
+        61
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 96.0,
+      "ocr_text": "phone number",
+      "classified_as": "phone",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "email",
+        "class": "wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email",
+        "placeholder": "Email Address",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        230,
+        270,
+        61
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 88.33333333333333,
+      "ocr_text": "email address phe",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "last_name",
+        "class": "wpcf7-form-control wpcf7-text wpcf7-validates-as-required",
+        "placeholder": "Last Name",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        276,
+        130,
+        270,
+        61
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 96.0,
+      "ocr_text": "last name",
+      "classified_as": "last_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "full_name",
+        "class": "wpcf7-form-control wpcf7-text wpcf7-validates-as-required",
+        "placeholder": "First Name",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        130,
+        270,
+        61
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 93.33333333333333,
+      "ocr_text": "first name las",
+      "classified_as": "name",
+      "classification_confidence": 92.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "/html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/h2",
+      "dom_type": "h2",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "* Required fields Personal Information"
+      },
+      "box": [
+        0,
+        58,
+        301,
+        23
+      ],
+      "source": "cv",
+      "ocr_confidence": 96.0,
+      "ocr_text": "personal information",
+      "classified_as": "message",
+      "classification_confidence": 84.21052631578947,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 5,
+      "xpath": "/html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div[3]/div/p/input",
+      "dom_type": "input",
+      "attributes": {
+        "type": "submit",
+        "class": "wpcf7-form-control wpcf7-submit has-spinner",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        178,
+        370,
+        119,
+        41
+      ],
+      "source": "cv",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "submit",
+      "classification_confidence": 98.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": false,
+    "ocr_failure": true,
+    "current_url": "https://folio3.com/contact-us/",
+    "ocr_excerpt": "conf=95.1 s_score=0 f_score=9 success=[] failure=['field_error', 'required_fields', 'check_try_again'] text='required fields personal information john doe doe one or more fields have an error. please check and try again.'",
+    "ocr_success_matches": [],
+    "ocr_failure_matches": [
+      "field_error",
+      "required_fields",
+      "check_try_again"
+    ]
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    665,
+    142
+  ],
+  "form_bbox": {
+    "x": 665.109375,
+    "y": 142.125,
+    "width": 546.390625,
+    "height": 449.5
+  }
+}

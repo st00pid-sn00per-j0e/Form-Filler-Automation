@@ -4178,3 +4178,1198 @@ task: <Task pending name='Task-86' coro=<Page.goto() running at C:\Users\Dell\De
 2026-02-11 16:29:37,934 - INFO - Results saved to results.csv
 2026-02-11 16:29:37,934 - INFO - Batch processing complete. Processed 14 URLs.
 2026-02-11 16:29:37,940 - INFO - Results saved to results.csv
+2026-02-11 17:04:28,307 - INFO - Processing: https://10pearls.com/get-in-touch/
+2026-02-11 17:04:55,463 - WARNING - Captcha detected on https://10pearls.com/get-in-touch/ (continuing until obstruction)
+2026-02-11 17:04:57,690 - INFO - [LIVE OCR] idx=0 field=dropdown ocr_conf=94.6 class_conf=95 text='how can we help? message'
+2026-02-11 17:04:57,690 - INFO - [SKIP] no prefill data for classified field dropdown at [no-xpath]
+2026-02-11 17:04:57,945 - INFO - [LIVE OCR] idx=1 field=subject ocr_conf=93.5 class_conf=100.0 text='how did you hear about us? how can we help?'
+2026-02-11 17:04:58,190 - INFO - [LIVE OCR] idx=2 field=message ocr_conf=88.0 class_conf=90 text='message'
+2026-02-11 17:04:58,441 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=83.2 class_conf=90 text='name ~ ema company pho'
+2026-02-11 17:04:58,680 - INFO - [LIVE OCR] idx=4 field=phone ocr_conf=83.0 class_conf=90 text='nurrber'
+2026-02-11 17:04:58,936 - INFO - [LIVE OCR] idx=5 field=company ocr_conf=95.6 class_conf=90 text='company pho how did you hear about us?'
+2026-02-11 17:04:59,172 - INFO - [LIVE OCR] idx=6 field=email ocr_conf=71.0 class_conf=95 text='email prore'
+2026-02-11 17:04:59,399 - INFO - [LIVE OCR] idx=7 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:04:59,399 - INFO - [SKIP] non-fillable field submit at [no-xpath]
+2026-02-11 17:06:00,109 - INFO - Use pytorch device_name: cpu
+2026-02-11 17:06:00,109 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-11 17:06:04,676 - INFO - MiniLM model loaded for semantic classification
+2026-02-11 17:06:04,987 - INFO - [LIVE OCR] idx=8 field=unknown ocr_conf=84.0 class_conf=0 text='2'
+2026-02-11 17:06:04,987 - INFO - [SKIP] non-fillable field unknown at /html/body/div/div/div/div/section/div[2]/div/div/section/div/div[2]/div/div/div/div/form/div[3]/div/iframe
+2026-02-11 17:06:05,000 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_170455_annotated.png
+2026-02-11 17:06:05,593 - INFO - [OK] Filled subject: Business Inquiry...
+2026-02-11 17:06:06,225 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:06:06,791 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:06:07,358 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:06:07,926 - INFO - [OK] Filled company: Example Corp...
+2026-02-11 17:06:08,472 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:06:09,428 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_170609_post_fill_post_fill.png
+2026-02-11 17:06:16,086 - WARNING - [!] Submission uncertain for https://10pearls.com/get-in-touch/
+2026-02-11 17:06:16,131 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_170616_130535_https_10pearls_com_get_in_touch.json
+2026-02-11 17:06:16,131 - INFO - [FAILED] https://10pearls.com/get-in-touch/: submission attempted; OCR screenshot had no clear success/failure signal (107.8s)
+2026-02-11 17:06:16,131 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=9 known=8 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=1 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:06:16,131 - INFO - Processing: https://folio3.com/contact-us/
+2026-02-11 17:06:25,513 - WARNING - Captcha detected on https://folio3.com/contact-us/ (continuing until obstruction)
+2026-02-11 17:06:26,521 - INFO - [LIVE OCR] idx=0 field=phone ocr_conf=96.0 class_conf=90 text='phone number'
+2026-02-11 17:06:26,757 - INFO - [LIVE OCR] idx=1 field=email ocr_conf=88.3 class_conf=95 text='email address phe'
+2026-02-11 17:06:26,988 - INFO - [LIVE OCR] idx=2 field=last_name ocr_conf=96.0 class_conf=90 text='last name'
+2026-02-11 17:06:27,224 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=93.3 class_conf=92 text='first name las'
+2026-02-11 17:06:27,467 - INFO - [LIVE OCR] idx=4 field=message ocr_conf=96.0 class_conf=84.21052631578947 text='personal information'
+2026-02-11 17:06:27,467 - INFO - [SKIP] non-fillable field message at /html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/h2
+2026-02-11 17:06:27,707 - INFO - [LIVE OCR] idx=5 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:06:27,708 - INFO - [SKIP] non-fillable field submit at /html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div[3]/div/p/input
+2026-02-11 17:06:27,718 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_170625_annotated.png
+2026-02-11 17:06:28,287 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:06:28,971 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:06:29,635 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:06:30,335 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:06:31,253 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_170631_post_fill_post_fill.png
+2026-02-11 17:06:37,150 - WARNING - [!] Submission rejected for https://folio3.com/contact-us/
+2026-02-11 17:06:37,170 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_170637_170817_https_folio3_com_contact_us.json
+2026-02-11 17:06:37,170 - INFO - [FAILED] https://folio3.com/contact-us/: form submission failed validation checks (field_error) (21.0s)
+2026-02-11 17:06:37,170 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=6 known=6 ready=4 filled=4/4 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=1
+2026-02-11 17:06:49,224 - INFO - Starting batch processing of 14 URLs
+2026-02-11 17:06:49,224 - INFO - Processing: https://www.netguru.com/estimate-project
+2026-02-11 17:07:02,202 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=92.7 class_conf=71.42857142857143 text='we value your privacy by clicking “accept all" you agree to netguru s.a. storing cookies on your device to enhance site ...'
+2026-02-11 17:07:02,202 - INFO - [SKIP] non-fillable field message at /html/body/div[3]/div/div/div/div/div/div/div
+2026-02-11 17:07:02,510 - INFO - [LIVE OCR] idx=1 field=message ocr_conf=92.4 class_conf=95 text='cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. cookie polic...'
+2026-02-11 17:07:02,745 - INFO - [LIVE OCR] idx=2 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:07:02,746 - INFO - [SKIP] non-fillable field submit at /html/body/main/span/div/section/div/div[2]/div/div/form/div/div[2]/input
+2026-02-11 17:07:03,079 - INFO - [LIVE OCR] idx=3 field=company ocr_conf=88.1 class_conf=90 text='we value your privacy by clicking “accept all" you agree to netguru s.a. storing cookies on your device to enhance site ...'
+2026-02-11 17:07:03,321 - INFO - [LIVE OCR] idx=4 field=phone ocr_conf=88.0 class_conf=95 text='we byc cool'
+2026-02-11 17:07:03,580 - INFO - [LIVE OCR] idx=5 field=email ocr_conf=86.7 class_conf=95 text='email* jow did you hear about us?*'
+2026-02-11 17:07:03,825 - INFO - [LIVE OCR] idx=6 field=last_name ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:07:04,087 - INFO - [LIVE OCR] idx=7 field=first_name ocr_conf=93.6 class_conf=90 text='first name* la phone number'
+2026-02-11 17:07:04,328 - INFO - [LIVE OCR] idx=8 field=phone ocr_conf=0.0 class_conf=66.66666666666667 text=''
+2026-02-11 17:07:04,599 - INFO - [LIVE OCR] idx=9 field=choice ocr_conf=91.4 class_conf=90 text='lagree to receive email marketing communications from netguru.'
+2026-02-11 17:07:04,599 - INFO - [SKIP] non-fillable field choice at /html/body/div
+2026-02-11 17:07:04,629 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_170700_annotated.png
+2026-02-11 17:07:05,186 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:07:05,753 - INFO - [OK] Filled company: Example Corp...
+2026-02-11 17:07:15,475 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:07:16,022 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:07:16,572 - INFO - [OK] Filled first_name: John...
+2026-02-11 17:07:17,141 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:07:18,085 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_170717_post_fill_post_fill.png
+2026-02-11 17:07:36,969 - WARNING - [!] Submission uncertain for https://www.netguru.com/estimate-project
+2026-02-11 17:07:37,018 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_170737_012259_https_www_netguru_com_estimate_project.json
+2026-02-11 17:07:37,018 - INFO - [FAILED] https://www.netguru.com/estimate-project: submission attempted; OCR screenshot had no clear success/failure signal (47.8s)
+2026-02-11 17:07:37,018 - INFO - [MONITOR] issue=submission_confirmation summary=seen=10 known=10 ready=7 filled=6/7 fill_action_failed=1 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=3 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:07:39,032 - INFO - Processing: https://10pearls.com/get-in-touch/
+2026-02-11 17:07:52,470 - WARNING - Captcha detected on https://10pearls.com/get-in-touch/ (continuing until obstruction)
+2026-02-11 17:07:53,634 - INFO - [LIVE OCR] idx=0 field=dropdown ocr_conf=94.6 class_conf=95 text='how can we help? message'
+2026-02-11 17:07:53,634 - INFO - [SKIP] no prefill data for classified field dropdown at [no-xpath]
+2026-02-11 17:07:53,882 - INFO - [LIVE OCR] idx=1 field=subject ocr_conf=93.5 class_conf=100.0 text='how did you hear about us? how can we help?'
+2026-02-11 17:07:54,118 - INFO - [LIVE OCR] idx=2 field=message ocr_conf=88.0 class_conf=90 text='message'
+2026-02-11 17:07:54,352 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=83.2 class_conf=90 text='name ~ ema company pho'
+2026-02-11 17:07:54,586 - INFO - [LIVE OCR] idx=4 field=phone ocr_conf=83.0 class_conf=90 text='nurrber'
+2026-02-11 17:07:54,825 - INFO - [LIVE OCR] idx=5 field=company ocr_conf=95.6 class_conf=90 text='company pho how did you hear about us?'
+2026-02-11 17:07:55,069 - INFO - [LIVE OCR] idx=6 field=email ocr_conf=71.0 class_conf=95 text='email prore'
+2026-02-11 17:07:55,300 - INFO - [LIVE OCR] idx=7 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:07:55,300 - INFO - [SKIP] non-fillable field submit at [no-xpath]
+2026-02-11 17:08:07,486 - INFO - Use pytorch device_name: cpu
+2026-02-11 17:08:07,486 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-11 17:08:11,755 - INFO - MiniLM model loaded for semantic classification
+2026-02-11 17:08:11,828 - INFO - [LIVE OCR] idx=8 field=unknown ocr_conf=84.0 class_conf=0 text='2'
+2026-02-11 17:08:11,829 - INFO - [SKIP] non-fillable field unknown at /html/body/div/div/div/div/section/div[2]/div/div/section/div/div[2]/div/div/div/div/form/div[3]/div/iframe
+2026-02-11 17:08:11,844 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_170752_annotated.png
+2026-02-11 17:08:12,418 - INFO - [OK] Filled subject: Business Inquiry...
+2026-02-11 17:08:13,051 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:08:13,616 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:08:14,201 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:08:14,765 - INFO - [OK] Filled company: Example Corp...
+2026-02-11 17:08:15,331 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:08:16,294 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_170816_post_fill_post_fill.png
+2026-02-11 17:08:22,945 - WARNING - [!] Submission uncertain for https://10pearls.com/get-in-touch/
+2026-02-11 17:08:22,993 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_170822_991826_https_10pearls_com_get_in_touch.json
+2026-02-11 17:08:22,993 - INFO - [FAILED] https://10pearls.com/get-in-touch/: submission attempted; OCR screenshot had no clear success/failure signal (44.0s)
+2026-02-11 17:08:22,996 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=9 known=8 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=1 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:08:25,010 - INFO - Processing: https://www.valuecoders.com/
+2026-02-11 17:08:37,690 - WARNING - Captcha detected on https://www.valuecoders.com/ (continuing until obstruction)
+2026-02-11 17:08:39,170 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=88.1 class_conf=95 text='rents project brief this website uses cookies this website uses cookies to improve read more'
+2026-02-11 17:08:39,483 - INFO - [LIVE OCR] idx=1 field=dropdown ocr_conf=96.0 class_conf=90 text='select country'
+2026-02-11 17:08:39,727 - INFO - [LIVE OCR] idx=2 field=email ocr_conf=80.2 class_conf=90 text='email ernail address select country'
+2026-02-11 17:08:40,010 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=75.0 class_conf=92 text='full name er full se'
+2026-02-11 17:08:40,276 - INFO - [LIVE OCR] idx=4 field=phone ocr_conf=76.7 class_conf=90 text='phone no. se biv = phone c select your service*'
+2026-02-11 17:08:40,545 - INFO - [LIVE OCR] idx=5 field=company ocr_conf=92.5 class_conf=90 text='consultation 8 business hours'
+2026-02-11 17:08:40,545 - INFO - [SKIP] non-fillable field company at /html/body/section[16]/div/div/div[2]/form/div/h2
+2026-02-11 17:08:40,839 - INFO - [LIVE OCR] idx=6 field=submit ocr_conf=83.5 class_conf=98 text='uses cookies to improve user experic a | reject non-essential prefe'
+2026-02-11 17:08:40,839 - INFO - [SKIP] non-fillable field submit at /html/body/div/div[2]/div/button[2]
+2026-02-11 17:08:41,134 - INFO - [LIVE OCR] idx=7 field=company ocr_conf=90.3 class_conf=90 text='guaranteed response within 8 business hours'
+2026-02-11 17:08:41,134 - INFO - [SKIP] non-fillable field company at /html/body/section[16]/div/div/div[2]/form/div/p
+2026-02-11 17:08:41,402 - INFO - [LIVE OCR] idx=8 field=submit ocr_conf=73.2 class_conf=98 text='aor websiteuses cool accept all'
+2026-02-11 17:08:41,402 - INFO - [SKIP] non-fillable field submit at /html/body/div/div[2]/div/button
+2026-02-11 17:08:41,681 - INFO - [LIVE OCR] idx=9 field=phone ocr_conf=90.0 class_conf=66.66666666666667 text='this website uses cookies of cookies to'
+2026-02-11 17:08:41,681 - INFO - [SKIP] non-fillable field phone at /html/body/div/div[2]/h3
+2026-02-11 17:08:41,702 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_170837_annotated.png
+2026-02-11 17:08:42,305 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:08:42,926 - INFO - [OK] Filled dropdown: United States...
+2026-02-11 17:08:43,604 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:08:44,187 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:08:44,815 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:08:45,860 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_170845_post_fill_post_fill.png
+2026-02-11 17:08:52,454 - INFO - [OK] Successfully submitted https://www.valuecoders.com/
+2026-02-11 17:08:52,485 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_170852_485555_https_www_valuecoders_com.json
+2026-02-11 17:08:52,485 - INFO - [SUCCESS] https://www.valuecoders.com/: form submitted successfully (27.5s)
+2026-02-11 17:08:52,485 - INFO - [MONITOR] issue=none summary=seen=10 known=10 ready=5 filled=5/5 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=5 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=1 submit_failure_signal=0
+2026-02-11 17:08:54,495 - INFO - Processing: https://folio3.com/contact-us/
+2026-02-11 17:09:25,062 - ERROR - Error processing https://folio3.com/contact-us/: Timeout 30000ms exceeded.
+2026-02-11 17:09:25,064 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_170925_063399_https_folio3_com_contact_us.json
+2026-02-11 17:09:25,064 - INFO - [FAILED] https://folio3.com/contact-us/: error: Timeout 30000ms exceeded. (30.6s)
+2026-02-11 17:09:25,065 - INFO - [MONITOR] issue=ocr_heuristics summary=seen=0 known=0 ready=0 filled=0/0 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=0 prefill_miss_skips=0 submit_clicked=0 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:09:27,076 - INFO - Processing: https://geniusee.com/#contact
+2026-02-11 17:09:27,076 - ERROR - Error processing https://geniusee.com/#contact: Event loop is closed! Is Playwright already stopped?
+2026-02-11 17:09:27,076 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_170927_076939_https_geniusee_com_contact.json
+2026-02-11 17:09:27,076 - INFO - [FAILED] https://geniusee.com/#contact: error: Event loop is closed! Is Playwright already stopped? (0.0s)
+2026-02-11 17:09:27,076 - INFO - [MONITOR] issue=ocr_heuristics summary=seen=0 known=0 ready=0 filled=0/0 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=0 prefill_miss_skips=0 submit_clicked=0 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:09:29,086 - INFO - Processing: https://www.simform.com/contact/
+2026-02-11 17:09:29,086 - ERROR - Error processing https://www.simform.com/contact/: Event loop is closed! Is Playwright already stopped?
+2026-02-11 17:09:29,086 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_170929_086853_https_www_simform_com_contact.json
+2026-02-11 17:09:29,086 - INFO - [FAILED] https://www.simform.com/contact/: error: Event loop is closed! Is Playwright already stopped? (0.0s)
+2026-02-11 17:09:29,086 - INFO - [MONITOR] issue=ocr_heuristics summary=seen=0 known=0 ready=0 filled=0/0 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=0 prefill_miss_skips=0 submit_clicked=0 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:09:31,089 - INFO - Processing: https://www.merixstudio.com/contact
+2026-02-11 17:09:31,089 - ERROR - Error processing https://www.merixstudio.com/contact: Event loop is closed! Is Playwright already stopped?
+2026-02-11 17:09:31,091 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_170931_089505_https_www_merixstudio_com_contact.json
+2026-02-11 17:09:31,091 - INFO - [FAILED] https://www.merixstudio.com/contact: error: Event loop is closed! Is Playwright already stopped? (0.0s)
+2026-02-11 17:09:31,091 - INFO - [MONITOR] issue=ocr_heuristics summary=seen=0 known=0 ready=0 filled=0/0 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=0 prefill_miss_skips=0 submit_clicked=0 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:09:33,104 - INFO - Processing: https://www.cleveroad.com/contact/
+2026-02-11 17:09:33,104 - ERROR - Error processing https://www.cleveroad.com/contact/: Event loop is closed! Is Playwright already stopped?
+2026-02-11 17:09:33,105 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_170933_104143_https_www_cleveroad_com_contact.json
+2026-02-11 17:09:33,105 - INFO - [FAILED] https://www.cleveroad.com/contact/: error: Event loop is closed! Is Playwright already stopped? (0.0s)
+2026-02-11 17:09:33,105 - INFO - [MONITOR] issue=ocr_heuristics summary=seen=0 known=0 ready=0 filled=0/0 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=0 prefill_miss_skips=0 submit_clicked=0 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:09:35,109 - INFO - Processing: https://www.fingent.com/contact/
+2026-02-11 17:09:35,109 - ERROR - Error processing https://www.fingent.com/contact/: Event loop is closed! Is Playwright already stopped?
+2026-02-11 17:09:35,110 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_170935_110006_https_www_fingent_com_contact.json
+2026-02-11 17:09:35,110 - INFO - [FAILED] https://www.fingent.com/contact/: error: Event loop is closed! Is Playwright already stopped? (0.0s)
+2026-02-11 17:09:35,110 - INFO - [MONITOR] issue=ocr_heuristics summary=seen=0 known=0 ready=0 filled=0/0 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=0 prefill_miss_skips=0 submit_clicked=0 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:09:37,116 - INFO - Processing: https://www.systemsltd.com/contact-us
+2026-02-11 17:09:37,116 - ERROR - Error processing https://www.systemsltd.com/contact-us: Event loop is closed! Is Playwright already stopped?
+2026-02-11 17:09:37,118 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_170937_116914_https_www_systemsltd_com_contact_us.json
+2026-02-11 17:09:37,118 - INFO - [FAILED] https://www.systemsltd.com/contact-us: error: Event loop is closed! Is Playwright already stopped? (0.0s)
+2026-02-11 17:09:37,118 - INFO - [MONITOR] issue=ocr_heuristics summary=seen=0 known=0 ready=0 filled=0/0 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=0 prefill_miss_skips=0 submit_clicked=0 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:09:37,118 - INFO - Results saved to results.csv
+2026-02-11 17:09:37,118 - INFO - Progress: 10/14 URLs processed
+2026-02-11 17:09:39,121 - WARNING - Skipping invalid URL: netsoltech.com
+2026-02-11 17:09:39,121 - WARNING - Skipping invalid URL: venturedive.com
+2026-02-11 17:09:39,121 - WARNING - Skipping invalid URL: arbisoft.com
+2026-02-11 17:09:39,121 - WARNING - Skipping invalid URL: techlogix.com
+2026-02-11 17:09:39,121 - INFO - Results saved to results.csv
+2026-02-11 17:09:39,121 - INFO - Batch processing complete. Processed 14 URLs.
+2026-02-11 17:09:39,121 - INFO - Results saved to results.csv
+2026-02-11 17:10:39,699 - INFO - Processing: https://folio3.com/contact-us/
+2026-02-11 17:10:50,131 - WARNING - Captcha detected on https://folio3.com/contact-us/ (continuing until obstruction)
+2026-02-11 17:10:54,901 - INFO - [LIVE OCR] idx=0 field=phone ocr_conf=96.0 class_conf=90 text='phone number'
+2026-02-11 17:10:55,136 - INFO - [LIVE OCR] idx=1 field=email ocr_conf=88.3 class_conf=95 text='email address phe'
+2026-02-11 17:10:55,363 - INFO - [LIVE OCR] idx=2 field=last_name ocr_conf=96.0 class_conf=90 text='last name'
+2026-02-11 17:10:55,595 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=93.3 class_conf=92 text='first name las'
+2026-02-11 17:10:55,838 - INFO - [LIVE OCR] idx=4 field=message ocr_conf=96.0 class_conf=84.21052631578947 text='personal information'
+2026-02-11 17:10:55,838 - INFO - [SKIP] non-fillable field message at /html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/h2
+2026-02-11 17:10:56,053 - INFO - [LIVE OCR] idx=5 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:10:56,054 - INFO - [SKIP] non-fillable field submit at /html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div[3]/div/p/input
+2026-02-11 17:10:56,065 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171050_annotated.png
+2026-02-11 17:10:56,659 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:10:57,359 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:10:58,058 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:10:58,721 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:10:59,617 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171059_post_fill_post_fill.png
+2026-02-11 17:11:05,482 - WARNING - [!] Submission rejected for https://folio3.com/contact-us/
+2026-02-11 17:11:05,513 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_171105_503059_https_folio3_com_contact_us.json
+2026-02-11 17:11:05,513 - INFO - [FAILED] https://folio3.com/contact-us/: form submission failed validation checks (field_error) (25.8s)
+2026-02-11 17:11:05,513 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=6 known=6 ready=4 filled=4/4 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=1
+2026-02-11 17:11:05,514 - INFO - Processing: https://www.valuecoders.com/
+2026-02-11 17:11:14,976 - WARNING - Captcha detected on https://www.valuecoders.com/ (continuing until obstruction)
+2026-02-11 17:11:16,516 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=88.1 class_conf=95 text='rents project brief this website uses cookies this website uses cookies to improve read more'
+2026-02-11 17:11:16,829 - INFO - [LIVE OCR] idx=1 field=dropdown ocr_conf=96.0 class_conf=90 text='select country'
+2026-02-11 17:11:17,070 - INFO - [LIVE OCR] idx=2 field=email ocr_conf=80.2 class_conf=90 text='email ernail address select country'
+2026-02-11 17:11:17,339 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=75.0 class_conf=92 text='full name er full se'
+2026-02-11 17:11:17,615 - INFO - [LIVE OCR] idx=4 field=phone ocr_conf=76.7 class_conf=90 text='phone no. se biv = phone c select your service*'
+2026-02-11 17:11:17,860 - INFO - [LIVE OCR] idx=5 field=company ocr_conf=92.5 class_conf=90 text='consultation 8 business hours'
+2026-02-11 17:11:17,860 - INFO - [SKIP] non-fillable field company at /html/body/section[16]/div/div/div[2]/form/div/h2
+2026-02-11 17:11:18,127 - INFO - [LIVE OCR] idx=6 field=submit ocr_conf=83.5 class_conf=98 text='uses cookies to improve user experic a | reject non-essential prefe'
+2026-02-11 17:11:18,127 - INFO - [SKIP] non-fillable field submit at /html/body/div/div[2]/div/button[2]
+2026-02-11 17:11:18,398 - INFO - [LIVE OCR] idx=7 field=company ocr_conf=90.3 class_conf=90 text='guaranteed response within 8 business hours'
+2026-02-11 17:11:18,399 - INFO - [SKIP] non-fillable field company at /html/body/section[16]/div/div/div[2]/form/div/p
+2026-02-11 17:11:18,640 - INFO - [LIVE OCR] idx=8 field=submit ocr_conf=73.2 class_conf=98 text='aor websiteuses cool accept all'
+2026-02-11 17:11:18,640 - INFO - [SKIP] non-fillable field submit at /html/body/div/div[2]/div/button
+2026-02-11 17:11:18,898 - INFO - [LIVE OCR] idx=9 field=phone ocr_conf=90.0 class_conf=66.66666666666667 text='this website uses cookies of cookies to'
+2026-02-11 17:11:18,898 - INFO - [SKIP] non-fillable field phone at /html/body/div/div[2]/h3
+2026-02-11 17:11:18,919 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171114_annotated.png
+2026-02-11 17:11:19,522 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:11:20,226 - INFO - [OK] Filled dropdown: United States...
+2026-02-11 17:11:20,874 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:11:21,488 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:11:22,124 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:11:23,237 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171122_post_fill_post_fill.png
+2026-02-11 17:11:29,882 - INFO - [OK] Successfully submitted https://www.valuecoders.com/
+2026-02-11 17:11:29,923 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_171129_921153_https_www_valuecoders_com.json
+2026-02-11 17:11:29,924 - INFO - [SUCCESS] https://www.valuecoders.com/: form submitted successfully (24.4s)
+2026-02-11 17:11:29,924 - INFO - [MONITOR] issue=none summary=seen=10 known=10 ready=5 filled=5/5 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=5 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=1 submit_failure_signal=0
+2026-02-11 17:11:37,797 - INFO - Starting batch processing of 14 URLs
+2026-02-11 17:11:37,797 - INFO - Processing: https://www.netguru.com/estimate-project
+2026-02-11 17:11:49,808 - WARNING - Captcha detected on https://www.netguru.com/estimate-project (continuing until obstruction)
+2026-02-11 17:11:54,281 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=92.7 class_conf=71.42857142857143 text='we value your privacy by clicking “accept all" you agree to netguru s.a. storing cookies on your device to enhance site ...'
+2026-02-11 17:11:54,281 - INFO - [SKIP] non-fillable field message at /html/body/div[3]/div/div/div/div/div/div/div
+2026-02-11 17:11:54,582 - INFO - [LIVE OCR] idx=1 field=message ocr_conf=92.4 class_conf=95 text='cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. cookie polic...'
+2026-02-11 17:11:54,829 - INFO - [LIVE OCR] idx=2 field=choice ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:11:54,829 - INFO - [SKIP] non-fillable field choice at /html/body/div
+2026-02-11 17:11:55,065 - INFO - [LIVE OCR] idx=3 field=last_name ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:11:55,319 - INFO - [LIVE OCR] idx=4 field=first_name ocr_conf=94.0 class_conf=90 text='first name* la phone number'
+2026-02-11 17:11:55,586 - INFO - [LIVE OCR] idx=5 field=email ocr_conf=87.0 class_conf=95 text='email* jow did you hear about us?*'
+2026-02-11 17:11:55,842 - INFO - [LIVE OCR] idx=6 field=phone ocr_conf=88.0 class_conf=95 text='we byc cool'
+2026-02-11 17:11:56,173 - INFO - [LIVE OCR] idx=7 field=company ocr_conf=91.3 class_conf=90 text='we value your privacy by clicking “accept all" you agree to netguru s.a. storing cookies on your device to enhance site ...'
+2026-02-11 17:11:56,430 - INFO - [LIVE OCR] idx=8 field=phone ocr_conf=0.0 class_conf=66.66666666666667 text=''
+2026-02-11 17:11:56,453 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171149_annotated.png
+2026-02-11 17:11:57,086 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:11:57,701 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:11:58,245 - INFO - [OK] Filled first_name: John...
+2026-02-11 17:11:58,796 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:12:00,177 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:12:00,726 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:12:01,293 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:12:02,260 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171202_post_fill_post_fill.png
+2026-02-11 17:12:08,393 - WARNING - [!] Submission uncertain for https://www.netguru.com/estimate-project
+2026-02-11 17:12:08,445 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_171208_445051_https_www_netguru_com_estimate_project.json
+2026-02-11 17:12:08,445 - INFO - [FAILED] https://www.netguru.com/estimate-project: submission attempted; OCR screenshot had no clear success/failure signal (30.6s)
+2026-02-11 17:12:08,445 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=9 known=9 ready=7 filled=7/7 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:12:10,460 - INFO - Processing: https://10pearls.com/get-in-touch/
+2026-02-11 17:12:25,355 - WARNING - Captcha detected on https://10pearls.com/get-in-touch/ (continuing until obstruction)
+2026-02-11 17:12:26,467 - INFO - [LIVE OCR] idx=0 field=dropdown ocr_conf=94.6 class_conf=95 text='how can we help? message'
+2026-02-11 17:12:26,467 - INFO - [SKIP] no prefill data for classified field dropdown at [no-xpath]
+2026-02-11 17:12:26,720 - INFO - [LIVE OCR] idx=1 field=subject ocr_conf=93.5 class_conf=100.0 text='how did you hear about us? how can we help?'
+2026-02-11 17:12:26,960 - INFO - [LIVE OCR] idx=2 field=message ocr_conf=88.0 class_conf=90 text='message'
+2026-02-11 17:12:27,186 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=83.2 class_conf=90 text='name ~ ema company pho'
+2026-02-11 17:12:27,415 - INFO - [LIVE OCR] idx=4 field=phone ocr_conf=83.0 class_conf=90 text='nurrber'
+2026-02-11 17:12:27,652 - INFO - [LIVE OCR] idx=5 field=company ocr_conf=95.6 class_conf=90 text='company pho how did you hear about us?'
+2026-02-11 17:12:27,872 - INFO - [LIVE OCR] idx=6 field=email ocr_conf=71.0 class_conf=95 text='email prore'
+2026-02-11 17:12:28,084 - INFO - [LIVE OCR] idx=7 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:12:28,084 - INFO - [SKIP] non-fillable field submit at [no-xpath]
+2026-02-11 17:12:39,589 - INFO - Use pytorch device_name: cpu
+2026-02-11 17:12:39,589 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-11 17:12:45,592 - INFO - MiniLM model loaded for semantic classification
+2026-02-11 17:12:45,650 - INFO - [LIVE OCR] idx=8 field=unknown ocr_conf=84.0 class_conf=0 text='2'
+2026-02-11 17:12:45,659 - INFO - [SKIP] non-fillable field unknown at /html/body/div/div/div/div/section/div[2]/div/div/section/div/div[2]/div/div/div/div/form/div[3]/div/iframe
+2026-02-11 17:12:45,671 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171225_annotated.png
+2026-02-11 17:12:46,248 - INFO - [OK] Filled subject: Business Inquiry...
+2026-02-11 17:12:46,897 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:12:47,480 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:12:48,030 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:12:48,596 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:12:49,146 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:12:50,063 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171249_post_fill_post_fill.png
+2026-02-11 17:12:56,672 - WARNING - [!] Submission uncertain for https://10pearls.com/get-in-touch/
+2026-02-11 17:12:56,710 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_171256_710468_https_10pearls_com_get_in_touch.json
+2026-02-11 17:12:56,710 - INFO - [FAILED] https://10pearls.com/get-in-touch/: submission attempted; OCR screenshot had no clear success/failure signal (46.3s)
+2026-02-11 17:12:56,710 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=9 known=8 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=1 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:12:58,718 - INFO - Processing: https://www.valuecoders.com/
+2026-02-11 17:13:10,176 - WARNING - Captcha detected on https://www.valuecoders.com/ (continuing until obstruction)
+2026-02-11 17:13:11,522 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=88.1 class_conf=95 text='rents project brief this website uses cookies this website uses cookies to improve read more'
+2026-02-11 17:13:11,826 - INFO - [LIVE OCR] idx=1 field=dropdown ocr_conf=96.0 class_conf=90 text='select country'
+2026-02-11 17:13:12,071 - INFO - [LIVE OCR] idx=2 field=email ocr_conf=80.2 class_conf=90 text='email ernail address select country'
+2026-02-11 17:13:12,334 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=75.0 class_conf=92 text='full name er full se'
+2026-02-11 17:13:12,591 - INFO - [LIVE OCR] idx=4 field=phone ocr_conf=76.7 class_conf=90 text='phone no. se biv = phone c select your service*'
+2026-02-11 17:13:12,838 - INFO - [LIVE OCR] idx=5 field=company ocr_conf=92.5 class_conf=90 text='consultation 8 business hours'
+2026-02-11 17:13:12,838 - INFO - [SKIP] non-fillable field company at /html/body/section[16]/div/div/div[2]/form/div/h2
+2026-02-11 17:13:13,122 - INFO - [LIVE OCR] idx=6 field=submit ocr_conf=83.5 class_conf=98 text='uses cookies to improve user experic a | reject non-essential prefe'
+2026-02-11 17:13:13,122 - INFO - [SKIP] non-fillable field submit at /html/body/div/div[2]/div/button[2]
+2026-02-11 17:13:13,391 - INFO - [LIVE OCR] idx=7 field=company ocr_conf=90.3 class_conf=90 text='guaranteed response within 8 business hours'
+2026-02-11 17:13:13,391 - INFO - [SKIP] non-fillable field company at /html/body/section[16]/div/div/div[2]/form/div/p
+2026-02-11 17:13:13,631 - INFO - [LIVE OCR] idx=8 field=submit ocr_conf=73.2 class_conf=98 text='aor websiteuses cool accept all'
+2026-02-11 17:13:13,631 - INFO - [SKIP] non-fillable field submit at /html/body/div/div[2]/div/button
+2026-02-11 17:13:13,895 - INFO - [LIVE OCR] idx=9 field=phone ocr_conf=90.0 class_conf=66.66666666666667 text='this website uses cookies of cookies to'
+2026-02-11 17:13:13,896 - INFO - [SKIP] non-fillable field phone at /html/body/div/div[2]/h3
+2026-02-11 17:13:13,915 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171310_annotated.png
+2026-02-11 17:13:14,488 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:13:15,105 - INFO - [OK] Filled dropdown: United States...
+2026-02-11 17:13:15,687 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:13:16,487 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:13:17,085 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:13:18,975 - INFO - Detected 4 dynamic fields
+2026-02-11 17:13:21,072 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171320_post_fill_post_fill.png
+2026-02-11 17:13:27,501 - INFO - [OK] Successfully submitted https://www.valuecoders.com/
+2026-02-11 17:13:27,539 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_171327_533265_https_www_valuecoders_com.json
+2026-02-11 17:13:27,539 - INFO - [SUCCESS] https://www.valuecoders.com/: form submitted successfully (28.8s)
+2026-02-11 17:13:27,539 - INFO - [MONITOR] issue=none summary=seen=14 known=14 ready=5 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=8 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=1 submit_failure_signal=0
+2026-02-11 17:13:29,543 - INFO - Processing: https://folio3.com/contact-us/
+2026-02-11 17:13:38,447 - WARNING - Captcha detected on https://folio3.com/contact-us/ (continuing until obstruction)
+2026-02-11 17:13:39,434 - INFO - [LIVE OCR] idx=0 field=phone ocr_conf=96.0 class_conf=90 text='phone number'
+2026-02-11 17:13:39,684 - INFO - [LIVE OCR] idx=1 field=email ocr_conf=88.3 class_conf=95 text='email address phe'
+2026-02-11 17:13:39,939 - INFO - [LIVE OCR] idx=2 field=last_name ocr_conf=96.0 class_conf=90 text='last name'
+2026-02-11 17:13:40,163 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=93.3 class_conf=92 text='first name las'
+2026-02-11 17:13:40,406 - INFO - [LIVE OCR] idx=4 field=message ocr_conf=96.0 class_conf=84.21052631578947 text='personal information'
+2026-02-11 17:13:40,406 - INFO - [SKIP] non-fillable field message at /html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/h2
+2026-02-11 17:13:40,633 - INFO - [LIVE OCR] idx=5 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:13:40,633 - INFO - [SKIP] non-fillable field submit at /html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div[3]/div/p/input
+2026-02-11 17:13:40,646 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171338_annotated.png
+2026-02-11 17:13:41,211 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:13:41,960 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:13:42,642 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:13:43,359 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:13:44,248 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171344_post_fill_post_fill.png
+2026-02-11 17:13:50,193 - WARNING - [!] Submission rejected for https://folio3.com/contact-us/
+2026-02-11 17:13:50,221 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_171350_218053_https_folio3_com_contact_us.json
+2026-02-11 17:13:50,222 - INFO - [FAILED] https://folio3.com/contact-us/: form submission failed validation checks (field_error) (20.7s)
+2026-02-11 17:13:50,222 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=6 known=6 ready=4 filled=4/4 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=1
+2026-02-11 17:13:52,232 - INFO - Processing: https://geniusee.com/#contact
+2026-02-11 17:13:57,628 - INFO - [LIVE OCR] idx=0 field=phone ocr_conf=0.0 class_conf=66.66666666666667 text=''
+2026-02-11 17:13:57,628 - INFO - [SKIP] non-fillable field phone at /html/body/div/section/div[2]/svg/path
+2026-02-11 17:13:57,917 - INFO - [LIVE OCR] idx=1 field=dropdown ocr_conf=0.0 class_conf=57.14285714285714 text=''
+2026-02-11 17:13:57,917 - INFO - [SKIP] non-fillable field dropdown at /html/body/div/section/div/div[2]/div[2]/svg/rect[2]
+2026-02-11 17:13:58,218 - INFO - [LIVE OCR] idx=2 field=subject ocr_conf=89.9 class_conf=90 text='‘tv access to this page is forbidden.'
+2026-02-11 17:13:58,219 - INFO - [SKIP] non-fillable field subject at /html/body/div/section/div/p
+2026-02-11 17:13:58,502 - INFO - [LIVE OCR] idx=3 field=subject ocr_conf=82.0 class_conf=90 text='3 - forbidden to thic nage ic farhiddan'
+2026-02-11 17:13:58,503 - INFO - [SKIP] non-fillable field subject at /html/body/div/section/div/h1
+2026-02-11 17:13:58,756 - INFO - [LIVE OCR] idx=4 field=company ocr_conf=0.0 class_conf=66.66666666666667 text=''
+2026-02-11 17:13:58,756 - INFO - [SKIP] non-fillable field company at /html/body/div/section/div/div/svg/path[8]
+2026-02-11 17:13:58,790 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171356_annotated.png
+2026-02-11 17:13:59,540 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171359_post_fill_post_fill.png
+2026-02-11 17:13:59,541 - INFO - [i] No fillable fields on https://geniusee.com/#contact
+2026-02-11 17:13:59,558 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_171359_554530_https_geniusee_com_contact.json
+2026-02-11 17:13:59,558 - INFO - [FAILED] https://geniusee.com/#contact: no fillable fields found (7.3s)
+2026-02-11 17:13:59,558 - INFO - [MONITOR] issue=ocr_heuristics summary=seen=5 known=5 ready=0 filled=0/0 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=5 prefill_miss_skips=0 submit_clicked=0 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:14:01,572 - INFO - Processing: https://www.simform.com/contact/
+2026-02-11 17:14:08,973 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=95.2 class_conf=95 text='3. where did you hear about us? how did you hear about us?'
+2026-02-11 17:14:09,297 - INFO - [LIVE OCR] idx=1 field=message ocr_conf=94.1 class_conf=95 text='2. tell us more about your project describe your project briefly* the'
+2026-02-11 17:14:09,540 - INFO - [LIVE OCR] idx=2 field=dropdown ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:14:09,540 - INFO - [SKIP] non-fillable field dropdown at /html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[2]/div[4]/div/label
+2026-02-11 17:14:09,841 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=95.8 class_conf=90 text='company name or website'
+2026-02-11 17:14:10,128 - INFO - [LIVE OCR] idx=4 field=dropdown ocr_conf=88.8 class_conf=95 text='| please choose the budget*'
+2026-02-11 17:14:10,129 - INFO - [SKIP] no prefill data for classified field dropdown at [no-xpath]
+2026-02-11 17:14:10,489 - INFO - [LIVE OCR] idx=5 field=name ocr_conf=83.9 class_conf=92 text='to azure tion deliver analytics, governance, and al readiness industries al accelerators » resources whysimform + about ...'
+2026-02-11 17:14:10,811 - INFO - [LIVE OCR] idx=6 field=email ocr_conf=82.0 class_conf=95 text='industries al accelerators resources'
+2026-02-11 17:14:11,130 - INFO - [LIVE OCR] idx=7 field=phone ocr_conf=66.4 class_conf=95 text='whysimform v about us, con'
+2026-02-11 17:14:11,404 - INFO - [LIVE OCR] idx=8 field=name ocr_conf=94.6 class_conf=77.77777777777779 text='to azure tion deliver analytics, governance, and al readiness'
+2026-02-11 17:14:11,405 - INFO - [SKIP] non-fillable field name at /html/body/div/div[2]/p
+2026-02-11 17:14:11,685 - INFO - [LIVE OCR] idx=9 field=phone ocr_conf=95.4 class_conf=90 text='2. tell us more about your project'
+2026-02-11 17:14:11,686 - INFO - [SKIP] non-fillable field phone at /html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[2]/div
+2026-02-11 17:14:11,916 - INFO - [LIVE OCR] idx=10 field=phone ocr_conf=0.0 class_conf=66.66666666666667 text=''
+2026-02-11 17:14:11,917 - INFO - [SKIP] non-fillable field phone at /html/body/div/div[3]/a
+2026-02-11 17:14:12,170 - INFO - [LIVE OCR] idx=11 field=subject ocr_conf=76.0 class_conf=66.66666666666667 text='nezone -'
+2026-02-11 17:14:12,503 - INFO - [LIVE OCR] idx=12 field=subject ocr_conf=95.4 class_conf=90 text='3. where did you hear about us?'
+2026-02-11 17:14:12,503 - INFO - [SKIP] non-fillable field subject at /html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[3]/div
+2026-02-11 17:14:12,769 - INFO - [LIVE OCR] idx=13 field=dropdown ocr_conf=81.8 class_conf=90 text='06:00 am - 07:00 am'
+2026-02-11 17:14:12,769 - INFO - [SKIP] no prefill data for classified field dropdown at [no-xpath]
+2026-02-11 17:14:13,001 - INFO - [LIVE OCR] idx=14 field=dropdown ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:14:13,001 - INFO - [SKIP] non-fillable field dropdown at /html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[2]/div[4]/div/label/div[2]/div[2]
+2026-02-11 17:14:13,272 - INFO - [LIVE OCR] idx=15 field=name ocr_conf=85.3 class_conf=77.77777777777779 text='‘move to azure tion deliver analytics, govert'
+2026-02-11 17:14:13,273 - INFO - [SKIP] non-fillable field name at /html/body/div/div[2]/h4
+2026-02-11 17:14:13,535 - INFO - [LIVE OCR] idx=16 field=name ocr_conf=0.0 class_conf=80.0 text=''
+2026-02-11 17:14:13,535 - INFO - [SKIP] non-fillable field name at /html/body/header/div/div[2]/a
+2026-02-11 17:14:13,569 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171407_annotated.png
+2026-02-11 17:14:14,096 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:14:14,710 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:14:15,475 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:14:16,025 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:14:16,914 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:14:18,660 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:14:19,339 - INFO - [OK] Filled subject: Business Inquiry...
+2026-02-11 17:14:20,479 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171420_post_fill_post_fill.png
+2026-02-11 17:14:26,982 - WARNING - [!] Submission uncertain for https://www.simform.com/contact/
+2026-02-11 17:14:27,008 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_171427_008091_https_www_simform_com_contact.json
+2026-02-11 17:14:27,008 - INFO - [FAILED] https://www.simform.com/contact/: submission attempted; OCR screenshot had no clear success/failure signal (25.4s)
+2026-02-11 17:14:27,008 - INFO - [MONITOR] issue=submission_confirmation summary=seen=17 known=17 ready=7 filled=7/7 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=8 prefill_miss_skips=2 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:14:29,014 - INFO - Processing: https://www.merixstudio.com/contact
+2026-02-11 17:14:38,143 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=86.4 class_conf=95 text='how can we help? q add attachment'
+2026-02-11 17:14:38,462 - INFO - [LIVE OCR] idx=1 field=last_name ocr_conf=73.0 class_conf=90 text='last name. emall*'
+2026-02-11 17:14:38,935 - INFO - [LIVE OCR] idx=2 field=company ocr_conf=94.5 class_conf=90 text='company name how can we help?'
+2026-02-11 17:14:39,399 - INFO - [LIVE OCR] idx=3 field=phone ocr_conf=95.2 class_conf=95 text='phone number company name'
+2026-02-11 17:14:39,821 - INFO - [LIVE OCR] idx=4 field=email ocr_conf=85.3 class_conf=95 text='emall* phone number'
+2026-02-11 17:14:40,099 - INFO - [LIVE OCR] idx=5 field=first_name ocr_conf=91.9 class_conf=90 text='insights careers contact request for pr last name'
+2026-02-11 17:14:40,449 - INFO - [LIVE OCR] idx=6 field=message ocr_conf=91.4 class_conf=90 text='add attachment merixstudio requires the contact information to respond to your inquiry you may opt out of receiving furt...'
+2026-02-11 17:14:40,449 - INFO - [SKIP] non-fillable field message at /html/body/section/div/div/form/div[2]/div/form/fieldset[7]/div/div
+2026-02-11 17:14:40,704 - INFO - [LIVE OCR] idx=7 field=company ocr_conf=55.0 class_conf=90 text='togetl'
+2026-02-11 17:14:40,705 - INFO - [SKIP] non-fillable field company at /html/body/section/div/div/form/div/h1
+2026-02-11 17:14:40,969 - INFO - [LIVE OCR] idx=8 field=submit ocr_conf=84.2 class_conf=98 text='more details, please r submit >'
+2026-02-11 17:14:40,969 - INFO - [SKIP] non-fillable field submit at /html/body/section/div/div/form/div[2]/div/form/div/div[2]/input
+2026-02-11 17:14:41,217 - INFO - [LIVE OCR] idx=9 field=company ocr_conf=67.0 class_conf=90 text='m se e as'
+2026-02-11 17:14:41,217 - INFO - [SKIP] non-fillable field company at /html/body/section/div/div/form/div/div[3]/img
+2026-02-11 17:14:41,467 - INFO - [LIVE OCR] idx=10 field=subject ocr_conf=92.3 class_conf=75.86206896551724 text='request for pr'
+2026-02-11 17:14:41,467 - INFO - [SKIP] non-fillable field subject at /html/body/div[5]/div/a[2]
+2026-02-11 17:14:41,724 - INFO - [LIVE OCR] idx=11 field=submit ocr_conf=69.0 class_conf=98 text='|'
+2026-02-11 17:14:41,724 - INFO - [SKIP] non-fillable field submit at //button[@aria-label="Accept All"]
+2026-02-11 17:14:42,029 - INFO - [LIVE OCR] idx=12 field=subject ocr_conf=90.2 class_conf=90 text='ry 233 we value your privacy we use cookles to enhance your'
+2026-02-11 17:14:42,029 - INFO - [SKIP] non-fillable field subject at /html/body/div[3]/div/div/p
+2026-02-11 17:14:42,333 - INFO - [LIVE OCR] idx=13 field=company ocr_conf=92.2 class_conf=90 text='solve problems ar let's work together.'
+2026-02-11 17:14:42,333 - INFO - [SKIP] non-fillable field company at /html/body/section/div/div/form/div/p
+2026-02-11 17:14:42,370 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171436_annotated.png
+2026-02-11 17:14:42,936 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:14:43,532 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:14:44,066 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:14:45,398 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:14:45,948 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:14:46,496 - INFO - [OK] Filled first_name: John...
+2026-02-11 17:14:47,465 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171447_post_fill_post_fill.png
+2026-02-11 17:14:53,922 - WARNING - [!] Submission uncertain for https://www.merixstudio.com/contact
+2026-02-11 17:14:53,953 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_171453_950302_https_www_merixstudio_com_contact.json
+2026-02-11 17:14:53,953 - INFO - [FAILED] https://www.merixstudio.com/contact: submission attempted; OCR screenshot had no clear success/failure signal (24.9s)
+2026-02-11 17:14:53,953 - INFO - [MONITOR] issue=submission_confirmation summary=seen=14 known=14 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=8 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:14:55,970 - INFO - Processing: https://www.cleveroad.com/contact/
+2026-02-11 17:15:06,870 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=89.4 class_conf=95 text='about a project* @ send me nda'
+2026-02-11 17:15:07,123 - INFO - [LIVE OCR] idx=1 field=message ocr_conf=95.0 class_conf=90 text='send message'
+2026-02-11 17:15:07,123 - INFO - [SKIP] non-fillable field message at /html/body/div/div/div/main/div/section/div/div/section/div/div[2]/form/div[5]/button/span
+2026-02-11 17:15:07,373 - INFO - [LIVE OCR] idx=2 field=phone ocr_conf=95.3 class_conf=90 text='your phone number'
+2026-02-11 17:15:07,622 - INFO - [LIVE OCR] idx=3 field=email ocr_conf=91.0 class_conf=90 text='your email address* ye'
+2026-02-11 17:15:07,875 - INFO - [LIVE OCR] idx=4 field=company ocr_conf=95.0 class_conf=90 text='company'
+2026-02-11 17:15:08,105 - INFO - [LIVE OCR] idx=5 field=name ocr_conf=0.0 class_conf=92 text=''
+2026-02-11 17:15:08,353 - INFO - [LIVE OCR] idx=6 field=company ocr_conf=96.0 class_conf=90 text='company'
+2026-02-11 17:15:08,590 - INFO - [LIVE OCR] idx=7 field=choice ocr_conf=96.0 class_conf=95 text='about send'
+2026-02-11 17:15:08,590 - INFO - [SKIP] non-fillable field choice at //*[@id="cfNda"]
+2026-02-11 17:15:08,620 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171505_annotated.png
+2026-02-11 17:15:09,260 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:15:09,875 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:15:10,439 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:15:10,971 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:15:11,521 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:15:12,057 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:15:13,009 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171512_post_fill_post_fill.png
+2026-02-11 17:15:23,122 - INFO - [OK] Successfully submitted https://www.cleveroad.com/contact/
+2026-02-11 17:15:23,160 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_171523_155547_https_www_cleveroad_com_contact.json
+2026-02-11 17:15:23,160 - INFO - [SUCCESS] https://www.cleveroad.com/contact/: form submitted successfully (27.2s)
+2026-02-11 17:15:23,161 - INFO - [MONITOR] issue=none summary=seen=8 known=8 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=1 submit_failure_signal=0
+2026-02-11 17:15:25,173 - INFO - Processing: https://www.fingent.com/contact/
+2026-02-11 17:15:37,966 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=88.7 class_conf=95 text='tell us a bit about your software requirement (*)'
+2026-02-11 17:15:38,246 - INFO - [LIVE OCR] idx=1 field=file ocr_conf=65.5 class_conf=98 text='upload project ie not 8b. allowed type: pof ] fie] chosen'
+2026-02-11 17:15:38,250 - INFO - [SKIP] non-fillable field file at /html/body/div/div/div/section/div/div/div/section/div/div/div/div[2]/div/div/div/form/div[5]/div[2]/p/span[2]/input
+2026-02-11 17:15:38,543 - INFO - [LIVE OCR] idx=2 field=name ocr_conf=0.0 class_conf=92 text=''
+2026-02-11 17:15:38,821 - INFO - [LIVE OCR] idx=3 field=dropdown ocr_conf=87.9 class_conf=95 text='how did you hear about us? up'
+2026-02-11 17:15:39,090 - INFO - [LIVE OCR] idx=4 field=dropdown ocr_conf=80.4 class_conf=95 text='] choose country (*) upload not exceeding & mb. filetype: pof'
+2026-02-11 17:15:39,374 - INFO - [LIVE OCR] idx=5 field=phone ocr_conf=92.6 class_conf=95 text='l how did you hear about us?'
+2026-02-11 17:15:39,642 - INFO - [LIVE OCR] idx=6 field=email ocr_conf=52.0 class_conf=95 text='|'
+2026-02-11 17:15:39,866 - INFO - [LIVE OCR] idx=7 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:15:39,866 - INFO - [SKIP] non-fillable field submit at /html/body/div/div/div/section/div/div/div/section/div/div/div/div[2]/div/div/div/form/p/input
+2026-02-11 17:15:40,120 - INFO - [LIVE OCR] idx=8 field=file ocr_conf=80.7 class_conf=98 text='upload project exceeding @ mb | ‘choose file | no file chosen'
+2026-02-11 17:15:40,120 - INFO - [SKIP] non-fillable field file at //input[@name="attach-file"]
+2026-02-11 17:15:40,133 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171536_annotated.png
+2026-02-11 17:15:40,713 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:15:41,313 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:15:41,710 - INFO - [OK] Filled dropdown: Google Search...
+2026-02-11 17:15:57,961 - INFO - [OK] Filled dropdown: United States...
+2026-02-11 17:15:59,351 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:15:59,928 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:16:01,511 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171601_post_fill_post_fill.png
+2026-02-11 17:16:08,022 - WARNING - [!] Submission uncertain for https://www.fingent.com/contact/
+2026-02-11 17:16:08,073 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_171608_070688_https_www_fingent_com_contact.json
+2026-02-11 17:16:08,073 - INFO - [FAILED] https://www.fingent.com/contact/: submission attempted; OCR screenshot had no clear success/failure signal (42.9s)
+2026-02-11 17:16:08,073 - INFO - [MONITOR] issue=submission_confirmation summary=seen=9 known=9 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=3 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:16:10,080 - INFO - Processing: https://www.systemsltd.com/contact-us
+2026-02-11 17:16:21,115 - WARNING - Captcha detected on https://www.systemsltd.com/contact-us (continuing until obstruction)
+2026-02-11 17:16:22,706 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=90.2 class_conf=95 text='company please tell us a bit about what you're looking for'
+2026-02-11 17:16:22,979 - INFO - [LIVE OCR] idx=1 field=phone ocr_conf=80.0 class_conf=90 text='j €.g. +92 300 1234567'
+2026-02-11 17:16:23,216 - INFO - [LIVE OCR] idx=2 field=name ocr_conf=55.0 class_conf=92 text='‘'
+2026-02-11 17:16:23,464 - INFO - [LIVE OCR] idx=3 field=email ocr_conf=56.0 class_conf=95 text='c'
+2026-02-11 17:16:23,742 - INFO - [LIVE OCR] idx=4 field=name ocr_conf=88.8 class_conf=90 text='e.g. please tell us a bit about what you're looking for'
+2026-02-11 17:16:24,040 - INFO - [LIVE OCR] idx=5 field=dropdown ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:16:24,040 - INFO - [SKIP] no prefill data for classified field dropdown at //*[@id="edit-city"]
+2026-02-11 17:16:24,312 - INFO - [LIVE OCR] idx=6 field=subject ocr_conf=84.5 class_conf=90 text='+92 300 1234567 j'
+2026-02-11 17:16:24,633 - INFO - [LIVE OCR] idx=7 field=submit ocr_conf=92.0 class_conf=98 text='your privacy cookies to enhance your brow: you consent toot'
+2026-02-11 17:16:24,633 - INFO - [SKIP] non-fillable field submit at //*[@id="edit-actions-submit"]
+2026-02-11 17:16:24,947 - INFO - [LIVE OCR] idx=8 field=subject ocr_conf=93.6 class_conf=90 text='your privacy cookies to enhance your bro'
+2026-02-11 17:16:24,947 - INFO - [SKIP] non-fillable field subject at /html/body/div[3]/div/div/p
+2026-02-11 17:16:25,217 - INFO - [LIVE OCR] idx=9 field=unknown ocr_conf=65.0 class_conf=0 text='-™'
+2026-02-11 17:16:25,217 - INFO - [SKIP] non-fillable field unknown at //iframe[@name="a-p71xue7yy3d9"]
+2026-02-11 17:16:25,235 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171621_annotated.png
+2026-02-11 17:16:25,787 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:16:26,349 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:16:26,921 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:16:27,465 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:16:28,031 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:16:28,597 - INFO - [OK] Filled subject: Business Inquiry...
+2026-02-11 17:16:29,619 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_171629_post_fill_post_fill.png
+2026-02-11 17:16:36,274 - WARNING - [!] Submission uncertain for https://www.systemsltd.com/contact-us
+2026-02-11 17:16:36,323 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_171636_321774_https_www_systemsltd_com_contact_us.json
+2026-02-11 17:16:36,325 - INFO - [FAILED] https://www.systemsltd.com/contact-us: submission attempted; OCR screenshot had no clear success/failure signal (26.2s)
+2026-02-11 17:16:36,325 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=10 known=9 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=3 prefill_miss_skips=1 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:16:36,326 - INFO - Results saved to results.csv
+2026-02-11 17:16:36,326 - INFO - Progress: 10/14 URLs processed
+2026-02-11 17:16:38,336 - WARNING - Skipping invalid URL: netsoltech.com
+2026-02-11 17:16:38,336 - WARNING - Skipping invalid URL: venturedive.com
+2026-02-11 17:16:38,336 - WARNING - Skipping invalid URL: arbisoft.com
+2026-02-11 17:16:38,337 - WARNING - Skipping invalid URL: techlogix.com
+2026-02-11 17:16:38,339 - INFO - Results saved to results.csv
+2026-02-11 17:16:38,339 - INFO - Batch processing complete. Processed 14 URLs.
+2026-02-11 17:16:38,339 - INFO - Results saved to results.csv
+2026-02-11 17:21:35,583 - INFO - Starting batch processing of 14 URLs
+2026-02-11 17:21:35,583 - INFO - Processing: https://www.netguru.com/estimate-project
+2026-02-11 17:21:46,469 - WARNING - Captcha detected on https://www.netguru.com/estimate-project (continuing until obstruction)
+2026-02-11 17:21:47,985 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=89.5 class_conf=95 text='tell us more about your project* de 4 lagree to receive email marketing communications from netguru.'
+2026-02-11 17:21:48,238 - INFO - [LIVE OCR] idx=1 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:21:48,238 - INFO - [SKIP] non-fillable field submit at /html/body/main/span/div/section/div/div[2]/div/div/form/div[2]/div[2]/input
+2026-02-11 17:21:48,498 - INFO - [LIVE OCR] idx=2 field=company ocr_conf=95.8 class_conf=90 text='company name he de'
+2026-02-11 17:21:48,775 - INFO - [LIVE OCR] idx=3 field=phone ocr_conf=93.5 class_conf=95 text='phone number tell us more about your project*'
+2026-02-11 17:21:49,027 - INFO - [LIVE OCR] idx=4 field=email ocr_conf=93.0 class_conf=95 text='email* how did you hear about us?*'
+2026-02-11 17:21:49,282 - INFO - [LIVE OCR] idx=5 field=last_name ocr_conf=90.0 class_conf=90 text='last name* en company name he'
+2026-02-11 17:21:49,541 - INFO - [LIVE OCR] idx=6 field=first_name ocr_conf=88.2 class_conf=90 text='first name* la phone number ce'
+2026-02-11 17:21:49,803 - INFO - [LIVE OCR] idx=7 field=first_name ocr_conf=94.2 class_conf=66.66666666666667 text='how did you hear about us?* do you need an nda first?'
+2026-02-11 17:22:00,926 - INFO - Use pytorch device_name: cpu
+2026-02-11 17:22:00,926 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-11 17:22:05,080 - INFO - MiniLM model loaded for semantic classification
+2026-02-11 17:22:05,291 - INFO - [LIVE OCR] idx=8 field=last_name ocr_conf=54.0 class_conf=50.0 text='by'
+2026-02-11 17:22:05,291 - INFO - [SKIP] non-fillable field last_name at //iframe[@name="a-a7qfa0l1t2up"]
+2026-02-11 17:22:05,570 - INFO - [LIVE OCR] idx=9 field=email ocr_conf=92.1 class_conf=90 text='lagree to receive email marketing communications from netguru.'
+2026-02-11 17:22:05,570 - INFO - [SKIP] non-fillable field email at /html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[6]/div/div/div/div/div/ul/li/label/span/p
+2026-02-11 17:22:05,596 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172146_annotated.png
+2026-02-11 17:22:06,168 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:22:06,767 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:22:08,115 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:22:08,665 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:22:09,251 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:22:09,813 - INFO - [OK] Filled first_name: John...
+2026-02-11 17:22:10,379 - INFO - [OK] Filled first_name: John...
+2026-02-11 17:22:11,355 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172211_post_fill_post_fill.png
+2026-02-11 17:22:17,600 - WARNING - [!] Submission uncertain for https://www.netguru.com/estimate-project
+2026-02-11 17:22:17,653 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_172217_650452_https_www_netguru_com_estimate_project.json
+2026-02-11 17:22:17,653 - INFO - [FAILED] https://www.netguru.com/estimate-project: submission attempted; OCR screenshot had no clear success/failure signal (42.1s)
+2026-02-11 17:22:17,654 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=10 known=10 ready=7 filled=7/7 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=3 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:22:19,666 - INFO - Processing: https://10pearls.com/get-in-touch/
+2026-02-11 17:23:05,234 - WARNING - Captcha detected on https://10pearls.com/get-in-touch/ (continuing until obstruction)
+2026-02-11 17:23:06,406 - INFO - [LIVE OCR] idx=0 field=dropdown ocr_conf=94.6 class_conf=95 text='how can we help? message'
+2026-02-11 17:23:06,406 - INFO - [SKIP] no prefill data for classified field dropdown at [no-xpath]
+2026-02-11 17:23:06,653 - INFO - [LIVE OCR] idx=1 field=subject ocr_conf=93.5 class_conf=100.0 text='how did you hear about us? how can we help?'
+2026-02-11 17:23:06,892 - INFO - [LIVE OCR] idx=2 field=message ocr_conf=88.0 class_conf=90 text='message'
+2026-02-11 17:23:07,115 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=83.2 class_conf=90 text='name ~ ema company pho'
+2026-02-11 17:23:07,348 - INFO - [LIVE OCR] idx=4 field=phone ocr_conf=83.0 class_conf=90 text='nurrber'
+2026-02-11 17:23:07,585 - INFO - [LIVE OCR] idx=5 field=company ocr_conf=95.6 class_conf=90 text='company pho how did you hear about us?'
+2026-02-11 17:23:07,803 - INFO - [LIVE OCR] idx=6 field=email ocr_conf=71.0 class_conf=95 text='email prore'
+2026-02-11 17:23:08,021 - INFO - [LIVE OCR] idx=7 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:23:08,021 - INFO - [SKIP] non-fillable field submit at [no-xpath]
+2026-02-11 17:23:08,249 - INFO - [LIVE OCR] idx=8 field=unknown ocr_conf=84.0 class_conf=0 text='2'
+2026-02-11 17:23:08,257 - INFO - [SKIP] non-fillable field unknown at /html/body/div/div/div/div/section/div[2]/div/div/section/div/div[2]/div/div/div/div/form/div[3]/div/iframe
+2026-02-11 17:23:08,271 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172305_annotated.png
+2026-02-11 17:23:08,886 - INFO - [OK] Filled subject: Business Inquiry...
+2026-02-11 17:23:09,503 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:23:10,069 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:23:10,635 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:23:11,201 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:23:11,767 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:23:12,710 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172312_post_fill_post_fill.png
+2026-02-11 17:23:19,307 - WARNING - [!] Submission uncertain for https://10pearls.com/get-in-touch/
+2026-02-11 17:23:19,348 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_172319_347284_https_10pearls_com_get_in_touch.json
+2026-02-11 17:23:19,349 - INFO - [FAILED] https://10pearls.com/get-in-touch/: submission attempted; OCR screenshot had no clear success/failure signal (59.7s)
+2026-02-11 17:23:19,349 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=9 known=8 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=1 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:23:21,359 - INFO - Processing: https://www.valuecoders.com/
+2026-02-11 17:23:29,853 - WARNING - Captcha detected on https://www.valuecoders.com/ (continuing until obstruction)
+2026-02-11 17:23:31,383 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=88.1 class_conf=95 text='rents project brief this website uses cookies this website uses cookies to improve read more'
+2026-02-11 17:23:31,697 - INFO - [LIVE OCR] idx=1 field=dropdown ocr_conf=96.0 class_conf=90 text='select country'
+2026-02-11 17:23:31,946 - INFO - [LIVE OCR] idx=2 field=email ocr_conf=80.2 class_conf=90 text='email ernail address select country'
+2026-02-11 17:23:32,204 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=75.0 class_conf=92 text='full name er full se'
+2026-02-11 17:23:32,473 - INFO - [LIVE OCR] idx=4 field=phone ocr_conf=76.7 class_conf=90 text='phone no. se biv = phone c select your service*'
+2026-02-11 17:23:32,723 - INFO - [LIVE OCR] idx=5 field=company ocr_conf=92.5 class_conf=90 text='consultation 8 business hours'
+2026-02-11 17:23:32,723 - INFO - [SKIP] non-fillable field company at /html/body/section[16]/div/div/div[2]/form/div/h2
+2026-02-11 17:23:32,989 - INFO - [LIVE OCR] idx=6 field=submit ocr_conf=83.5 class_conf=98 text='uses cookies to improve user experic a | reject non-essential prefe'
+2026-02-11 17:23:32,989 - INFO - [SKIP] non-fillable field submit at /html/body/div/div[2]/div/button[2]
+2026-02-11 17:23:33,287 - INFO - [LIVE OCR] idx=7 field=company ocr_conf=90.3 class_conf=90 text='guaranteed response within 8 business hours'
+2026-02-11 17:23:33,287 - INFO - [SKIP] non-fillable field company at /html/body/section[16]/div/div/div[2]/form/div/p
+2026-02-11 17:23:33,535 - INFO - [LIVE OCR] idx=8 field=submit ocr_conf=73.2 class_conf=98 text='aor websiteuses cool accept all'
+2026-02-11 17:23:33,535 - INFO - [SKIP] non-fillable field submit at /html/body/div/div[2]/div/button
+2026-02-11 17:23:33,793 - INFO - [LIVE OCR] idx=9 field=phone ocr_conf=90.0 class_conf=66.66666666666667 text='this website uses cookies of cookies to'
+2026-02-11 17:23:33,793 - INFO - [SKIP] non-fillable field phone at /html/body/div/div[2]/h3
+2026-02-11 17:23:33,821 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172329_annotated.png
+2026-02-11 17:23:34,413 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:23:35,027 - INFO - [OK] Filled dropdown: United States...
+2026-02-11 17:23:35,661 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:23:36,277 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:23:36,893 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:23:37,947 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172337_post_fill_post_fill.png
+2026-02-11 17:23:44,487 - INFO - [OK] Successfully submitted https://www.valuecoders.com/
+2026-02-11 17:23:44,527 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_172344_524421_https_www_valuecoders_com.json
+2026-02-11 17:23:44,527 - INFO - [SUCCESS] https://www.valuecoders.com/: form submitted successfully (23.2s)
+2026-02-11 17:23:44,528 - INFO - [MONITOR] issue=none summary=seen=10 known=10 ready=5 filled=5/5 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=5 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=1 submit_failure_signal=0
+2026-02-11 17:23:46,532 - INFO - Processing: https://folio3.com/contact-us/
+2026-02-11 17:23:55,993 - WARNING - Captcha detected on https://folio3.com/contact-us/ (continuing until obstruction)
+2026-02-11 17:23:57,024 - INFO - [LIVE OCR] idx=0 field=phone ocr_conf=96.0 class_conf=90 text='phone number'
+2026-02-11 17:23:57,262 - INFO - [LIVE OCR] idx=1 field=email ocr_conf=88.3 class_conf=95 text='email address phe'
+2026-02-11 17:23:57,499 - INFO - [LIVE OCR] idx=2 field=last_name ocr_conf=96.0 class_conf=90 text='last name'
+2026-02-11 17:23:57,727 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=93.3 class_conf=92 text='first name las'
+2026-02-11 17:23:57,953 - INFO - [LIVE OCR] idx=4 field=message ocr_conf=96.0 class_conf=84.21052631578947 text='personal information'
+2026-02-11 17:23:57,953 - INFO - [SKIP] non-fillable field message at /html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/h2
+2026-02-11 17:23:58,173 - INFO - [LIVE OCR] idx=5 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:23:58,173 - INFO - [SKIP] non-fillable field submit at /html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div[3]/div/p/input
+2026-02-11 17:23:58,185 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172355_annotated.png
+2026-02-11 17:23:58,757 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:23:59,455 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:24:00,137 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:24:00,803 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:24:01,698 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172401_post_fill_post_fill.png
+2026-02-11 17:24:07,555 - WARNING - [!] Submission rejected for https://folio3.com/contact-us/
+2026-02-11 17:24:07,587 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_172407_585586_https_folio3_com_contact_us.json
+2026-02-11 17:24:07,588 - INFO - [FAILED] https://folio3.com/contact-us/: form submission failed validation checks (field_error) (21.1s)
+2026-02-11 17:24:07,588 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=6 known=6 ready=4 filled=4/4 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=1
+2026-02-11 17:24:09,591 - INFO - Processing: https://geniusee.com/#contact
+2026-02-11 17:24:14,884 - INFO - [LIVE OCR] idx=0 field=phone ocr_conf=0.0 class_conf=66.66666666666667 text=''
+2026-02-11 17:24:14,884 - INFO - [SKIP] non-fillable field phone at /html/body/div/section/div[2]/svg/path
+2026-02-11 17:24:15,161 - INFO - [LIVE OCR] idx=1 field=dropdown ocr_conf=0.0 class_conf=57.14285714285714 text=''
+2026-02-11 17:24:15,161 - INFO - [SKIP] non-fillable field dropdown at /html/body/div/section/div/div[2]/div[2]/svg/rect[2]
+2026-02-11 17:24:15,430 - INFO - [LIVE OCR] idx=2 field=subject ocr_conf=89.9 class_conf=90 text='‘tv access to this page is forbidden.'
+2026-02-11 17:24:15,430 - INFO - [SKIP] non-fillable field subject at /html/body/div/section/div/p
+2026-02-11 17:24:15,697 - INFO - [LIVE OCR] idx=3 field=subject ocr_conf=82.0 class_conf=90 text='3 - forbidden to thic nage ic farhiddan'
+2026-02-11 17:24:15,697 - INFO - [SKIP] non-fillable field subject at /html/body/div/section/div/h1
+2026-02-11 17:24:15,933 - INFO - [LIVE OCR] idx=4 field=company ocr_conf=0.0 class_conf=66.66666666666667 text=''
+2026-02-11 17:24:15,934 - INFO - [SKIP] non-fillable field company at /html/body/div/section/div/div/svg/path[8]
+2026-02-11 17:24:15,973 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172414_annotated.png
+2026-02-11 17:24:16,718 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172416_post_fill_post_fill.png
+2026-02-11 17:24:16,719 - INFO - [i] No fillable fields on https://geniusee.com/#contact
+2026-02-11 17:24:16,733 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_172416_731153_https_geniusee_com_contact.json
+2026-02-11 17:24:16,733 - INFO - [FAILED] https://geniusee.com/#contact: no fillable fields found (7.1s)
+2026-02-11 17:24:16,733 - INFO - [MONITOR] issue=ocr_heuristics summary=seen=5 known=5 ready=0 filled=0/0 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=5 prefill_miss_skips=0 submit_clicked=0 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:24:18,743 - INFO - Processing: https://www.simform.com/contact/
+2026-02-11 17:24:26,359 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=95.2 class_conf=95 text='3. where did you hear about us? how did you hear about us?'
+2026-02-11 17:24:26,696 - INFO - [LIVE OCR] idx=1 field=message ocr_conf=94.1 class_conf=95 text='2. tell us more about your project describe your project briefly* the'
+2026-02-11 17:24:26,934 - INFO - [LIVE OCR] idx=2 field=dropdown ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:24:26,934 - INFO - [SKIP] non-fillable field dropdown at /html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[2]/div[4]/div/label
+2026-02-11 17:24:27,224 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=95.8 class_conf=90 text='company name or website'
+2026-02-11 17:24:27,499 - INFO - [LIVE OCR] idx=4 field=dropdown ocr_conf=88.8 class_conf=95 text='| please choose the budget*'
+2026-02-11 17:24:27,499 - INFO - [SKIP] no prefill data for classified field dropdown at [no-xpath]
+2026-02-11 17:24:27,851 - INFO - [LIVE OCR] idx=5 field=name ocr_conf=83.9 class_conf=92 text='to azure tion deliver analytics, governance, and al readiness industries al accelerators » resources whysimform + about ...'
+2026-02-11 17:24:28,128 - INFO - [LIVE OCR] idx=6 field=email ocr_conf=82.0 class_conf=95 text='industries al accelerators resources'
+2026-02-11 17:24:28,447 - INFO - [LIVE OCR] idx=7 field=phone ocr_conf=66.4 class_conf=95 text='whysimform v about us, con'
+2026-02-11 17:24:28,717 - INFO - [LIVE OCR] idx=8 field=name ocr_conf=94.6 class_conf=77.77777777777779 text='to azure tion deliver analytics, governance, and al readiness'
+2026-02-11 17:24:28,717 - INFO - [SKIP] non-fillable field name at /html/body/div/div[2]/p
+2026-02-11 17:24:28,990 - INFO - [LIVE OCR] idx=9 field=phone ocr_conf=95.4 class_conf=90 text='2. tell us more about your project'
+2026-02-11 17:24:28,990 - INFO - [SKIP] non-fillable field phone at /html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[2]/div
+2026-02-11 17:24:29,226 - INFO - [LIVE OCR] idx=10 field=phone ocr_conf=0.0 class_conf=66.66666666666667 text=''
+2026-02-11 17:24:29,226 - INFO - [SKIP] non-fillable field phone at /html/body/div/div[3]/a
+2026-02-11 17:24:29,469 - INFO - [LIVE OCR] idx=11 field=subject ocr_conf=76.0 class_conf=66.66666666666667 text='nezone -'
+2026-02-11 17:24:29,794 - INFO - [LIVE OCR] idx=12 field=subject ocr_conf=95.4 class_conf=90 text='3. where did you hear about us?'
+2026-02-11 17:24:29,796 - INFO - [SKIP] non-fillable field subject at /html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[3]/div
+2026-02-11 17:24:30,052 - INFO - [LIVE OCR] idx=13 field=dropdown ocr_conf=81.8 class_conf=90 text='06:00 am - 07:00 am'
+2026-02-11 17:24:30,052 - INFO - [SKIP] no prefill data for classified field dropdown at [no-xpath]
+2026-02-11 17:24:30,278 - INFO - [LIVE OCR] idx=14 field=dropdown ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:24:30,278 - INFO - [SKIP] non-fillable field dropdown at /html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[2]/div[4]/div/label/div[2]/div[2]
+2026-02-11 17:24:30,535 - INFO - [LIVE OCR] idx=15 field=name ocr_conf=85.3 class_conf=77.77777777777779 text='‘move to azure tion deliver analytics, govert'
+2026-02-11 17:24:30,535 - INFO - [SKIP] non-fillable field name at /html/body/div/div[2]/h4
+2026-02-11 17:24:30,785 - INFO - [LIVE OCR] idx=16 field=name ocr_conf=0.0 class_conf=80.0 text=''
+2026-02-11 17:24:30,785 - INFO - [SKIP] non-fillable field name at /html/body/header/div/div[2]/a
+2026-02-11 17:24:30,823 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172425_annotated.png
+2026-02-11 17:24:31,339 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:24:31,950 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:24:32,754 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:24:33,290 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:24:34,135 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:24:36,050 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:24:36,618 - INFO - [OK] Filled subject: Business Inquiry...
+2026-02-11 17:24:37,723 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172437_post_fill_post_fill.png
+2026-02-11 17:24:44,134 - WARNING - [!] Submission uncertain for https://www.simform.com/contact/
+2026-02-11 17:24:44,159 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_172444_156662_https_www_simform_com_contact.json
+2026-02-11 17:24:44,160 - INFO - [FAILED] https://www.simform.com/contact/: submission attempted; OCR screenshot had no clear success/failure signal (25.4s)
+2026-02-11 17:24:44,161 - INFO - [MONITOR] issue=submission_confirmation summary=seen=17 known=17 ready=7 filled=7/7 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=8 prefill_miss_skips=2 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:24:46,167 - INFO - Processing: https://www.merixstudio.com/contact
+2026-02-11 17:24:56,676 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=86.4 class_conf=95 text='how can we help? q add attachment'
+2026-02-11 17:24:57,001 - INFO - [LIVE OCR] idx=1 field=last_name ocr_conf=73.0 class_conf=90 text='last name. emall*'
+2026-02-11 17:24:57,457 - INFO - [LIVE OCR] idx=2 field=company ocr_conf=94.5 class_conf=90 text='company name how can we help?'
+2026-02-11 17:24:57,886 - INFO - [LIVE OCR] idx=3 field=phone ocr_conf=95.2 class_conf=95 text='phone number company name'
+2026-02-11 17:24:58,290 - INFO - [LIVE OCR] idx=4 field=email ocr_conf=85.3 class_conf=95 text='emall* phone number'
+2026-02-11 17:24:58,545 - INFO - [LIVE OCR] idx=5 field=first_name ocr_conf=96.0 class_conf=90 text='last name'
+2026-02-11 17:24:58,888 - INFO - [LIVE OCR] idx=6 field=message ocr_conf=91.4 class_conf=90 text='add attachment merixstudio requires the contact information to respond to your inquiry you may opt out of receiving furt...'
+2026-02-11 17:24:58,889 - INFO - [SKIP] non-fillable field message at /html/body/section/div/div/form/div[2]/div/form/fieldset[7]/div/div
+2026-02-11 17:24:59,135 - INFO - [LIVE OCR] idx=7 field=company ocr_conf=55.0 class_conf=90 text='togetl'
+2026-02-11 17:24:59,135 - INFO - [SKIP] non-fillable field company at /html/body/section/div/div/form/div/h1
+2026-02-11 17:24:59,398 - INFO - [LIVE OCR] idx=8 field=submit ocr_conf=84.2 class_conf=98 text='more details, please r submit >'
+2026-02-11 17:24:59,399 - INFO - [SKIP] non-fillable field submit at /html/body/section/div/div/form/div[2]/div/form/div/div[2]/input
+2026-02-11 17:24:59,644 - INFO - [LIVE OCR] idx=9 field=company ocr_conf=67.0 class_conf=90 text='m se e as'
+2026-02-11 17:24:59,645 - INFO - [SKIP] non-fillable field company at /html/body/section/div/div/form/div/div[3]/img
+2026-02-11 17:24:59,886 - INFO - [LIVE OCR] idx=10 field=subject ocr_conf=0.0 class_conf=75.86206896551724 text=''
+2026-02-11 17:24:59,886 - INFO - [SKIP] non-fillable field subject at /html/body/div[5]/div/a[2]
+2026-02-11 17:25:00,138 - INFO - [LIVE OCR] idx=11 field=submit ocr_conf=69.0 class_conf=98 text='|'
+2026-02-11 17:25:00,139 - INFO - [SKIP] non-fillable field submit at //button[@aria-label="Accept All"]
+2026-02-11 17:25:00,432 - INFO - [LIVE OCR] idx=12 field=subject ocr_conf=90.2 class_conf=90 text='ry 233 we value your privacy we use cookles to enhance your'
+2026-02-11 17:25:00,432 - INFO - [SKIP] non-fillable field subject at /html/body/div[3]/div/div/p
+2026-02-11 17:25:00,727 - INFO - [LIVE OCR] idx=13 field=company ocr_conf=92.2 class_conf=90 text='solve problems ar let's work together.'
+2026-02-11 17:25:00,727 - INFO - [SKIP] non-fillable field company at /html/body/section/div/div/form/div/p
+2026-02-11 17:25:00,766 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172455_annotated.png
+2026-02-11 17:25:01,360 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:25:01,975 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:25:02,530 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:25:03,925 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:25:04,476 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:25:05,041 - INFO - [OK] Filled first_name: John...
+2026-02-11 17:25:06,048 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172505_post_fill_post_fill.png
+2026-02-11 17:25:12,437 - WARNING - [!] Submission uncertain for https://www.merixstudio.com/contact
+2026-02-11 17:25:12,464 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_172512_461509_https_www_merixstudio_com_contact.json
+2026-02-11 17:25:12,464 - INFO - [FAILED] https://www.merixstudio.com/contact: submission attempted; OCR screenshot had no clear success/failure signal (26.3s)
+2026-02-11 17:25:12,464 - INFO - [MONITOR] issue=submission_confirmation summary=seen=14 known=14 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=8 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:25:14,476 - INFO - Processing: https://www.cleveroad.com/contact/
+2026-02-11 17:25:24,651 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=89.4 class_conf=95 text='about a project* @ send me nda'
+2026-02-11 17:25:24,891 - INFO - [LIVE OCR] idx=1 field=message ocr_conf=95.0 class_conf=90 text='send message'
+2026-02-11 17:25:24,891 - INFO - [SKIP] non-fillable field message at /html/body/div/div/div/main/div/section/div/div/section/div/div[2]/form/div[5]/button/span
+2026-02-11 17:25:25,128 - INFO - [LIVE OCR] idx=2 field=phone ocr_conf=95.3 class_conf=90 text='your phone number'
+2026-02-11 17:25:25,362 - INFO - [LIVE OCR] idx=3 field=email ocr_conf=91.0 class_conf=90 text='your email address* ye'
+2026-02-11 17:25:25,593 - INFO - [LIVE OCR] idx=4 field=company ocr_conf=95.0 class_conf=90 text='company'
+2026-02-11 17:25:25,820 - INFO - [LIVE OCR] idx=5 field=name ocr_conf=0.0 class_conf=92 text=''
+2026-02-11 17:25:26,046 - INFO - [LIVE OCR] idx=6 field=company ocr_conf=96.0 class_conf=90 text='company'
+2026-02-11 17:25:26,267 - INFO - [LIVE OCR] idx=7 field=choice ocr_conf=96.0 class_conf=95 text='about send'
+2026-02-11 17:25:26,267 - INFO - [SKIP] non-fillable field choice at //*[@id="cfNda"]
+2026-02-11 17:25:26,304 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172523_annotated.png
+2026-02-11 17:25:26,870 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:25:27,434 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:25:27,966 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:25:28,482 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:25:28,998 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:25:29,516 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:25:30,433 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172530_post_fill_post_fill.png
+2026-02-11 17:25:40,414 - INFO - [OK] Successfully submitted https://www.cleveroad.com/contact/
+2026-02-11 17:25:40,446 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_172540_446772_https_www_cleveroad_com_contact.json
+2026-02-11 17:25:40,446 - INFO - [SUCCESS] https://www.cleveroad.com/contact/: form submitted successfully (26.0s)
+2026-02-11 17:25:40,446 - INFO - [MONITOR] issue=none summary=seen=8 known=8 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=1 submit_failure_signal=0
+2026-02-11 17:25:42,459 - INFO - Processing: https://www.fingent.com/contact/
+2026-02-11 17:25:52,868 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=88.7 class_conf=95 text='tell us a bit about your software requirement (*)'
+2026-02-11 17:25:53,117 - INFO - [LIVE OCR] idx=1 field=file ocr_conf=65.5 class_conf=98 text='upload project ie not 8b. allowed type: pof ] fie] chosen'
+2026-02-11 17:25:53,117 - INFO - [SKIP] non-fillable field file at /html/body/div/div/div/section/div/div/div/section/div/div/div/div[2]/div/div/div/form/div[5]/div[2]/p/span[2]/input
+2026-02-11 17:25:53,374 - INFO - [LIVE OCR] idx=2 field=name ocr_conf=0.0 class_conf=92 text=''
+2026-02-11 17:25:53,631 - INFO - [LIVE OCR] idx=3 field=dropdown ocr_conf=87.9 class_conf=95 text='how did you hear about us? up'
+2026-02-11 17:25:53,880 - INFO - [LIVE OCR] idx=4 field=dropdown ocr_conf=80.4 class_conf=95 text='] choose country (*) upload not exceeding & mb. filetype: pof'
+2026-02-11 17:25:54,125 - INFO - [LIVE OCR] idx=5 field=phone ocr_conf=92.6 class_conf=95 text='l how did you hear about us?'
+2026-02-11 17:25:54,384 - INFO - [LIVE OCR] idx=6 field=email ocr_conf=52.0 class_conf=95 text='|'
+2026-02-11 17:25:54,608 - INFO - [LIVE OCR] idx=7 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:25:54,612 - INFO - [SKIP] non-fillable field submit at /html/body/div/div/div/section/div/div/div/section/div/div/div/div[2]/div/div/div/form/p/input
+2026-02-11 17:25:54,869 - INFO - [LIVE OCR] idx=8 field=file ocr_conf=80.7 class_conf=98 text='upload project exceeding @ mb | ‘choose file | no file chosen'
+2026-02-11 17:25:54,870 - INFO - [SKIP] non-fillable field file at //input[@name="attach-file"]
+2026-02-11 17:25:54,884 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172551_annotated.png
+2026-02-11 17:25:55,462 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:25:56,082 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:25:57,339 - INFO - [OK] Filled dropdown: Google Search...
+2026-02-11 17:26:13,593 - INFO - [OK] Filled dropdown: United States...
+2026-02-11 17:26:15,005 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:26:15,589 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:26:17,148 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172616_post_fill_post_fill.png
+2026-02-11 17:26:28,442 - WARNING - [!] Submission uncertain for https://www.fingent.com/contact/
+2026-02-11 17:26:28,485 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_172628_483181_https_www_fingent_com_contact.json
+2026-02-11 17:26:28,487 - INFO - [FAILED] https://www.fingent.com/contact/: submission attempted; OCR screenshot had no clear success/failure signal (46.0s)
+2026-02-11 17:26:28,487 - INFO - [MONITOR] issue=submission_confirmation summary=seen=9 known=9 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=3 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:26:30,499 - INFO - Processing: https://www.systemsltd.com/contact-us
+2026-02-11 17:26:42,081 - WARNING - Captcha detected on https://www.systemsltd.com/contact-us (continuing until obstruction)
+2026-02-11 17:26:43,569 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=90.2 class_conf=95 text='company please tell us a bit about what you're looking for'
+2026-02-11 17:26:43,818 - INFO - [LIVE OCR] idx=1 field=phone ocr_conf=80.0 class_conf=90 text='j €.g. +92 300 1234567'
+2026-02-11 17:26:44,053 - INFO - [LIVE OCR] idx=2 field=name ocr_conf=55.0 class_conf=92 text='‘'
+2026-02-11 17:26:44,288 - INFO - [LIVE OCR] idx=3 field=email ocr_conf=56.0 class_conf=95 text='c'
+2026-02-11 17:26:44,540 - INFO - [LIVE OCR] idx=4 field=name ocr_conf=88.8 class_conf=90 text='e.g. please tell us a bit about what you're looking for'
+2026-02-11 17:26:44,770 - INFO - [LIVE OCR] idx=5 field=dropdown ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:26:44,771 - INFO - [SKIP] no prefill data for classified field dropdown at //*[@id="edit-city"]
+2026-02-11 17:26:45,026 - INFO - [LIVE OCR] idx=6 field=subject ocr_conf=84.5 class_conf=90 text='+92 300 1234567 j'
+2026-02-11 17:26:45,310 - INFO - [LIVE OCR] idx=7 field=submit ocr_conf=92.0 class_conf=98 text='your privacy cookies to enhance your brow: you consent toot'
+2026-02-11 17:26:45,310 - INFO - [SKIP] non-fillable field submit at //*[@id="edit-actions-submit"]
+2026-02-11 17:26:45,608 - INFO - [LIVE OCR] idx=8 field=subject ocr_conf=93.6 class_conf=90 text='your privacy cookies to enhance your bro'
+2026-02-11 17:26:45,608 - INFO - [SKIP] non-fillable field subject at /html/body/div[3]/div/div/p
+2026-02-11 17:26:45,854 - INFO - [LIVE OCR] idx=9 field=last_name ocr_conf=65.0 class_conf=50.0 text='-™'
+2026-02-11 17:26:45,854 - INFO - [SKIP] non-fillable field last_name at //iframe[@name="a-a37juxmcjhzg"]
+2026-02-11 17:26:45,872 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172642_annotated.png
+2026-02-11 17:26:46,458 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:26:47,009 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:26:47,575 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:26:48,146 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:26:48,691 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:26:49,240 - INFO - [OK] Filled subject: Business Inquiry...
+2026-02-11 17:26:50,265 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_172650_post_fill_post_fill.png
+2026-02-11 17:26:56,792 - WARNING - [!] Submission uncertain for https://www.systemsltd.com/contact-us
+2026-02-11 17:26:56,843 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_172656_839779_https_www_systemsltd_com_contact_us.json
+2026-02-11 17:26:56,843 - INFO - [FAILED] https://www.systemsltd.com/contact-us: submission attempted; OCR screenshot had no clear success/failure signal (26.3s)
+2026-02-11 17:26:56,844 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=10 known=10 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=3 prefill_miss_skips=1 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:26:56,846 - INFO - Results saved to results.csv
+2026-02-11 17:26:56,848 - INFO - Progress: 10/14 URLs processed
+2026-02-11 17:26:58,856 - WARNING - Skipping invalid URL: netsoltech.com
+2026-02-11 17:26:58,857 - WARNING - Skipping invalid URL: venturedive.com
+2026-02-11 17:26:58,857 - WARNING - Skipping invalid URL: arbisoft.com
+2026-02-11 17:26:58,857 - WARNING - Skipping invalid URL: techlogix.com
+2026-02-11 17:26:58,861 - INFO - Results saved to results.csv
+2026-02-11 17:26:58,861 - INFO - Batch processing complete. Processed 14 URLs.
+2026-02-11 17:26:58,865 - INFO - Results saved to results.csv
+2026-02-11 17:31:10,751 - INFO - Starting batch processing of 14 URLs
+2026-02-11 17:31:10,757 - INFO - Processing: https://www.netguru.com/estimate-project
+2026-02-11 17:31:24,242 - WARNING - Captcha detected on https://www.netguru.com/estimate-project (continuing until obstruction)
+2026-02-11 17:31:25,546 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=89.5 class_conf=95 text='tell us more about your project* de 4 lagree to receive email marketing communications from netguru.'
+2026-02-11 17:31:25,763 - INFO - [LIVE OCR] idx=1 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:31:25,763 - INFO - [SKIP] non-fillable field submit at /html/body/main/span/div/section/div/div[2]/div/div/form/div[2]/div[2]/input
+2026-02-11 17:31:26,013 - INFO - [LIVE OCR] idx=2 field=company ocr_conf=95.8 class_conf=90 text='company name he de'
+2026-02-11 17:31:26,265 - INFO - [LIVE OCR] idx=3 field=phone ocr_conf=93.5 class_conf=95 text='phone number tell us more about your project*'
+2026-02-11 17:31:26,510 - INFO - [LIVE OCR] idx=4 field=email ocr_conf=93.0 class_conf=95 text='email* how did you hear about us?*'
+2026-02-11 17:31:26,765 - INFO - [LIVE OCR] idx=5 field=last_name ocr_conf=90.0 class_conf=90 text='last name* en company name he'
+2026-02-11 17:31:27,012 - INFO - [LIVE OCR] idx=6 field=first_name ocr_conf=88.2 class_conf=90 text='first name* la phone number ce'
+2026-02-11 17:31:27,260 - INFO - [LIVE OCR] idx=7 field=first_name ocr_conf=94.2 class_conf=66.66666666666667 text='how did you hear about us?* do you need an nda first?'
+2026-02-11 17:31:45,369 - INFO - Use pytorch device_name: cpu
+2026-02-11 17:31:45,378 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-11 17:31:45,985 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:31:46,081 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-11 17:31:46,419 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:31:46,515 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-11 17:31:46,843 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:31:46,944 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-11 17:31:47,269 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:31:47,367 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-02-11 17:31:47,691 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:31:47,780 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-11 17:31:48,121 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:31:48,217 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-02-11 17:31:48,550 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-02-11 17:31:48,872 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:31:48,978 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-11 17:31:49,596 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:31:49,693 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-11 17:31:50,033 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:31:50,127 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-11 17:31:50,487 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-11 17:31:50,822 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-11 17:31:51,252 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:31:51,346 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-02-11 17:31:51,684 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-02-11 17:31:51,685 - INFO - MiniLM model loaded for semantic classification
+2026-02-11 17:31:51,765 - INFO - [LIVE OCR] idx=8 field=unknown ocr_conf=54.0 class_conf=0 text='by'
+2026-02-11 17:31:51,765 - INFO - [SKIP] non-fillable field unknown at //iframe[@name="a-xvk2vjxzysv6"]
+2026-02-11 17:31:52,035 - INFO - [LIVE OCR] idx=9 field=email ocr_conf=92.1 class_conf=90 text='lagree to receive email marketing communications from netguru.'
+2026-02-11 17:31:52,035 - INFO - [SKIP] non-fillable field email at /html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[6]/div/div/div/div/div/ul/li/label/span/p
+2026-02-11 17:31:52,060 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173124_242644_www_netguru_com_annotated.png
+2026-02-11 17:31:52,608 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:31:53,245 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:31:54,771 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:31:55,323 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:31:55,906 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:31:56,487 - INFO - [OK] Filled first_name: John...
+2026-02-11 17:31:57,038 - INFO - [OK] Filled first_name: John...
+2026-02-11 17:31:58,044 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173157_760305_www_netguru_com_post_fill_post_fill.png
+2026-02-11 17:32:04,412 - WARNING - [!] Submission uncertain for https://www.netguru.com/estimate-project
+2026-02-11 17:32:04,469 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_173204_467326_https_www_netguru_com_estimate_project.json
+2026-02-11 17:32:04,470 - INFO - [FAILED] https://www.netguru.com/estimate-project: submission attempted; OCR screenshot had no clear success/failure signal (53.7s)
+2026-02-11 17:32:04,470 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=10 known=9 ready=7 filled=7/7 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=3 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:32:06,481 - INFO - Processing: https://10pearls.com/get-in-touch/
+2026-02-11 17:32:21,049 - WARNING - Captcha detected on https://10pearls.com/get-in-touch/ (continuing until obstruction)
+2026-02-11 17:32:22,156 - INFO - [LIVE OCR] idx=0 field=dropdown ocr_conf=94.6 class_conf=95 text='how can we help? message'
+2026-02-11 17:32:22,156 - INFO - [SKIP] no prefill data for classified field dropdown at [no-xpath]
+2026-02-11 17:32:22,414 - INFO - [LIVE OCR] idx=1 field=subject ocr_conf=93.5 class_conf=100.0 text='how did you hear about us? how can we help?'
+2026-02-11 17:32:22,659 - INFO - [LIVE OCR] idx=2 field=message ocr_conf=88.0 class_conf=90 text='message'
+2026-02-11 17:32:23,182 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=83.2 class_conf=90 text='name ~ ema company pho'
+2026-02-11 17:32:23,648 - INFO - [LIVE OCR] idx=4 field=phone ocr_conf=83.0 class_conf=90 text='nurrber'
+2026-02-11 17:32:24,244 - INFO - [LIVE OCR] idx=5 field=company ocr_conf=95.6 class_conf=90 text='company pho how did you hear about us?'
+2026-02-11 17:32:24,478 - INFO - [LIVE OCR] idx=6 field=email ocr_conf=71.0 class_conf=95 text='email prore'
+2026-02-11 17:32:24,690 - INFO - [LIVE OCR] idx=7 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:32:24,690 - INFO - [SKIP] non-fillable field submit at [no-xpath]
+2026-02-11 17:32:24,923 - INFO - [LIVE OCR] idx=8 field=unknown ocr_conf=84.0 class_conf=0 text='2'
+2026-02-11 17:32:24,924 - INFO - [SKIP] non-fillable field unknown at /html/body/div/div/div/div/section/div[2]/div/div/section/div/div[2]/div/div/div/div/form/div[3]/div/iframe
+2026-02-11 17:32:24,939 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173221_050357_10pearls_com_annotated.png
+2026-02-11 17:32:25,510 - INFO - [OK] Filled subject: Business Inquiry...
+2026-02-11 17:32:26,157 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:32:26,708 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:32:27,273 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:32:27,840 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:32:28,424 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:32:29,400 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173229_112296_10pearls_com_post_fill_post_fill.png
+2026-02-11 17:32:36,132 - WARNING - [!] Submission uncertain for https://10pearls.com/get-in-touch/
+2026-02-11 17:32:36,179 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_173236_174200_https_10pearls_com_get_in_touch.json
+2026-02-11 17:32:36,180 - INFO - [FAILED] https://10pearls.com/get-in-touch/: submission attempted; OCR screenshot had no clear success/failure signal (29.7s)
+2026-02-11 17:32:36,180 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=9 known=8 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=1 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:32:38,184 - INFO - Processing: https://www.valuecoders.com/
+2026-02-11 17:32:46,674 - WARNING - Captcha detected on https://www.valuecoders.com/ (continuing until obstruction)
+2026-02-11 17:32:48,187 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=88.1 class_conf=95 text='rents project brief this website uses cookies this website uses cookies to improve read more'
+2026-02-11 17:32:48,559 - INFO - [LIVE OCR] idx=1 field=dropdown ocr_conf=96.0 class_conf=90 text='select country'
+2026-02-11 17:32:48,839 - INFO - [LIVE OCR] idx=2 field=email ocr_conf=80.2 class_conf=90 text='email ernail address select country'
+2026-02-11 17:32:49,109 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=75.0 class_conf=92 text='full name er full se'
+2026-02-11 17:32:49,382 - INFO - [LIVE OCR] idx=4 field=phone ocr_conf=76.7 class_conf=90 text='phone no. se biv = phone c select your service*'
+2026-02-11 17:32:49,637 - INFO - [LIVE OCR] idx=5 field=company ocr_conf=92.5 class_conf=90 text='consultation 8 business hours'
+2026-02-11 17:32:49,637 - INFO - [SKIP] non-fillable field company at /html/body/section[16]/div/div/div[2]/form/div/h2
+2026-02-11 17:32:49,919 - INFO - [LIVE OCR] idx=6 field=submit ocr_conf=83.5 class_conf=98 text='uses cookies to improve user experic a | reject non-essential prefe'
+2026-02-11 17:32:49,919 - INFO - [SKIP] non-fillable field submit at /html/body/div/div[2]/div/button[2]
+2026-02-11 17:32:50,309 - INFO - [LIVE OCR] idx=7 field=company ocr_conf=90.3 class_conf=90 text='guaranteed response within 8 business hours'
+2026-02-11 17:32:50,309 - INFO - [SKIP] non-fillable field company at /html/body/section[16]/div/div/div[2]/form/div/p
+2026-02-11 17:32:50,606 - INFO - [LIVE OCR] idx=8 field=submit ocr_conf=73.2 class_conf=98 text='aor websiteuses cool accept all'
+2026-02-11 17:32:50,606 - INFO - [SKIP] non-fillable field submit at /html/body/div/div[2]/div/button
+2026-02-11 17:32:50,971 - INFO - [LIVE OCR] idx=9 field=phone ocr_conf=90.0 class_conf=66.66666666666667 text='this website uses cookies of cookies to'
+2026-02-11 17:32:50,971 - INFO - [SKIP] non-fillable field phone at /html/body/div/div[2]/h3
+2026-02-11 17:32:51,003 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173246_674438_www_valuecoders_com_annotated.png
+2026-02-11 17:32:51,678 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:32:52,340 - INFO - [OK] Filled dropdown: United States...
+2026-02-11 17:32:53,021 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:32:53,618 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:32:54,322 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:32:55,551 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173255_211743_www_valuecoders_com_post_fill_post_fill.png
+2026-02-11 17:33:02,211 - INFO - [OK] Successfully submitted https://www.valuecoders.com/
+2026-02-11 17:33:02,260 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_173302_257745_https_www_valuecoders_com.json
+2026-02-11 17:33:02,275 - INFO - [SUCCESS] https://www.valuecoders.com/: form submitted successfully (24.1s)
+2026-02-11 17:33:02,278 - INFO - [MONITOR] issue=none summary=seen=10 known=10 ready=5 filled=5/5 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=5 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=1 submit_failure_signal=0
+2026-02-11 17:33:04,285 - INFO - Processing: https://folio3.com/contact-us/
+2026-02-11 17:33:17,041 - WARNING - Captcha detected on https://folio3.com/contact-us/ (continuing until obstruction)
+2026-02-11 17:33:18,081 - INFO - [LIVE OCR] idx=0 field=phone ocr_conf=96.0 class_conf=90 text='phone number'
+2026-02-11 17:33:18,329 - INFO - [LIVE OCR] idx=1 field=email ocr_conf=88.3 class_conf=95 text='email address phe'
+2026-02-11 17:33:18,576 - INFO - [LIVE OCR] idx=2 field=last_name ocr_conf=96.0 class_conf=90 text='last name'
+2026-02-11 17:33:18,813 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=93.3 class_conf=92 text='first name las'
+2026-02-11 17:33:19,063 - INFO - [LIVE OCR] idx=4 field=message ocr_conf=96.0 class_conf=84.21052631578947 text='personal information'
+2026-02-11 17:33:19,063 - INFO - [SKIP] non-fillable field message at /html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/h2
+2026-02-11 17:33:19,291 - INFO - [LIVE OCR] idx=5 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:33:19,291 - INFO - [SKIP] non-fillable field submit at /html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div[3]/div/p/input
+2026-02-11 17:33:19,304 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173317_042355_folio3_com_annotated.png
+2026-02-11 17:33:19,925 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:33:20,705 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:33:21,421 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:33:22,138 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:33:23,037 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173322_818911_folio3_com_post_fill_post_fill.png
+2026-02-11 17:33:28,914 - WARNING - [!] Submission rejected for https://folio3.com/contact-us/
+2026-02-11 17:33:28,933 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_173328_933689_https_folio3_com_contact_us.json
+2026-02-11 17:33:28,933 - INFO - [FAILED] https://folio3.com/contact-us/: form submission failed validation checks (field_error) (24.6s)
+2026-02-11 17:33:28,933 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=6 known=6 ready=4 filled=4/4 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=1
+2026-02-11 17:33:30,942 - INFO - Processing: https://geniusee.com/#contact
+2026-02-11 17:33:36,813 - INFO - [LIVE OCR] idx=0 field=phone ocr_conf=0.0 class_conf=66.66666666666667 text=''
+2026-02-11 17:33:36,813 - INFO - [SKIP] non-fillable field phone at /html/body/div/section/div[2]/svg/path
+2026-02-11 17:33:37,103 - INFO - [LIVE OCR] idx=1 field=dropdown ocr_conf=0.0 class_conf=57.14285714285714 text=''
+2026-02-11 17:33:37,103 - INFO - [SKIP] non-fillable field dropdown at /html/body/div/section/div/div[2]/div[2]/svg/rect[2]
+2026-02-11 17:33:37,400 - INFO - [LIVE OCR] idx=2 field=subject ocr_conf=89.9 class_conf=90 text='‘tv access to this page is forbidden.'
+2026-02-11 17:33:37,401 - INFO - [SKIP] non-fillable field subject at /html/body/div/section/div/p
+2026-02-11 17:33:37,685 - INFO - [LIVE OCR] idx=3 field=subject ocr_conf=82.0 class_conf=90 text='3 - forbidden to thic nage ic farhiddan'
+2026-02-11 17:33:37,685 - INFO - [SKIP] non-fillable field subject at /html/body/div/section/div/h1
+2026-02-11 17:33:37,919 - INFO - [LIVE OCR] idx=4 field=company ocr_conf=0.0 class_conf=66.66666666666667 text=''
+2026-02-11 17:33:37,919 - INFO - [SKIP] non-fillable field company at /html/body/div/section/div/div/svg/path[8]
+2026-02-11 17:33:37,960 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173336_148533_geniusee_com_annotated.png
+2026-02-11 17:33:38,735 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173338_493496_geniusee_com_post_fill_post_fill.png
+2026-02-11 17:33:38,735 - INFO - [i] No fillable fields on https://geniusee.com/#contact
+2026-02-11 17:33:38,756 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_173338_754265_https_geniusee_com_contact.json
+2026-02-11 17:33:38,757 - INFO - [FAILED] https://geniusee.com/#contact: no fillable fields found (7.8s)
+2026-02-11 17:33:38,757 - INFO - [MONITOR] issue=ocr_heuristics summary=seen=5 known=5 ready=0 filled=0/0 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=5 prefill_miss_skips=0 submit_clicked=0 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:33:40,767 - INFO - Processing: https://www.simform.com/contact/
+2026-02-11 17:33:48,488 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=95.2 class_conf=95 text='3. where did you hear about us? how did you hear about us?'
+2026-02-11 17:33:48,808 - INFO - [LIVE OCR] idx=1 field=message ocr_conf=94.1 class_conf=95 text='2. tell us more about your project describe your project briefly* the'
+2026-02-11 17:33:49,051 - INFO - [LIVE OCR] idx=2 field=dropdown ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:33:49,057 - INFO - [SKIP] non-fillable field dropdown at /html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[2]/div[4]/div/label
+2026-02-11 17:33:49,358 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=95.8 class_conf=90 text='company name or website'
+2026-02-11 17:33:49,650 - INFO - [LIVE OCR] idx=4 field=dropdown ocr_conf=88.8 class_conf=95 text='| please choose the budget*'
+2026-02-11 17:33:49,650 - INFO - [SKIP] no prefill data for classified field dropdown at [no-xpath]
+2026-02-11 17:33:50,024 - INFO - [LIVE OCR] idx=5 field=name ocr_conf=83.9 class_conf=92 text='to azure tion deliver analytics, governance, and al readiness industries al accelerators » resources whysimform + about ...'
+2026-02-11 17:33:50,315 - INFO - [LIVE OCR] idx=6 field=email ocr_conf=82.0 class_conf=95 text='industries al accelerators resources'
+2026-02-11 17:33:50,633 - INFO - [LIVE OCR] idx=7 field=phone ocr_conf=66.4 class_conf=95 text='whysimform v about us, con'
+2026-02-11 17:33:50,907 - INFO - [LIVE OCR] idx=8 field=name ocr_conf=94.6 class_conf=77.77777777777779 text='to azure tion deliver analytics, governance, and al readiness'
+2026-02-11 17:33:50,907 - INFO - [SKIP] non-fillable field name at /html/body/div/div[2]/p
+2026-02-11 17:33:51,182 - INFO - [LIVE OCR] idx=9 field=phone ocr_conf=95.4 class_conf=90 text='2. tell us more about your project'
+2026-02-11 17:33:51,182 - INFO - [SKIP] non-fillable field phone at /html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[2]/div
+2026-02-11 17:33:51,423 - INFO - [LIVE OCR] idx=10 field=phone ocr_conf=0.0 class_conf=66.66666666666667 text=''
+2026-02-11 17:33:51,431 - INFO - [SKIP] non-fillable field phone at /html/body/div/div[3]/a
+2026-02-11 17:33:51,678 - INFO - [LIVE OCR] idx=11 field=subject ocr_conf=76.0 class_conf=66.66666666666667 text='nezone -'
+2026-02-11 17:33:52,022 - INFO - [LIVE OCR] idx=12 field=subject ocr_conf=95.4 class_conf=90 text='3. where did you hear about us?'
+2026-02-11 17:33:52,022 - INFO - [SKIP] non-fillable field subject at /html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[3]/div
+2026-02-11 17:33:52,297 - INFO - [LIVE OCR] idx=13 field=dropdown ocr_conf=81.8 class_conf=90 text='06:00 am - 07:00 am'
+2026-02-11 17:33:52,297 - INFO - [SKIP] no prefill data for classified field dropdown at [no-xpath]
+2026-02-11 17:33:52,538 - INFO - [LIVE OCR] idx=14 field=dropdown ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:33:52,538 - INFO - [SKIP] non-fillable field dropdown at /html/body/main/div/div/div/div/div/div/div/div/div/section/div/div[2]/div[2]/form/div[2]/div[4]/div/label/div[2]/div[2]
+2026-02-11 17:33:52,805 - INFO - [LIVE OCR] idx=15 field=name ocr_conf=85.3 class_conf=77.77777777777779 text='‘move to azure tion deliver analytics, govert'
+2026-02-11 17:33:52,805 - INFO - [SKIP] non-fillable field name at /html/body/div/div[2]/h4
+2026-02-11 17:33:53,066 - INFO - [LIVE OCR] idx=16 field=name ocr_conf=0.0 class_conf=80.0 text=''
+2026-02-11 17:33:53,069 - INFO - [SKIP] non-fillable field name at /html/body/header/div/div[2]/a
+2026-02-11 17:33:53,105 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173347_343781_www_simform_com_annotated.png
+2026-02-11 17:33:53,658 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:33:54,265 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:33:55,036 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:33:55,571 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:33:56,203 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:33:58,433 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:33:59,019 - INFO - [OK] Filled subject: Business Inquiry...
+2026-02-11 17:34:00,166 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173359_707967_www_simform_com_post_fill_post_fill.png
+2026-02-11 17:34:06,741 - WARNING - [!] Submission uncertain for https://www.simform.com/contact/
+2026-02-11 17:34:06,766 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_173406_762382_https_www_simform_com_contact.json
+2026-02-11 17:34:06,766 - INFO - [FAILED] https://www.simform.com/contact/: submission attempted; OCR screenshot had no clear success/failure signal (26.0s)
+2026-02-11 17:34:06,766 - INFO - [MONITOR] issue=submission_confirmation summary=seen=17 known=17 ready=7 filled=7/7 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=8 prefill_miss_skips=2 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:34:08,770 - INFO - Processing: https://www.merixstudio.com/contact
+2026-02-11 17:34:17,991 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=86.4 class_conf=95 text='how can we help? q add attachment'
+2026-02-11 17:34:18,312 - INFO - [LIVE OCR] idx=1 field=last_name ocr_conf=73.0 class_conf=90 text='last name. emall*'
+2026-02-11 17:34:18,743 - INFO - [LIVE OCR] idx=2 field=company ocr_conf=94.5 class_conf=90 text='company name how can we help?'
+2026-02-11 17:34:19,166 - INFO - [LIVE OCR] idx=3 field=phone ocr_conf=95.2 class_conf=95 text='phone number company name'
+2026-02-11 17:34:19,551 - INFO - [LIVE OCR] idx=4 field=email ocr_conf=85.3 class_conf=95 text='emall* phone number'
+2026-02-11 17:34:19,835 - INFO - [LIVE OCR] idx=5 field=first_name ocr_conf=96.0 class_conf=90 text='last name'
+2026-02-11 17:34:20,238 - INFO - [LIVE OCR] idx=6 field=message ocr_conf=91.4 class_conf=90 text='add attachment merixstudio requires the contact information to respond to your inquiry you may opt out of receiving furt...'
+2026-02-11 17:34:20,238 - INFO - [SKIP] non-fillable field message at /html/body/section/div/div/form/div[2]/div/form/fieldset[7]/div/div
+2026-02-11 17:34:20,500 - INFO - [LIVE OCR] idx=7 field=company ocr_conf=55.0 class_conf=90 text='togetl'
+2026-02-11 17:34:20,500 - INFO - [SKIP] non-fillable field company at /html/body/section/div/div/form/div/h1
+2026-02-11 17:34:20,769 - INFO - [LIVE OCR] idx=8 field=submit ocr_conf=84.2 class_conf=98 text='more details, please r submit >'
+2026-02-11 17:34:20,769 - INFO - [SKIP] non-fillable field submit at /html/body/section/div/div/form/div[2]/div/form/div/div[2]/input
+2026-02-11 17:34:21,018 - INFO - [LIVE OCR] idx=9 field=company ocr_conf=67.0 class_conf=90 text='m se e as'
+2026-02-11 17:34:21,019 - INFO - [SKIP] non-fillable field company at /html/body/section/div/div/form/div/div[3]/img
+2026-02-11 17:34:21,255 - INFO - [LIVE OCR] idx=10 field=subject ocr_conf=0.0 class_conf=75.86206896551724 text=''
+2026-02-11 17:34:21,255 - INFO - [SKIP] non-fillable field subject at /html/body/div[5]/div/a[2]
+2026-02-11 17:34:21,511 - INFO - [LIVE OCR] idx=11 field=submit ocr_conf=69.0 class_conf=98 text='|'
+2026-02-11 17:34:21,511 - INFO - [SKIP] non-fillable field submit at //button[@aria-label="Accept All"]
+2026-02-11 17:34:21,834 - INFO - [LIVE OCR] idx=12 field=subject ocr_conf=90.2 class_conf=90 text='ry 233 we value your privacy we use cookles to enhance your'
+2026-02-11 17:34:21,834 - INFO - [SKIP] non-fillable field subject at /html/body/div[3]/div/div/p
+2026-02-11 17:34:22,136 - INFO - [LIVE OCR] idx=13 field=company ocr_conf=92.2 class_conf=90 text='solve problems ar let's work together.'
+2026-02-11 17:34:22,136 - INFO - [SKIP] non-fillable field company at /html/body/section/div/div/form/div/p
+2026-02-11 17:34:22,174 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173416_698455_www_merixstudio_com_annotated.png
+2026-02-11 17:34:22,762 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:34:23,363 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:34:23,943 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:34:25,357 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:34:25,943 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:34:26,508 - INFO - [OK] Filled first_name: John...
+2026-02-11 17:34:27,521 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173427_167399_www_merixstudio_com_post_fill_post_fill.png
+2026-02-11 17:34:33,954 - WARNING - [!] Submission uncertain for https://www.merixstudio.com/contact
+2026-02-11 17:34:33,984 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_173433_982012_https_www_merixstudio_com_contact.json
+2026-02-11 17:34:33,984 - INFO - [FAILED] https://www.merixstudio.com/contact: submission attempted; OCR screenshot had no clear success/failure signal (25.2s)
+2026-02-11 17:34:33,984 - INFO - [MONITOR] issue=submission_confirmation summary=seen=14 known=14 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=8 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:34:35,988 - INFO - Processing: https://www.cleveroad.com/contact/
+2026-02-11 17:34:45,766 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=89.4 class_conf=95 text='about a project* @ send me nda'
+2026-02-11 17:34:46,031 - INFO - [LIVE OCR] idx=1 field=message ocr_conf=95.0 class_conf=90 text='send message'
+2026-02-11 17:34:46,031 - INFO - [SKIP] non-fillable field message at /html/body/div/div/div/main/div/section/div/div/section/div/div[2]/form/div[5]/button/span
+2026-02-11 17:34:46,272 - INFO - [LIVE OCR] idx=2 field=phone ocr_conf=95.3 class_conf=90 text='your phone number'
+2026-02-11 17:34:46,542 - INFO - [LIVE OCR] idx=3 field=email ocr_conf=91.0 class_conf=90 text='your email address* ye'
+2026-02-11 17:34:46,784 - INFO - [LIVE OCR] idx=4 field=company ocr_conf=95.0 class_conf=90 text='company'
+2026-02-11 17:34:47,010 - INFO - [LIVE OCR] idx=5 field=name ocr_conf=0.0 class_conf=92 text=''
+2026-02-11 17:34:47,257 - INFO - [LIVE OCR] idx=6 field=company ocr_conf=96.0 class_conf=90 text='company'
+2026-02-11 17:34:47,484 - INFO - [LIVE OCR] idx=7 field=choice ocr_conf=96.0 class_conf=95 text='about send'
+2026-02-11 17:34:47,484 - INFO - [SKIP] non-fillable field choice at //*[@id="cfNda"]
+2026-02-11 17:34:47,519 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173444_786725_www_cleveroad_com_annotated.png
+2026-02-11 17:34:48,134 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:34:48,750 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:34:49,286 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:34:49,835 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:34:50,399 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:34:50,930 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:34:51,879 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173451_518435_www_cleveroad_com_post_fill_post_fill.png
+2026-02-11 17:35:01,750 - INFO - [OK] Successfully submitted https://www.cleveroad.com/contact/
+2026-02-11 17:35:01,783 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_173501_780367_https_www_cleveroad_com_contact.json
+2026-02-11 17:35:01,783 - INFO - [SUCCESS] https://www.cleveroad.com/contact/: form submitted successfully (25.8s)
+2026-02-11 17:35:01,783 - INFO - [MONITOR] issue=none summary=seen=8 known=8 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=1 submit_failure_signal=0
+2026-02-11 17:35:03,789 - INFO - Processing: https://www.fingent.com/contact/
+2026-02-11 17:35:15,143 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=88.7 class_conf=95 text='tell us a bit about your software requirement (*)'
+2026-02-11 17:35:15,449 - INFO - [LIVE OCR] idx=1 field=file ocr_conf=65.5 class_conf=98 text='upload project ie not 8b. allowed type: pof ] fie] chosen'
+2026-02-11 17:35:15,449 - INFO - [SKIP] non-fillable field file at /html/body/div/div/div/section/div/div/div/section/div/div/div/div[2]/div/div/div/form/div[5]/div[2]/p/span[2]/input
+2026-02-11 17:35:15,800 - INFO - [LIVE OCR] idx=2 field=name ocr_conf=0.0 class_conf=92 text=''
+2026-02-11 17:35:16,100 - INFO - [LIVE OCR] idx=3 field=dropdown ocr_conf=87.9 class_conf=95 text='how did you hear about us? up'
+2026-02-11 17:35:16,431 - INFO - [LIVE OCR] idx=4 field=dropdown ocr_conf=80.4 class_conf=95 text='] choose country (*) upload not exceeding & mb. filetype: pof'
+2026-02-11 17:35:16,760 - INFO - [LIVE OCR] idx=5 field=phone ocr_conf=92.6 class_conf=95 text='l how did you hear about us?'
+2026-02-11 17:35:17,071 - INFO - [LIVE OCR] idx=6 field=email ocr_conf=52.0 class_conf=95 text='|'
+2026-02-11 17:35:17,340 - INFO - [LIVE OCR] idx=7 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:35:17,340 - INFO - [SKIP] non-fillable field submit at /html/body/div/div/div/section/div/div/div/section/div/div/div/div[2]/div/div/div/form/p/input
+2026-02-11 17:35:17,650 - INFO - [LIVE OCR] idx=8 field=file ocr_conf=80.7 class_conf=98 text='upload project exceeding @ mb | ‘choose file | no file chosen'
+2026-02-11 17:35:17,650 - INFO - [SKIP] non-fillable field file at //input[@name="attach-file"]
+2026-02-11 17:35:17,672 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173512_378478_www_fingent_com_annotated.png
+2026-02-11 17:35:18,444 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:35:21,659 - INFO - [OK] Filled name: John Doe...
+2026-02-11 17:35:22,750 - INFO - Results saved incrementally to C:\Users\Dell\Desktop\Form-Filler\Form\Form\results_incremental_test.csv (1 rows)
+2026-02-11 17:35:22,774 - INFO - Results saved incrementally to C:\Users\Dell\Desktop\Form-Filler\Form\Form\results_incremental_test.csv (2 rows)
+2026-02-11 17:35:23,355 - INFO - [OK] Filled dropdown: Google Search...
+2026-02-11 17:35:37,449 - INFO - Results saved incrementally to C:\Users\Dell\Desktop\Form-Filler\Form\results_incremental_test.csv (1 rows)
+2026-02-11 17:35:37,451 - INFO - Results saved incrementally to C:\Users\Dell\Desktop\Form-Filler\Form\results_incremental_test.csv (2 rows)
+2026-02-11 17:35:42,713 - INFO - [OK] Filled dropdown: United States...
+2026-02-11 17:35:44,542 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:35:45,177 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:35:47,775 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173547_144552_www_fingent_com_post_fill_post_fill.png
+2026-02-11 17:35:59,999 - WARNING - [!] Submission uncertain for https://www.fingent.com/contact/
+2026-02-11 17:36:00,072 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_173600_072141_https_www_fingent_com_contact.json
+2026-02-11 17:36:00,072 - INFO - [FAILED] https://www.fingent.com/contact/: submission attempted; OCR screenshot had no clear success/failure signal (56.3s)
+2026-02-11 17:36:00,076 - INFO - [MONITOR] issue=submission_confirmation summary=seen=9 known=9 ready=6 filled=6/6 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=3 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:36:02,092 - INFO - Processing: https://www.systemsltd.com/contact-us
+2026-02-11 17:37:06,340 - ERROR - Error processing https://www.systemsltd.com/contact-us: Timeout 30000ms exceeded.
+2026-02-11 17:37:06,343 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_173706_340803_https_www_systemsltd_com_contact_us.json
+2026-02-11 17:37:06,343 - INFO - [FAILED] https://www.systemsltd.com/contact-us: error: Timeout 30000ms exceeded. (64.2s)
+2026-02-11 17:37:06,343 - INFO - [MONITOR] issue=ocr_heuristics summary=seen=0 known=0 ready=0 filled=0/0 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=0 prefill_miss_skips=0 submit_clicked=0 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:37:06,347 - INFO - Results saved to results.csv
+2026-02-11 17:37:06,348 - INFO - Progress: 10/14 URLs processed
+2026-02-11 17:37:08,350 - WARNING - Skipping invalid URL: netsoltech.com
+2026-02-11 17:37:08,350 - WARNING - Skipping invalid URL: venturedive.com
+2026-02-11 17:37:08,350 - WARNING - Skipping invalid URL: arbisoft.com
+2026-02-11 17:37:08,352 - WARNING - Skipping invalid URL: techlogix.com
+2026-02-11 17:37:08,354 - INFO - Results saved to results.csv
+2026-02-11 17:37:08,354 - INFO - Batch processing complete. Processed 14 URLs.
+2026-02-11 17:37:08,363 - INFO - Results saved to results.csv
+2026-02-11 17:37:20,019 - INFO - Starting batch processing of 14 URLs
+2026-02-11 17:37:20,019 - INFO - Processing: https://www.netguru.com/estimate-project
+2026-02-11 17:37:31,788 - WARNING - Captcha detected on https://www.netguru.com/estimate-project (continuing until obstruction)
+2026-02-11 17:37:34,492 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=92.7 class_conf=71.42857142857143 text='we value your privacy by clicking “accept all" you agree to netguru s.a. storing cookies on your device to enhance site ...'
+2026-02-11 17:37:34,492 - INFO - [SKIP] non-fillable field message at /html/body/div[3]/div/div/div/div/div/div/div
+2026-02-11 17:37:34,865 - INFO - [LIVE OCR] idx=1 field=message ocr_conf=92.4 class_conf=95 text='cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. cookie polic...'
+2026-02-11 17:37:35,177 - INFO - [LIVE OCR] idx=2 field=choice ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:37:35,183 - INFO - [SKIP] non-fillable field choice at /html/body/div
+2026-02-11 17:37:35,505 - INFO - [LIVE OCR] idx=3 field=last_name ocr_conf=0.0 class_conf=90 text=''
+2026-02-11 17:37:35,831 - INFO - [LIVE OCR] idx=4 field=first_name ocr_conf=94.0 class_conf=90 text='first name* la phone number'
+2026-02-11 17:37:36,170 - INFO - [LIVE OCR] idx=5 field=email ocr_conf=87.0 class_conf=95 text='email* jow did you hear about us?*'
+2026-02-11 17:37:36,468 - INFO - [LIVE OCR] idx=6 field=phone ocr_conf=88.0 class_conf=95 text='we byc cool'
+2026-02-11 17:37:36,794 - INFO - [LIVE OCR] idx=7 field=company ocr_conf=91.3 class_conf=90 text='we value your privacy by clicking “accept all" you agree to netguru s.a. storing cookies on your device to enhance site ...'
+2026-02-11 17:37:37,041 - INFO - [LIVE OCR] idx=8 field=phone ocr_conf=0.0 class_conf=66.66666666666667 text=''
+2026-02-11 17:37:37,082 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173731_790483_www_netguru_com_annotated.png
+2026-02-11 17:37:37,797 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:37:38,632 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:37:39,376 - INFO - [OK] Filled first_name: John...
+2026-02-11 17:37:40,089 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:37:50,280 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:37:51,112 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:37:52,703 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_173752_093517_www_netguru_com_post_fill_post_fill.png
+2026-02-11 17:38:50,822 - WARNING - [!] Submission uncertain for https://www.netguru.com/estimate-project
+2026-02-11 17:38:50,903 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_173850_897688_https_www_netguru_com_estimate_project.json
+2026-02-11 17:38:50,906 - INFO - Results saved incrementally to C:\Users\Dell\Desktop\Form-Filler\Form\results.csv (1 rows)
+2026-02-11 17:38:50,908 - INFO - [FAILED] https://www.netguru.com/estimate-project: submission attempted; OCR screenshot had no clear success/failure signal (90.9s)
+2026-02-11 17:38:50,908 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=9 known=9 ready=7 filled=6/7 fill_action_failed=1 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=2 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:38:50,908 - INFO - Progress: 1/14 URLs processed
+2026-02-11 17:38:52,923 - INFO - Processing: https://10pearls.com/get-in-touch/
+2026-02-11 17:39:05,333 - WARNING - Captcha detected on https://10pearls.com/get-in-touch/ (continuing until obstruction)
+2026-02-11 17:39:05,639 - WARNING - Primary form detection failed: Target page, context or browser has been closed
+2026-02-11 17:39:05,651 - ERROR - Error processing https://10pearls.com/get-in-touch/: Target page, context or browser has been closed
+2026-02-11 17:39:05,669 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_173905_667682_https_10pearls_com_get_in_touch.json
+2026-02-11 17:39:05,707 - INFO - Results saved incrementally to C:\Users\Dell\Desktop\Form-Filler\Form\results.csv (2 rows)
+2026-02-11 17:39:05,707 - INFO - [FAILED] https://10pearls.com/get-in-touch/: error: Target page, context or browser has been closed (12.7s)
+2026-02-11 17:39:05,709 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=0 known=0 ready=0 filled=0/0 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=0 prefill_miss_skips=0 submit_clicked=0 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:39:05,710 - INFO - Progress: 2/14 URLs processed
+2026-02-11 17:42:35,616 - INFO - Starting batch processing of 14 URLs
+2026-02-11 17:42:35,616 - INFO - Processing: https://www.netguru.com/estimate-project
+2026-02-11 17:42:50,060 - WARNING - Captcha detected on https://www.netguru.com/estimate-project (continuing until obstruction)
+2026-02-11 17:42:53,095 - INFO - [LIVE OCR] idx=0 field=message ocr_conf=89.5 class_conf=95 text='tell us more about your project* de 4 lagree to receive email marketing communications from netguru.'
+2026-02-11 17:42:53,353 - INFO - [LIVE OCR] idx=1 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:42:53,353 - INFO - [SKIP] non-fillable field submit at /html/body/main/span/div/section/div/div[2]/div/div/form/div[2]/div[2]/input
+2026-02-11 17:42:53,652 - INFO - [LIVE OCR] idx=2 field=company ocr_conf=95.8 class_conf=90 text='company name he de'
+2026-02-11 17:42:53,994 - INFO - [LIVE OCR] idx=3 field=phone ocr_conf=93.5 class_conf=95 text='phone number tell us more about your project*'
+2026-02-11 17:42:54,292 - INFO - [LIVE OCR] idx=4 field=email ocr_conf=93.0 class_conf=95 text='email* how did you hear about us?*'
+2026-02-11 17:42:54,641 - INFO - [LIVE OCR] idx=5 field=last_name ocr_conf=90.0 class_conf=90 text='last name* en company name he'
+2026-02-11 17:42:54,929 - INFO - [LIVE OCR] idx=6 field=first_name ocr_conf=88.2 class_conf=90 text='first name* la phone number ce'
+2026-02-11 17:42:55,248 - INFO - [LIVE OCR] idx=7 field=first_name ocr_conf=94.2 class_conf=66.66666666666667 text='how did you hear about us?* do you need an nda first?'
+2026-02-11 17:43:07,042 - INFO - Use pytorch device_name: cpu
+2026-02-11 17:43:07,042 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-02-11 17:43:07,700 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:43:07,731 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-11 17:43:08,008 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:43:08,043 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-11 17:43:08,418 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:43:08,453 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-02-11 17:43:08,824 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:43:08,862 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-02-11 17:43:09,236 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:43:09,272 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-02-11 17:43:09,643 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:43:09,685 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-02-11 17:43:10,057 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-02-11 17:43:10,358 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:43:10,399 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-11 17:43:11,121 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:43:11,160 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-02-11 17:43:11,419 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:43:11,455 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-11 17:43:11,795 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-11 17:43:12,104 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-11 17:43:12,616 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-11 17:43:12,650 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-02-11 17:43:12,958 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-02-11 17:43:12,971 - INFO - MiniLM model loaded for semantic classification
+2026-02-11 17:43:13,130 - INFO - [LIVE OCR] idx=8 field=email ocr_conf=54.0 class_conf=50.0 text='by'
+2026-02-11 17:43:13,132 - INFO - [SKIP] non-fillable field email at //iframe[@name="a-l5oo3vdb24wo"]
+2026-02-11 17:43:13,471 - INFO - [LIVE OCR] idx=9 field=email ocr_conf=92.1 class_conf=90 text='lagree to receive email marketing communications from netguru.'
+2026-02-11 17:43:13,471 - INFO - [SKIP] non-fillable field email at /html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[6]/div/div/div/div/div/ul/li/label/span/p
+2026-02-11 17:43:13,515 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_174250_060922_www_netguru_com_annotated.png
+2026-02-11 17:43:14,288 - INFO - [OK] Filled message: Hello, I would like to know mo...
+2026-02-11 17:43:15,120 - INFO - [OK] Filled company: Example Inc....
+2026-02-11 17:43:16,868 - INFO - [OK] Filled phone: +1234567890...
+2026-02-11 17:43:17,638 - INFO - [OK] Filled email: john@example.com...
+2026-02-11 17:43:18,416 - INFO - [OK] Filled last_name: Doe...
+2026-02-11 17:43:19,132 - INFO - [OK] Filled first_name: John...
+2026-02-11 17:43:19,934 - INFO - [OK] Filled first_name: John...
+2026-02-11 17:43:21,154 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_174320_736932_www_netguru_com_post_fill_post_fill.png
+2026-02-11 17:43:28,153 - WARNING - [!] Submission uncertain for https://www.netguru.com/estimate-project
+2026-02-11 17:43:28,231 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_174328_223578_https_www_netguru_com_estimate_project.json
+2026-02-11 17:43:28,260 - INFO - Results saved incrementally to C:\Users\Dell\Desktop\Form-Filler\Form\results.csv (2 rows)
+2026-02-11 17:43:28,260 - INFO - [FAILED] https://www.netguru.com/estimate-project: submission attempted; OCR screenshot had no clear success/failure signal (52.6s)
+2026-02-11 17:43:28,262 - INFO - [MONITOR] issue=captcha_obstruction summary=seen=10 known=10 ready=7 filled=7/7 fill_action_failed=0 fill_verify_failed=0 low_conf_skips=0 non_fillable_skips=3 prefill_miss_skips=0 submit_clicked=1 submit_success_signal=0 submit_failure_signal=0
+2026-02-11 17:43:28,263 - INFO - Progress: 1/14 URLs processed
+2026-02-11 17:43:30,278 - INFO - Processing: https://10pearls.com/get-in-touch/
+2026-02-11 17:43:46,842 - WARNING - Captcha detected on https://10pearls.com/get-in-touch/ (continuing until obstruction)
+2026-02-11 17:43:48,735 - INFO - [LIVE OCR] idx=0 field=dropdown ocr_conf=94.6 class_conf=95 text='how can we help? message'
+2026-02-11 17:43:48,735 - INFO - [SKIP] no prefill data for classified field dropdown at [no-xpath]
+2026-02-11 17:43:49,078 - INFO - [LIVE OCR] idx=1 field=subject ocr_conf=93.5 class_conf=100.0 text='how did you hear about us? how can we help?'
+2026-02-11 17:43:49,379 - INFO - [LIVE OCR] idx=2 field=message ocr_conf=88.0 class_conf=90 text='message'
+2026-02-11 17:43:49,681 - INFO - [LIVE OCR] idx=3 field=name ocr_conf=83.2 class_conf=90 text='name ~ ema company pho'
+2026-02-11 17:43:50,042 - INFO - [LIVE OCR] idx=4 field=phone ocr_conf=83.0 class_conf=90 text='nurrber'
+2026-02-11 17:43:50,669 - INFO - [LIVE OCR] idx=5 field=company ocr_conf=95.6 class_conf=90 text='company pho how did you hear about us?'
+2026-02-11 17:43:50,983 - INFO - [LIVE OCR] idx=6 field=email ocr_conf=71.0 class_conf=95 text='email prore'
+2026-02-11 17:43:51,280 - INFO - [LIVE OCR] idx=7 field=submit ocr_conf=0.0 class_conf=98 text=''
+2026-02-11 17:43:51,286 - INFO - [SKIP] non-fillable field submit at [no-xpath]
+2026-02-11 17:43:51,709 - INFO - [LIVE OCR] idx=8 field=unknown ocr_conf=84.0 class_conf=0 text='2'
+2026-02-11 17:43:51,709 - INFO - [SKIP] non-fillable field unknown at /html/body/div/div/div/div/section/div[2]/div/div/section/div/div[2]/div/div/div/div/form/div[3]/div/iframe
+2026-02-11 17:43:51,733 - INFO - [ANNOTATE] Saved detection overlay: logs/annotated_screenshots\20260211_174346_842704_10pearls_com_annotated.png
+2026-02-11 17:43:52,491 - WARNING - Primary form detection failed: Target page, context or browser has been closed
+2026-02-11 17:43:52,505 - ERROR - Error processing https://10pearls.com/get-in-touch/: Target page, context or browser has been closed
+2026-02-11 17:43:52,531 - INFO - [LIVE OCR] Trace saved: logs/live_ocr\20260211_174352_523883_https_10pearls_com_get_in_touch.json
+2026-02-11 17:43:52,542 - INFO - Results saved incrementally to C:\Users\Dell\Desktop\Form-Filler\Form\results.csv (2 rows)

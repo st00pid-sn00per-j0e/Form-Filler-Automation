@@ -1,0 +1,282 @@
+{
+  "url": "https://www.valuecoders.com/",
+  "timestamp": "2026-02-11T17:32:38.184635",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_173246_674438_www_valuecoders_com.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_173246_674438_www_valuecoders_com_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_173255_211743_www_valuecoders_com_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_173255_211743_www_valuecoders_com_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_173301_333376_www_valuecoders_com_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": null,
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "user-req",
+        "id": "user-req",
+        "class": "input-field comment-input",
+        "placeholder": "Project Brief",
+        "label_text": "",
+        "nearby_text": "Your Requirements Error Message BROWSE | DROP FILES HERE"
+      },
+      "box": [
+        16,
+        510,
+        605,
+        70
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 88.13333333333334,
+      "ocr_text": "rents project brief this website uses cookies this website uses cookies to improve read more",
+      "classified_as": "message",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//*[@id=\"cont_country\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "user-country",
+        "id": "cont_country",
+        "class": "input-field input-skype",
+        "placeholder": "Country",
+        "label_text": "",
+        "nearby_text": "Select Country"
+      },
+      "box": [
+        336,
+        298,
+        336,
+        54
+      ],
+      "source": "dom",
+      "ocr_confidence": 96.0,
+      "ocr_text": "select country",
+      "classified_as": "dropdown",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "user-email",
+        "id": "cont_email",
+        "class": "input-field",
+        "placeholder": "Email Address",
+        "label_text": "",
+        "nearby_text": "Email Error Message"
+      },
+      "box": [
+        336,
+        214,
+        336,
+        54
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 80.2,
+      "ocr_text": "email ernail address select country",
+      "classified_as": "email",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"cont_name\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "user-name",
+        "id": "cont_name",
+        "class": "input-field",
+        "placeholder": "Full Name",
+        "label_text": "",
+        "nearby_text": "Full Name"
+      },
+      "box": [
+        0,
+        214,
+        316,
+        54
+      ],
+      "source": "dom",
+      "ocr_confidence": 75.0,
+      "ocr_text": "full name er full se",
+      "classified_as": "name",
+      "classification_confidence": 92.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//*[@id=\"cont_phpne\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "user-phone",
+        "id": "cont_phpne",
+        "class": "input-field",
+        "placeholder": "Phone Number (Optional)",
+        "label_text": "",
+        "nearby_text": "United States+1United Kingdom+44Afghanistan (‫افغانستان‬‎)+93Albania (Shqipëri)+355Algeria (‫الجزائر‬‎)+213American Samoa+1Andorra+376Angola+244Anguilla+1Antigua and Barbuda+1Argentina+54Armenia (Հայաստան)+374Aruba+297Ascension Island+247Australia+61Austria (Österreich)+43Azerbaijan (Azərbaycan)+994"
+      },
+      "box": [
+        1,
+        299,
+        314,
+        54
+      ],
+      "source": "dom",
+      "ocr_confidence": 76.7,
+      "ocr_text": "phone no. se biv = phone c select your service*",
+      "classified_as": "phone",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 5,
+      "xpath": "/html/body/section[16]/div/div/div[2]/form/div/h2",
+      "dom_type": "h2",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Book Free Consultation Guaranteed response within 8 business hours."
+      },
+      "box": [
+        233,
+        80,
+        276,
+        38
+      ],
+      "source": "cv",
+      "ocr_confidence": 92.5,
+      "ocr_text": "consultation 8 business hours",
+      "classified_as": "company",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 6,
+      "xpath": "/html/body/div/div[2]/div/button[2]",
+      "dom_type": "button",
+      "attributes": {
+        "class": "reject-all st-button st-button--primary",
+        "label_text": "",
+        "nearby_text": "Accept all Reject non-essential Preferences"
+      },
+      "box": [
+        288,
+        659,
+        190,
+        49
+      ],
+      "source": "cv",
+      "ocr_confidence": 83.45454545454545,
+      "ocr_text": "uses cookies to improve user experic a | reject non-essential prefe",
+      "classified_as": "submit",
+      "classification_confidence": 98.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 7,
+      "xpath": "/html/body/section[16]/div/div/div[2]/form/div/p",
+      "dom_type": "p",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Book Free Consultation Guaranteed response within 8 business hours."
+      },
+      "box": [
+        0,
+        142,
+        388,
+        19
+      ],
+      "source": "cv",
+      "ocr_confidence": 90.33333333333333,
+      "ocr_text": "guaranteed response within 8 business hours",
+      "classified_as": "company",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 8,
+      "xpath": "/html/body/div/div[2]/div/button",
+      "dom_type": "button",
+      "attributes": {
+        "class": "accept-all st-button st-button--primary",
+        "label_text": "",
+        "nearby_text": "Accept all Reject non-essential Preferences"
+      },
+      "box": [
+        155,
+        655,
+        123,
+        58
+      ],
+      "source": "cv",
+      "ocr_confidence": 73.2,
+      "ocr_text": "aor websiteuses cool accept all",
+      "classified_as": "submit",
+      "classification_confidence": 98.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 9,
+      "xpath": "/html/body/div/div[2]/h3",
+      "dom_type": "h3",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "This website uses cookies This website uses cookies to improve user experience. Read More Accept all Reject non-essential Preferences"
+      },
+      "box": [
+        159,
+        574,
+        268,
+        18
+      ],
+      "source": "cv",
+      "ocr_confidence": 90.0,
+      "ocr_text": "this website uses cookies of cookies to",
+      "classified_as": "phone",
+      "classification_confidence": 66.66666666666667,
+      "status": "skipped",
+      "reason": "non-fillable"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": true,
+    "ocr_success": false,
+    "ocr_failure": false,
+    "current_url": "https://www.valuecoders.com/",
+    "ocr_excerpt": "conf=88.6 s_score=0 f_score=1 success=[] failure=['please_select'] text='full name email john doe ° john@example.com ° phone no. select country +1234567890 united states select your service* please select from the dropdown v this your requirements hello, like to know more ...'",
+    "ocr_success_matches": [],
+    "ocr_failure_matches": [
+      "please_select"
+    ]
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    519,
+    10996
+  ],
+  "form_bbox": {
+    "x": 519.5,
+    "y": 10996.125,
+    "width": 672.0,
+    "height": 712.0
+  }
+}

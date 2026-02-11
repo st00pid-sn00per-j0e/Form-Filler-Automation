@@ -1,0 +1,22 @@
+{
+  "url": "https://10pearls.com/get-in-touch/",
+  "timestamp": "2026-02-11T17:38:52.923440",
+  "captcha_detected": true,
+  "initial_screenshot": "",
+  "annotated_screenshot": "",
+  "post_fill_screenshot": "",
+  "annotated_post_fill_screenshot": "",
+  "post_submit_screenshot": "",
+  "fields": [],
+  "submit": {
+    "attempted": false,
+    "clicked": false,
+    "dom_success": false,
+    "ocr_success": false,
+    "ocr_failure": false,
+    "current_url": "",
+    "ocr_excerpt": "",
+    "ocr_success_matches": [],
+    "ocr_failure_matches": []
+  }
+}

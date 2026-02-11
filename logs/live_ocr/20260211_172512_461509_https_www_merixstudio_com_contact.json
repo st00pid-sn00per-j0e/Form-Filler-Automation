@@ -1,0 +1,377 @@
+{
+  "url": "https://www.merixstudio.com/contact",
+  "timestamp": "2026-02-11T17:24:46.167681",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_172455.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_172455_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_172505_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_172505_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_172511_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": null,
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "message",
+        "id": "message-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4",
+        "class": "hs-input hs-fieldtype-textarea",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        567,
+        500,
+        560,
+        84
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 86.42857142857143,
+      "ocr_text": "how can we help? q add attachment",
+      "classified_as": "message",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//*[@id=\"lastname-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "lastname",
+        "id": "lastname-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4",
+        "class": "hs-input",
+        "label_text": "Last Name",
+        "nearby_text": "Last Name"
+      },
+      "box": [
+        567,
+        120,
+        560,
+        56
+      ],
+      "source": "dom",
+      "ocr_confidence": 73.0,
+      "ocr_text": "last name. emall*",
+      "classified_as": "last_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "company",
+        "id": "company-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4",
+        "class": "hs-input",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        567,
+        405,
+        560,
+        56
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 94.5,
+      "ocr_text": "company name how can we help?",
+      "classified_as": "company",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "tel",
+        "name": "phone",
+        "id": "phone-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4",
+        "class": "hs-input",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        567,
+        310,
+        560,
+        56
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 95.25,
+      "ocr_text": "phone number company name",
+      "classified_as": "phone",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "email",
+        "id": "email-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4",
+        "class": "hs-input",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        567,
+        215,
+        560,
+        56
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 85.33333333333333,
+      "ocr_text": "emall* phone number",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 5,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "firstname",
+        "id": "firstname-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4",
+        "class": "hs-input",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        567,
+        25,
+        560,
+        56
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 96.0,
+      "ocr_text": "last name",
+      "classified_as": "first_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 6,
+      "xpath": "/html/body/section/div/div/form/div[2]/div/form/fieldset[7]/div/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "hs-richtext",
+        "label_text": "",
+        "nearby_text": "Merixstudio requires the contact information to respond to your inquiry. You may opt out of receiving further communications at any time. For more details, please refer to our Privacy Policy."
+      },
+      "box": [
+        567,
+        653,
+        568,
+        18
+      ],
+      "source": "cv",
+      "ocr_confidence": 91.38709677419355,
+      "ocr_text": "add attachment merixstudio requires the contact information to respond to your inquiry you may opt out of receiving further communications at any time. for more detaile refer to our privacy policy",
+      "classified_as": "message",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 7,
+      "xpath": "/html/body/section/div/div/form/div/h1",
+      "dom_type": "h1",
+      "attributes": {
+        "class": "typo-headline-h1 grey-4",
+        "label_text": "",
+        "nearby_text": "Let's connect and build together We are the best choice for complex, durable products that solve difficult problems and improve people's lives and work. Let’s work together. Michał Bień Senior Business Analyst m.bien@merixstudio.com +48 570 233 207"
+      },
+      "box": [
+        34,
+        187,
+        130,
+        56
+      ],
+      "source": "cv",
+      "ocr_confidence": 55.0,
+      "ocr_text": "togetl",
+      "classified_as": "company",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 8,
+      "xpath": "/html/body/section/div/div/form/div[2]/div/form/div/div[2]/input",
+      "dom_type": "input",
+      "attributes": {
+        "type": "submit",
+        "class": "hs-button primary large",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        566,
+        744,
+        125,
+        57
+      ],
+      "source": "cv",
+      "ocr_confidence": 84.16666666666667,
+      "ocr_text": "more details, please r submit >",
+      "classified_as": "submit",
+      "classification_confidence": 98.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 9,
+      "xpath": "/html/body/section/div/div/form/div/div[3]/img",
+      "dom_type": "img",
+      "attributes": {
+        "class": "person-image",
+        "label_text": "",
+        "nearby_text": "Michał Bień Senior Business Analyst m.bien@merixstudio.com +48 570 233 207"
+      },
+      "box": [
+        15,
+        417,
+        72,
+        83
+      ],
+      "source": "cv",
+      "ocr_confidence": 67.0,
+      "ocr_text": "m se e as",
+      "classified_as": "company",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 10,
+      "xpath": "/html/body/div[5]/div/a[2]",
+      "dom_type": "a",
+      "attributes": {
+        "class": "button-stroke is-small w-button w--current",
+        "label_text": "",
+        "nearby_text": "About Services Clients Insights Careers Contact Request for proposal"
+      },
+      "box": [
+        1014,
+        16,
+        121,
+        49
+      ],
+      "source": "cv",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "subject",
+      "classification_confidence": 75.86206896551724,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 11,
+      "xpath": "//button[@aria-label=\"Accept All\"]",
+      "dom_type": "button",
+      "attributes": {
+        "class": "cky-btn cky-btn-accept",
+        "aria-label": "Accept All",
+        "label_text": "",
+        "nearby_text": "Customize Reject All Accept All"
+      },
+      "box": [
+        263,
+        694,
+        126,
+        45
+      ],
+      "source": "cv",
+      "ocr_confidence": 69.0,
+      "ocr_text": "|",
+      "classified_as": "submit",
+      "classification_confidence": 98.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 12,
+      "xpath": "/html/body/div[3]/div/div/p",
+      "dom_type": "p",
+      "attributes": {
+        "class": "cky-title",
+        "label_text": "",
+        "nearby_text": "We value your privacy We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies. Customize Reject All Accept All"
+      },
+      "box": [
+        0,
+        551,
+        202,
+        19
+      ],
+      "source": "cv",
+      "ocr_confidence": 90.25,
+      "ocr_text": "ry 233 we value your privacy we use cookles to enhance your",
+      "classified_as": "subject",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 13,
+      "xpath": "/html/body/section/div/div/form/div/p",
+      "dom_type": "p",
+      "attributes": {
+        "class": "body-text-normal grey-4",
+        "label_text": "",
+        "nearby_text": "Let's connect and build together We are the best choice for complex, durable products that solve difficult problems and improve people's lives and work. Let’s work together. Michał Bień Senior Business Analyst m.bien@merixstudio.com +48 570 233 207"
+      },
+      "box": [
+        0,
+        342,
+        156,
+        18
+      ],
+      "source": "cv",
+      "ocr_confidence": 92.16666666666667,
+      "ocr_text": "solve problems ar let's work together.",
+      "classified_as": "company",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": false,
+    "ocr_failure": false,
+    "current_url": "https://www.merixstudio.com/contact",
+    "ocr_excerpt": "conf=90.8 s_score=0 f_score=2 success=[] failure=['enter_valid_value'] text='1 1 first and together john@example.com please enter valid emall address. we are the best choice for complex, durable products that solve difficult problems and improve people's lives and work. phone ...'",
+    "ocr_success_matches": [],
+    "ocr_failure_matches": [
+      "enter_valid_value"
+    ]
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    64,
+    238
+  ],
+  "form_bbox": {
+    "x": 64.0,
+    "y": 238.0,
+    "width": 1135.0,
+    "height": 801.0
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "url": "https://10pearls.com/get-in-touch/",
+  "timestamp": "2026-02-11T17:32:06.481672",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_173221_050357_10pearls_com.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_173221_050357_10pearls_com_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_173229_112296_10pearls_com_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_173229_112296_10pearls_com_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_173235_271318_10pearls_com_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": null,
+      "dom_type": "select",
+      "attributes": {
+        "name": "wpforms[fields][8]",
+        "id": "wpforms-127560-field_8",
+        "class": "wpforms-field-large",
+        "label_text": "",
+        "nearby_text": "How can we help? Services & SolutionsCareers"
+      },
+      "box": [
+        0,
+        310,
+        537,
+        43
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 94.6,
+      "ocr_text": "how can we help? message",
+      "classified_as": "dropdown",
+      "classification_confidence": 95.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 1,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "wpforms[fields][2]",
+        "id": "wpforms-127560-field_2",
+        "class": "wpforms-field-large",
+        "label_text": "",
+        "nearby_text": "How did you hear about us?"
+      },
+      "box": [
+        0,
+        218,
+        537,
+        43
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 93.5,
+      "ocr_text": "how did you hear about us? how can we help?",
+      "classified_as": "subject",
+      "classification_confidence": 100.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "wpforms[fields][5]",
+        "id": "wpforms-127560-field_5",
+        "class": "wpforms-field-large",
+        "label_text": "",
+        "nearby_text": "Message"
+      },
+      "box": [
+        0,
+        402,
+        537,
+        43
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 88.0,
+      "ocr_text": "message",
+      "classified_as": "message",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"wpforms-127560-field_4\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "wpforms[fields][4]",
+        "id": "wpforms-127560-field_4",
+        "class": "wpforms-field-large wpforms-field-required",
+        "label_text": "Name *",
+        "nearby_text": "Name *"
+      },
+      "box": [
+        0,
+        34,
+        258,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 83.2,
+      "ocr_text": "name ~ ema company pho",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "number",
+        "name": "wpforms[fields][6]",
+        "id": "wpforms-127560-field_6",
+        "class": "wpforms-field-large",
+        "label_text": "",
+        "nearby_text": "Phone Number"
+      },
+      "box": [
+        279,
+        126,
+        258,
+        43
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 83.0,
+      "ocr_text": "nurrber",
+      "classified_as": "phone",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 5,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "wpforms[fields][1]",
+        "id": "wpforms-127560-field_1",
+        "class": "wpforms-field-large wpforms-field-required",
+        "label_text": "",
+        "nearby_text": "Company *"
+      },
+      "box": [
+        0,
+        126,
+        258,
+        43
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 95.625,
+      "ocr_text": "company pho how did you hear about us?",
+      "classified_as": "company",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 6,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "wpforms[fields][3]",
+        "id": "wpforms-127560-field_3",
+        "class": "wpforms-field-large wpforms-field-required",
+        "label_text": "",
+        "nearby_text": "Email *"
+      },
+      "box": [
+        279,
+        34,
+        258,
+        43
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 71.0,
+      "ocr_text": "email prore",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 7,
+      "xpath": null,
+      "dom_type": "button",
+      "attributes": {
+        "type": "submit",
+        "name": "wpforms[submit]",
+        "id": "wpforms-submit-127560",
+        "class": "wpforms-submit",
+        "label_text": "",
+        "nearby_text": "Send"
+      },
+      "box": [
+        416,
+        556,
+        121,
+        41
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "submit",
+      "classification_confidence": 98.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 8,
+      "xpath": "/html/body/div/div/div/div/section/div[2]/div/div/section/div/div[2]/div/div/div/div/form/div[3]/div/iframe",
+      "dom_type": "iframe",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        237,
+        514,
+        55,
+        22
+      ],
+      "source": "cv",
+      "ocr_confidence": 84.0,
+      "ocr_text": "2",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": false,
+    "ocr_failure": false,
+    "current_url": "https://10pearls.com/get-in-touch/",
+    "ocr_excerpt": "conf=89.9 s_score=1 f_score=0 success=['submitted_word'] failure=[] text='bas not beer submitted. p case see the name email john doe prore example inc. +1234567890 how you hear about us? business inquiry how can we help? message hello, | would like to know more about your s...'",
+    "ocr_success_matches": [
+      "submitted_word"
+    ],
+    "ocr_failure_matches": []
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    673,
+    188
+  ],
+  "form_bbox": {
+    "x": 673.5,
+    "y": 188.140625,
+    "width": 537.5,
+    "height": 556.0
+  }
+}

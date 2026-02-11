@@ -1,0 +1,291 @@
+{
+  "url": "https://www.systemsltd.com/contact-us",
+  "timestamp": "2026-02-11T16:29:06.873291",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_162920.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_162920_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_162929_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_162929_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_162935_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//*[@id=\"edit-description\"]",
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "description",
+        "id": "edit-description",
+        "class": "form-control form-textarea",
+        "placeholder": "Please tell us a bit about what you’re looking for",
+        "label_text": "Description",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        252,
+        551,
+        154
+      ],
+      "source": "cv",
+      "ocr_confidence": 90.18181818181819,
+      "ocr_text": "company please tell us a bit about what you're looking for",
+      "classified_as": "message",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//*[@id=\"edit-phone-number\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "phone_number",
+        "id": "edit-phone-number",
+        "class": "form-control form-text required",
+        "placeholder": "Phone number*",
+        "label_text": "",
+        "nearby_text": "e.g. +92 300 1234567"
+      },
+      "box": [
+        287,
+        80,
+        264,
+        76
+      ],
+      "source": "cv",
+      "ocr_confidence": 80.0,
+      "ocr_text": "j €.g. +92 300 1234567",
+      "classified_as": "phone",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "//*[@id=\"edit-name\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "name",
+        "id": "edit-name",
+        "class": "form-control js-webform-counter webform-counter form-text required",
+        "placeholder": "Your name*",
+        "label_text": "",
+        "nearby_text": "50 character(s) remaining"
+      },
+      "box": [
+        0,
+        4,
+        265,
+        54
+      ],
+      "source": "cv",
+      "ocr_confidence": 55.0,
+      "ocr_text": "‘",
+      "classified_as": "name",
+      "classification_confidence": 92.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"edit-email-address\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "email_address",
+        "id": "edit-email-address",
+        "class": "form-control form-email required",
+        "placeholder": "Email address*",
+        "label_text": "Email Address",
+        "nearby_text": "Email Address"
+      },
+      "box": [
+        0,
+        76,
+        265,
+        54
+      ],
+      "source": "cv",
+      "ocr_confidence": 56.0,
+      "ocr_text": "c",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//*[@id=\"edit-company-name\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "company_name",
+        "id": "edit-company-name",
+        "class": "form-control js-webform-counter webform-counter form-text required",
+        "placeholder": "Company name*",
+        "label_text": "",
+        "nearby_text": "50 character(s) remaining"
+      },
+      "box": [
+        0,
+        180,
+        265,
+        54
+      ],
+      "source": "cv",
+      "ocr_confidence": 88.81818181818181,
+      "ocr_text": "e.g. please tell us a bit about what you're looking for",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 5,
+      "xpath": "//*[@id=\"edit-city\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "city",
+        "id": "edit-city",
+        "class": "form-control js-webform-counter webform-counter form-text required",
+        "placeholder": "City*",
+        "label_text": "",
+        "nearby_text": "20 character(s) remaining"
+      },
+      "box": [
+        287,
+        4,
+        264,
+        54
+      ],
+      "source": "cv",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "dropdown",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 6,
+      "xpath": "//*[@id=\"edit-your-role\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "your_role",
+        "id": "edit-your-role",
+        "class": "form-control js-webform-counter webform-counter form-text required",
+        "placeholder": "Your title/role*",
+        "label_text": "",
+        "nearby_text": "100 character(s) remaining"
+      },
+      "box": [
+        287,
+        180,
+        264,
+        54
+      ],
+      "source": "cv",
+      "ocr_confidence": 84.5,
+      "ocr_text": "+92 300 1234567 j",
+      "classified_as": "subject",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 7,
+      "xpath": "//*[@id=\"edit-actions-submit\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "submit",
+        "name": "op",
+        "id": "edit-actions-submit",
+        "class": "mt-4 btn-rounded home-hero-display--lets-talk m-0 btn-black webform-button--submit button button--primary js-form-submit form-submit",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        610,
+        153,
+        50
+      ],
+      "source": "dom",
+      "ocr_confidence": 92.0,
+      "ocr_text": "your privacy cookies to enhance your brow: you consent toot",
+      "classified_as": "submit",
+      "classification_confidence": 98.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 8,
+      "xpath": "/html/body/div[3]/div/div/p",
+      "dom_type": "p",
+      "attributes": {
+        "class": "cky-title",
+        "label_text": "",
+        "nearby_text": "We value your privacy We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies. Customize Reject All Accept All"
+      },
+      "box": [
+        0,
+        584,
+        142,
+        19
+      ],
+      "source": "cv",
+      "ocr_confidence": 93.57142857142857,
+      "ocr_text": "your privacy cookies to enhance your bro",
+      "classified_as": "subject",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 9,
+      "xpath": "//iframe[@name=\"a-cv257ronaxaf\"]",
+      "dom_type": "iframe",
+      "attributes": {
+        "name": "a-cv257ronaxaf",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        234,
+        521,
+        57,
+        22
+      ],
+      "source": "cv",
+      "ocr_confidence": 65.0,
+      "ocr_text": "-™",
+      "classified_as": "name",
+      "classification_confidence": 50.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "https://www.systemsltd.com/contact-us",
+    "ocr_excerpt": "conf=84.0 text='john@example.com +1234567890 +92 3001234567 hello. ike to know more about your services z lue your privacy cookies to enhance your browsing experience, serve personalized ads or content, a all’, you c...'"
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    73,
+    591
+  ],
+  "form_bbox": {
+    "x": 73.5,
+    "y": 591.59375,
+    "width": 550.0,
+    "height": 680.0
+  }
+}

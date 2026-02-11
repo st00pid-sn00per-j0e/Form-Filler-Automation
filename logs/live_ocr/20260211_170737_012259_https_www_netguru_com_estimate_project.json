@@ -1,0 +1,286 @@
+{
+  "url": "https://www.netguru.com/estimate-project",
+  "timestamp": "2026-02-11T17:06:49.224412",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_170700.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_170700_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_170717_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_170717_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_170736_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "/html/body/div[3]/div/div/div/div/div/div/div",
+      "dom_type": "div",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "By clicking \"Accept all\" you agree to Netguru S.A. storing cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts."
+      },
+      "box": [
+        363,
+        106,
+        641,
+        229
+      ],
+      "source": "cv",
+      "ocr_confidence": 92.6969696969697,
+      "ocr_text": "we value your privacy by clicking “accept all\" you agree to netguru s.a. storing cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. cookie policy",
+      "classified_as": "message",
+      "classification_confidence": 71.42857142857143,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 1,
+      "xpath": null,
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "short_description_of_idea",
+        "id": "short_description_of_idea-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input hs-fieldtype-textarea",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        233,
+        767,
+        93
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 92.42105263157895,
+      "ocr_text": "cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. cookie policy",
+      "classified_as": "message",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "/html/body/main/span/div/section/div/div[2]/div/div/form/div/div[2]/input",
+      "dom_type": "input",
+      "attributes": {
+        "type": "submit",
+        "class": "hs-button primary large",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        612,
+        767,
+        45
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "submit",
+      "classification_confidence": 98.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 3,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "company",
+        "id": "company-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        399,
+        130,
+        368,
+        46
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 88.1,
+      "ocr_text": "we value your privacy by clicking “accept all\" you agree to netguru s.a. storing cookies on your device to enhance site navigation, analyze cite uence and nesict in cur efforts,",
+      "classified_as": "company",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "tel",
+        "name": "phone",
+        "id": "phone-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        130,
+        368,
+        46
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 88.0,
+      "ocr_text": "we byc cool",
+      "classified_as": "phone",
+      "classification_confidence": 95.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 5,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "email",
+        "id": "email-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        797,
+        27,
+        368,
+        46
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 86.71428571428571,
+      "ocr_text": "email* jow did you hear about us?*",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 6,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "lastname",
+        "id": "lastname-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        399,
+        27,
+        368,
+        46
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "last_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 7,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "firstname",
+        "id": "firstname-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        27,
+        368,
+        46
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 93.6,
+      "ocr_text": "first name* la phone number",
+      "classified_as": "first_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 8,
+      "xpath": null,
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "source__declared_",
+        "id": "source__declared_-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        797,
+        130,
+        368,
+        46
+      ],
+      "source": "shadow_dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "phone",
+      "classification_confidence": 66.66666666666667,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 9,
+      "xpath": "/html/body/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-overlay",
+        "label_text": "",
+        "nearby_text": "We value your privacy By clicking \"Accept all\" you agree to Netguru S.A. storing cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. Cookie policy Customise Reject All Accept All Skip menu Open the Services submenu Services Open the Industries "
+      },
+      "box": [
+        27,
+        547,
+        438,
+        18
+      ],
+      "source": "cv",
+      "ocr_confidence": 91.375,
+      "ocr_text": "lagree to receive email marketing communications from netguru.",
+      "classified_as": "choice",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": false,
+    "ocr_failure": false,
+    "current_url": "https://www.netguru.com/estimate-project",
+    "ocr_excerpt": "conf=92.3 s_score=0 f_score=2 success=[] failure=['enter_valid_value'] text='first name* last name* email* john doe john@example.com please enter a valid email adress. phone number company name how did you hear about us?* example corp +1234567890 tell us more about your do you...'",
+    "ocr_success_matches": [],
+    "ocr_failure_matches": [
+      "enter_valid_value"
+    ]
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    48,
+    563
+  ],
+  "form_bbox": {
+    "x": 48.875,
+    "y": 563.921875,
+    "width": 1165.25,
+    "height": 656.25
+  }
+}

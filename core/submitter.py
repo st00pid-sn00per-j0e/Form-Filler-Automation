@@ -102,29 +102,29 @@ class SubmitHandler:
         """
         Check if form submission was successful
         """
-        # Check for success indicators
-        success_indicators = [
-            'text=Thank you',
-            'text=Thank You',
-            'text=Success',
-            'text=Submitted',
-            'text=Sent successfully',
-            'text=Message sent',
-            'text=We\'ll be in touch',
-            'text=We will contact you',
-            'text=form submitted'
+        # Use specific confirmation phrases (avoid overly generic words like "success").
+        success_patterns = [
+            re.compile(r"thank(s)?\s+you", re.I),
+            re.compile(r"thanks?\s+for\s+(contacting|reaching out)", re.I),
+            re.compile(r"message\s+(has\s+been\s+)?(sent|submitted)", re.I),
+            re.compile(r"(form|request|application)\s+(has\s+been\s+)?submitted", re.I),
+            re.compile(r"(submission|request)\s+(has\s+been\s+)?received", re.I),
+            re.compile(r"we('ll| will)\s+(be in touch|contact you|reach out)", re.I),
         ]
 
-        for indicator in success_indicators:
+        for pattern in success_patterns:
             try:
-                if self.page.locator(indicator).first.is_visible(timeout=2000):
+                if self.page.get_by_text(pattern).first.is_visible(timeout=2000):
                     return True
             except Exception:
                 continue
 
         # Check if redirected (e.g. httpbin /forms/post -> /post)
         current_url = self.page.url
-        if 'success' in current_url.lower() or 'thank' in current_url.lower():
+        lowered_url = current_url.lower()
+        if re.search(r"/(thank[-_]?you|thanks|submitted|confirmation)(/|$)", lowered_url):
+            return True
+        if re.search(r"/success(/|$)", lowered_url) and "success-stor" not in lowered_url:
             return True
         if '/post' in current_url and 'forms' not in current_url:  # httpbin form submit
             return True
@@ -135,7 +135,10 @@ class SubmitHandler:
         except Exception:
             pass
         current_url = self.page.url
-        if 'success' in current_url.lower() or 'thank' in current_url.lower():
+        lowered_url = current_url.lower()
+        if re.search(r"/(thank[-_]?you|thanks|submitted|confirmation)(/|$)", lowered_url):
+            return True
+        if re.search(r"/success(/|$)", lowered_url) and "success-stor" not in lowered_url:
             return True
         if '/post' in current_url and 'forms' not in current_url:
             return True

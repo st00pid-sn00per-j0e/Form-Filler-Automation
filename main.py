@@ -53,6 +53,17 @@ class AutomatedFormFiller:
             "annotated_screenshots_dir",
             os.path.join("logs", "annotated_screenshots")
         )
+        configured_results = output_cfg.get("results_file", "results.csv")
+        if os.path.isabs(configured_results):
+            self.results_output_path = configured_results
+        else:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            preferred_form_dir = os.path.join(script_dir, "Form")
+            if configured_results.lower() == "results.csv" and os.path.isdir(preferred_form_dir):
+                self.results_output_path = os.path.join(preferred_form_dir, "results.csv")
+            else:
+                self.results_output_path = os.path.join(script_dir, configured_results)
+        os.makedirs(os.path.dirname(self.results_output_path), exist_ok=True)
         os.makedirs(self.live_ocr_dir, exist_ok=True)
         os.makedirs(self.annotated_screenshots_dir, exist_ok=True)
         self.results = []
@@ -62,8 +73,8 @@ class AutomatedFormFiller:
         """Process a single URL with proper error handling"""
         result = {
             "URL": url,
-            "Submission status": "unsuccessful",
-            "reason": "unknown error",
+            "Submission": "unsuccessful",
+            "Reason": "unknown error",
             "timestamp": datetime.now().isoformat(),
             "fields_filled": 0,
             "total_fields": 0,
@@ -98,8 +109,11 @@ class AutomatedFormFiller:
                 "clicked": False,
                 "dom_success": False,
                 "ocr_success": False,
+                "ocr_failure": False,
                 "current_url": "",
-                "ocr_excerpt": ""
+                "ocr_excerpt": "",
+                "ocr_success_matches": [],
+                "ocr_failure_matches": []
             }
         }
 
@@ -117,7 +131,7 @@ class AutomatedFormFiller:
                 logger.warning(f"Captcha detected on {url} (continuing until obstruction)")
 
             # 3. Capture screenshot
-            screenshot_path = f"screenshots/{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+            screenshot_path = self._build_screenshot_path(url)
             shot_meta = self._capture_form_preferred_screenshot(page, screenshot_path)
             live_trace["initial_screenshot"] = screenshot_path
             live_trace["screenshot_mode"] = shot_meta.get("mode", "full")
@@ -278,6 +292,7 @@ class AutomatedFormFiller:
             # 7b. Detect and process dynamic fields that appear after interactions.
             dynamic_elements, dynamic_shot = self.detect_dynamic_fields(
                 page,
+                url,
                 seen_elements=elements + fillable_elements
             )
             if dynamic_elements:
@@ -339,7 +354,7 @@ class AutomatedFormFiller:
                         result["fill_action_failed"] += 1
 
             result["fields_filled"] = filled_count
-            post_fill_shot = f"screenshots/{datetime.now().strftime('%Y%m%d_%H%M%S')}_post_fill.png"
+            post_fill_shot = self._build_screenshot_path(url, "post_fill")
             self._capture_form_preferred_screenshot(page, post_fill_shot)
             live_trace["post_fill_screenshot"] = post_fill_shot
             annotated_post = self._save_annotated_screenshot(
@@ -360,20 +375,40 @@ class AutomatedFormFiller:
                     # Enhanced success detection
                     dom_success = submitter.check_success()
                     live_trace["submit"]["dom_success"] = dom_success
-                    post_submit_shot = f"screenshots/{datetime.now().strftime('%Y%m%d_%H%M%S')}_post_submit.png"
+                    post_submit_shot = self._build_screenshot_path(url, "post_submit")
                     self._capture_form_preferred_screenshot(page, post_submit_shot)
                     live_trace["post_submit_screenshot"] = post_submit_shot
-                    ocr_success, ocr_excerpt = self._post_submit_ocr_signal(post_submit_shot)
+                    ocr_signal = self._post_submit_ocr_signal(post_submit_shot)
+                    ocr_success = bool(ocr_signal.get("success"))
+                    ocr_failure = bool(ocr_signal.get("failure"))
+                    ocr_excerpt = ocr_signal.get("excerpt", "")
                     live_trace["submit"]["ocr_success"] = ocr_success
+                    live_trace["submit"]["ocr_failure"] = ocr_failure
                     live_trace["submit"]["ocr_excerpt"] = ocr_excerpt
+                    live_trace["submit"]["ocr_success_matches"] = ocr_signal.get("success_matches", [])
+                    live_trace["submit"]["ocr_failure_matches"] = ocr_signal.get("failure_matches", [])
                     live_trace["submit"]["current_url"] = page.url
 
                     if dom_success or ocr_success:
                         result["Submission status"] = "success"
                         result["reason"] = "form submitted successfully"
                         logger.info(f"[OK] Successfully submitted {url}")
+                    elif ocr_failure:
+                        failure_matches = ocr_signal.get("failure_matches", [])
+                        if any("captcha" in m for m in failure_matches):
+                            result["reason"] = "captcha verification blocked submission"
+                        elif failure_matches:
+                            result["reason"] = (
+                                f"form submission failed validation checks ({failure_matches[0]})"
+                            )
+                        else:
+                            result["reason"] = "form submission failed validation checks"
+                        logger.warning(f"[!] Submission rejected for {url}")
                     else:
-                        result["reason"] = "submission completed but success uncertain"
+                        result["Submission status"] = "uncertain"
+                        result["reason"] = (
+                            "submission attempted; OCR screenshot had no clear success/failure signal"
+                        )
                         logger.warning(f"[!] Submission uncertain for {url}")
                 else:
                     if result["captcha_detected"]:
@@ -394,13 +429,17 @@ class AutomatedFormFiller:
 
         finally:
             if page:
-                page.close()
+                try:
+                    page.close()
+                except Exception as e:
+                    logger.warning(f"Failed to close page cleanly: {e}")
 
             result["processing_time"] = time.time() - start_time
             diagnostics = self._build_monitoring_diagnostics(live_trace, result)
             result.update(diagnostics)
             self.results.append(result)
             self._write_live_trace(live_trace)
+            self.save_results()
 
             # Log result
             status_icon = "[SUCCESS]" if result["Submission status"] == "success" else "[FAILED]"
@@ -527,7 +566,7 @@ class AutomatedFormFiller:
 
         return None
 
-    def detect_dynamic_fields(self, page, seen_elements=None, after_action=None):
+    def detect_dynamic_fields(self, page, url, seen_elements=None, after_action=None):
         """
         Detect fields that appear after interaction and return only new ones.
         """
@@ -548,7 +587,7 @@ class AutomatedFormFiller:
         if current_count <= initial_count:
             return [], ""
 
-        screenshot_path = f"screenshots/{datetime.now().strftime('%Y%m%d_%H%M%S')}_dynamic.png"
+        screenshot_path = self._build_screenshot_path(url, "dynamic")
         shot_meta = self._capture_form_preferred_screenshot(page, screenshot_path)
         boxes = self.detector.detect_form_elements(screenshot_path)
         discovered = DOMMapper.find_form_elements(
@@ -582,6 +621,19 @@ class AutomatedFormFiller:
             dom.get("type", ""),
         )
 
+    def _sanitize_site_name(self, url):
+        host = re.sub(r"^https?://", "", (url or "").strip(), flags=re.IGNORECASE)
+        host = host.split("/", 1)[0].split(":", 1)[0]
+        safe_host = re.sub(r"[^a-zA-Z0-9]+", "_", host).strip("_").lower()
+        return safe_host or "site"
+
+    def _build_screenshot_path(self, url, stage=""):
+        os.makedirs("screenshots", exist_ok=True)
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+        site = self._sanitize_site_name(url)
+        suffix = f"_{stage}" if stage else ""
+        return f"screenshots/{ts}_{site}{suffix}.png"
+
     def _load_config(self, config_path):
         if not config_path or not os.path.exists(config_path):
             return {}
@@ -609,24 +661,89 @@ class AutomatedFormFiller:
         try:
             img = cv2.imread(screenshot_path)
             if img is None:
-                return False, ""
+                return {
+                    "success": False,
+                    "failure": False,
+                    "success_matches": [],
+                    "failure_matches": [],
+                    "excerpt": ""
+                }
             h, w = img.shape[:2]
             text, conf = self.ocr.extract_with_context(screenshot_path, (0, 0, w, h), context_margin=0)
-            signal_patterns = [
-                r"\bthank you\b",
-                r"\bsuccess\b",
-                r"\bsubmitted\b",
-                r"\bsent\b",
-                r"\breceived\b",
-                r"\bwe.*(contact|reach out)\b",
-                r"application/json",  # API/test form responses (e.g. httpbin)
-                r'"form"\s*:',  # JSON form response
+            text_blob = text or ""
+            success_patterns = [
+                ("thank_you", r"\bthank(s)?\s+you\b", 3),
+                ("thanks_for_contacting", r"\bthanks?\s+for\s+(contacting|reaching out)\b", 3),
+                ("message_sent", r"\bmessage\s+(has\s+been\s+)?(sent|submitted)\b", 3),
+                ("form_submitted", r"\bform\s+(has\s+been\s+)?submitted\b", 3),
+                ("submission_received", r"\b(submission|request)\s+(has\s+been\s+)?received\b", 3),
+                ("we_will_contact", r"\bwe('ll| will)\s+(be in touch|contact you|reach out)\b", 3),
+                ("api_json", r"application/json", 2),  # API/test form responses (e.g. httpbin)
+                ("api_form_payload", r'"form"\s*:', 2),  # JSON form response
+                ("submitted_word", r"\bsubmitted\b", 1),
             ]
-            found = any(re.search(p, text or "", re.IGNORECASE) for p in signal_patterns)
-            excerpt = f"conf={conf:.1f} text='{self._clip(text, 200)}'"
-            return found, excerpt
+            failure_patterns = [
+                ("field_error", r"\bone or more fields have an error\b", 4),
+                ("required_fields", r"\brequired fields?\b", 2),
+                ("field_required", r"\bthis field is required\b", 3),
+                ("invalid_input", r"\binvalid\b", 2),
+                ("enter_valid_value", r"\bplease\s+enter\s+(an?\s+)?valid\b", 2),
+                ("please_choose", r"\bplease\s+choose\b", 1),
+                ("please_select", r"\bplease\s+select\b", 1),
+                ("check_try_again", r"\bplease check and try again\b", 3),
+                ("captcha", r"\b(?:re)?captcha\b", 4),
+                ("verification_failed", r"\bverification failed\b", 3),
+                ("something_wrong", r"\bsomething went wrong\b", 3),
+            ]
+
+            success_matches = []
+            success_score = 0
+            for label, pattern, weight in success_patterns:
+                if re.search(pattern, text_blob, re.IGNORECASE):
+                    success_matches.append(label)
+                    success_score += weight
+
+            failure_matches = []
+            failure_score = 0
+            for label, pattern, weight in failure_patterns:
+                if re.search(pattern, text_blob, re.IGNORECASE):
+                    failure_matches.append(label)
+                    failure_score += weight
+
+            success = False
+            failure = False
+            if success_score >= 3 and failure_score >= 3:
+                if failure_score >= success_score:
+                    failure = True
+                else:
+                    success = True
+            elif success_score >= 3:
+                success = True
+            elif failure_score >= 3:
+                failure = True
+
+            excerpt = (
+                f"conf={conf:.1f} "
+                f"s_score={success_score} f_score={failure_score} "
+                f"success={success_matches[:3]} "
+                f"failure={failure_matches[:3]} "
+                f"text='{self._clip(text_blob, 200)}'"
+            )
+            return {
+                "success": success,
+                "failure": failure,
+                "success_matches": success_matches[:5],
+                "failure_matches": failure_matches[:5],
+                "excerpt": excerpt
+            }
         except Exception as e:
-            return False, f"ocr error: {e}"
+            return {
+                "success": False,
+                "failure": False,
+                "success_matches": [],
+                "failure_matches": [],
+                "excerpt": f"ocr error: {e}"
+            }
 
     def _write_live_trace(self, trace):
         if not self.live_ocr_enabled:
@@ -782,6 +899,8 @@ class AutomatedFormFiller:
                 issue = "form_filler"
             elif submit.get("attempted") and not submit.get("clicked"):
                 issue = "submission_click"
+            elif submit.get("clicked") and submit.get("ocr_failure"):
+                issue = "submission_rejected"
             elif submit.get("clicked") and not (submit.get("dom_success") or submit.get("ocr_success")):
                 issue = "submission_confirmation"
             else:
@@ -798,7 +917,8 @@ class AutomatedFormFiller:
             f"non_fillable_skips={result.get('non_fillable_skips', 0)} "
             f"prefill_miss_skips={result.get('prefill_miss_skips', 0)} "
             f"submit_clicked={int(bool(submit.get('clicked')))} "
-            f"submit_success_signal={int(bool(submit.get('dom_success') or submit.get('ocr_success')))}"
+            f"submit_success_signal={int(bool(submit.get('dom_success') or submit.get('ocr_success')))} "
+            f"submit_failure_signal={int(bool(submit.get('ocr_failure')))}"
         )
 
         return {
@@ -825,11 +945,7 @@ class AutomatedFormFiller:
                 continue
 
             self.process_url(url)
-
-            # Save progress every 10 URLs
-            if (i + 1) % 10 == 0:
-                self.save_results()
-                logger.info(f"Progress: {i + 1}/{total} URLs processed")
+            logger.info(f"Progress: {i + 1}/{total} URLs processed")
 
             # Rate limiting
             if i < len(urls) - 1:
@@ -838,22 +954,63 @@ class AutomatedFormFiller:
         self.save_results()
         logger.info(f"Batch processing complete. Processed {total} URLs.")
 
-    def save_results(self, output_path="results.csv"):
-        """Save results with proper error handling"""
+    def save_results(self, output_path=None):
+        """Incrementally upsert run results into CSV."""
         try:
-            with open(output_path, 'w', newline='', encoding='utf-8') as f:
-                fieldnames = [
-                    "URL", "Submission status", "reason", "timestamp",
-                    "fields_filled", "total_fields", "captcha_detected", "processing_time",
-                    "monitor_issue", "monitor_summary",
-                    "elements_seen", "elements_ready_to_fill", "fill_attempts",
-                    "fill_action_failed", "fill_verify_failed",
-                    "low_confidence_skips", "non_fillable_skips", "prefill_miss_skips"
-                ]
+            out_path = output_path or self.results_output_path
+            if not os.path.isabs(out_path):
+                out_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), out_path)
+
+            out_dir = os.path.dirname(out_path)
+            if out_dir:
+                os.makedirs(out_dir, exist_ok=True)
+
+            fieldnames = ["URL", "Submission", "Reason"]
+            merged_by_url = {}
+            ordered_urls = []
+
+            if os.path.exists(out_path):
+                with open(out_path, 'r', newline='', encoding='utf-8') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        url = (row.get("URL") or "").strip()
+                        if not url:
+                            continue
+                        merged_by_url[url] = {
+                            "URL": url,
+                            "Submission": (
+                                row.get("Submission")
+                                or row.get("Submission status")
+                                or "unsuccessful"
+                            ),
+                            "Reason": (row.get("Reason") or row.get("reason") or "")
+                        }
+                        if url not in ordered_urls:
+                            ordered_urls.append(url)
+
+            for row in self.results:
+                url = (row.get("URL") or "").strip()
+                if not url:
+                    continue
+                exported = {
+                    "URL": url,
+                    "Submission": (
+                        row.get("Submission status")
+                        or row.get("Submission")
+                        or "unsuccessful"
+                    ),
+                    "Reason": (row.get("reason") or row.get("Reason") or "")
+                }
+                if url not in merged_by_url:
+                    ordered_urls.append(url)
+                merged_by_url[url] = exported
+
+            with open(out_path, 'w', newline='', encoding='utf-8') as f:
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
-                writer.writerows(self.results)
-            logger.info(f"Results saved to {output_path}")
+                writer.writerows([merged_by_url[url] for url in ordered_urls if url in merged_by_url])
+
+            logger.info(f"Results saved incrementally to {out_path} ({len(ordered_urls)} rows)")
         except Exception as e:
             logger.error(f"Failed to save results: {e}")
 

@@ -1,0 +1,22 @@
+{
+  "url": "https://www.fingent.com/contact/",
+  "timestamp": "2026-02-11T17:09:35.109443",
+  "captcha_detected": false,
+  "initial_screenshot": "",
+  "annotated_screenshot": "",
+  "post_fill_screenshot": "",
+  "annotated_post_fill_screenshot": "",
+  "post_submit_screenshot": "",
+  "fields": [],
+  "submit": {
+    "attempted": false,
+    "clicked": false,
+    "dom_success": false,
+    "ocr_success": false,
+    "ocr_failure": false,
+    "current_url": "",
+    "ocr_excerpt": "",
+    "ocr_success_matches": [],
+    "ocr_failure_matches": []
+  }
+}
