@@ -1,0 +1,19 @@
+{
+  "url": "https://folio3.com/contact-us/",
+  "timestamp": "2026-02-11T14:01:37.135364",
+  "captcha_detected": false,
+  "initial_screenshot": "",
+  "annotated_screenshot": "",
+  "post_fill_screenshot": "",
+  "annotated_post_fill_screenshot": "",
+  "post_submit_screenshot": "",
+  "fields": [],
+  "submit": {
+    "attempted": false,
+    "clicked": false,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "",
+    "ocr_excerpt": ""
+  }
+}

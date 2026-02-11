@@ -1,0 +1,207 @@
+{
+  "url": "https://www.merixstudio.com/contact",
+  "timestamp": "2026-02-11T15:49:32.474309",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_154943.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_154943_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_154953_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_154953_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_154959_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//*[@id=\"message-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4\"]",
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "message",
+        "id": "message-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4",
+        "class": "hs-input hs-fieldtype-textarea",
+        "label_text": "How can we help?",
+        "nearby_text": "How can we help?"
+      },
+      "box": [
+        567,
+        500,
+        560,
+        84
+      ],
+      "source": "dom",
+      "ocr_confidence": 86.42857142857143,
+      "ocr_text": "how can we help? q add attachment",
+      "classified_as": "subject",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//*[@id=\"company-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "company",
+        "id": "company-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4",
+        "class": "hs-input",
+        "label_text": "Company name",
+        "nearby_text": "Company name"
+      },
+      "box": [
+        567,
+        405,
+        560,
+        56
+      ],
+      "source": "dom",
+      "ocr_confidence": 94.5,
+      "ocr_text": "company name how can we help?",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "//*[@id=\"phone-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "tel",
+        "name": "phone",
+        "id": "phone-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4",
+        "class": "hs-input",
+        "label_text": "Phone number",
+        "nearby_text": "Phone number"
+      },
+      "box": [
+        567,
+        310,
+        560,
+        56
+      ],
+      "source": "dom",
+      "ocr_confidence": 95.25,
+      "ocr_text": "phone number company name",
+      "classified_as": "phone",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"email-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "email",
+        "id": "email-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4",
+        "class": "hs-input",
+        "label_text": "Email*",
+        "nearby_text": "Email*"
+      },
+      "box": [
+        567,
+        215,
+        560,
+        56
+      ],
+      "source": "dom",
+      "ocr_confidence": 85.33333333333333,
+      "ocr_text": "emall* phone number",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//*[@id=\"lastname-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "lastname",
+        "id": "lastname-04bacdb4-66f0-4f34-8eb0-fc27889dd5d4",
+        "class": "hs-input",
+        "label_text": "Last Name",
+        "nearby_text": "Last Name"
+      },
+      "box": [
+        567,
+        120,
+        560,
+        56
+      ],
+      "source": "dom",
+      "ocr_confidence": 73.0,
+      "ocr_text": "last name. emall*",
+      "classified_as": "last_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 5,
+      "xpath": "/html/body/div[5]/div/nav/ul/li[6]/a",
+      "dom_type": "a",
+      "attributes": {
+        "class": "nav-link-item current-contact w--current",
+        "label_text": "",
+        "nearby_text": "Contact"
+      },
+      "box": [
+        567,
+        25,
+        560,
+        56
+      ],
+      "source": "dom",
+      "ocr_confidence": 88.75,
+      "ocr_text": "insights careere contact request for pr last name",
+      "classified_as": "last_name",
+      "classification_confidence": 100.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 6,
+      "xpath": "/html/body/section/div/div/form/div[2]/div/form/div/div[2]/input",
+      "dom_type": "input",
+      "attributes": {
+        "type": "submit",
+        "class": "hs-button primary large",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        567,
+        745,
+        124,
+        56
+      ],
+      "source": "dom",
+      "ocr_confidence": 84.16666666666667,
+      "ocr_text": "more details, please r submit >",
+      "classified_as": "submit",
+      "classification_confidence": 98.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": true,
+    "current_url": "https://www.merixstudio.com/contact",
+    "ocr_excerpt": "conf=92.0 text='please complete this and build doe together jehn@example.com we are the best choice for complex, durable products that please enter valid emall address. solve difficult problems and improve people's l...'"
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    64,
+    238
+  ],
+  "form_bbox": {
+    "x": 64.0,
+    "y": 238.0,
+    "width": 1135.0,
+    "height": 801.0
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "url": "https://www.netguru.com/estimate-project",
+  "timestamp": "2026-02-11T13:39:28.085012",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_133942.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_133942_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_133949_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_133949_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_133953_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//*[@id=\"firstname-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "firstname",
+        "id": "firstname-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input"
+      },
+      "box": [
+        48,
+        590,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 89.6,
+      "ocr_text": "first name* phone number c",
+      "classified_as": "first_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//*[@id=\"lastname-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "lastname",
+        "id": "lastname-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input"
+      },
+      "box": [
+        447,
+        590,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 91.16666666666667,
+      "ocr_text": "last name* e company name h",
+      "classified_as": "last_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "//*[@id=\"email-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "email",
+        "id": "email-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input"
+      },
+      "box": [
+        845,
+        590,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 91.14285714285714,
+      "ocr_text": "email* how did you hear about us?*",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"phone-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "tel",
+        "name": "phone",
+        "id": "phone-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input"
+      },
+      "box": [
+        48,
+        693,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 91.3,
+      "ocr_text": "phone number c & tell us more about your project*",
+      "classified_as": "phone",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//*[@id=\"company-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "company",
+        "id": "company-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input"
+      },
+      "box": [
+        447,
+        693,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 94.0,
+      "ocr_text": "company name h d",
+      "classified_as": "company",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 5,
+      "xpath": "//*[@id=\"source__declared_-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "source__declared_",
+        "id": "source__declared_-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input"
+      },
+      "box": [
+        845,
+        693,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 92.16666666666667,
+      "ocr_text": "how did you hear about us?* do you need an nda first?",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": true,
+    "current_url": "https://www.netguru.com/estimate-project",
+    "ocr_excerpt": "conf=91.4 text='‘reh hel you need a partner. we're here to help. we would like to understand your needs. before we start, please fill in the form or send your rfp or inquiry via hello@netguru.com. for job-related inq...'"
+  }
+}

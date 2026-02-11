@@ -1,0 +1,275 @@
+{
+  "url": "https://10pearls.com/get-in-touch/",
+  "timestamp": "2026-02-11T13:27:40.934807",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_132755.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_132755_annotated.png",
+  "post_submit_screenshot": "screenshots/20260211_132828_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//*[@id=\"wpforms-127560-field_5\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "wpforms[fields][5]",
+        "id": "wpforms-127560-field_5",
+        "class": "wpforms-field-large"
+      },
+      "box": [
+        673,
+        590,
+        537,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 75.0,
+      "ocr_text": "message:",
+      "classified_as": "message",
+      "classification_confidence": 100.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//*[@id=\"wpforms-127560-field_8\"]",
+      "dom_type": "select",
+      "attributes": {
+        "name": "wpforms[fields][8]",
+        "id": "wpforms-127560-field_8",
+        "class": "wpforms-field-large"
+      },
+      "box": [
+        673,
+        498,
+        537,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 89.8,
+      "ocr_text": "how car we help? message",
+      "classified_as": "message",
+      "classification_confidence": 100.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 2,
+      "xpath": "//*[@id=\"wpforms-127560-field_2\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "wpforms[fields][2]",
+        "id": "wpforms-127560-field_2",
+        "class": "wpforms-field-large"
+      },
+      "box": [
+        673,
+        406,
+        537,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 84.88888888888889,
+      "ocr_text": "how cid you hear us? how car we help?",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"wpforms-127560-field_6\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "number",
+        "name": "wpforms[fields][6]",
+        "id": "wpforms-127560-field_6",
+        "class": "wpforms-field-large"
+      },
+      "box": [
+        952,
+        314,
+        258,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 89.0,
+      "ocr_text": "phone number",
+      "classified_as": "phone",
+      "classification_confidence": 100.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//*[@id=\"wpforms-127560-field_1\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "wpforms[fields][1]",
+        "id": "wpforms-127560-field_1",
+        "class": "wpforms-field-large wpforms-field-required"
+      },
+      "box": [
+        673,
+        314,
+        258,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 83.0,
+      "ocr_text": "company pr how ciel you hear about us?",
+      "classified_as": "company",
+      "classification_confidence": 100.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 5,
+      "xpath": "//*[@id=\"wpforms-127560-field_3\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "wpforms[fields][3]",
+        "id": "wpforms-127560-field_3",
+        "class": "wpforms-field-large wpforms-field-required"
+      },
+      "box": [
+        952,
+        222,
+        258,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 92.33333333333333,
+      "ocr_text": "email phone number",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 6,
+      "xpath": "//*[@id=\"wpforms-127560-field_4\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "wpforms[fields][4]",
+        "id": "wpforms-127560-field_4",
+        "class": "wpforms-field-large wpforms-field-required"
+      },
+      "box": [
+        673,
+        222,
+        258,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 82.66666666666667,
+      "ocr_text": "en company pr",
+      "classified_as": "company",
+      "classification_confidence": 100.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 7,
+      "xpath": "//*[@id=\"wpforms-submit-127560\"]",
+      "dom_type": "button",
+      "attributes": {
+        "type": "submit",
+        "name": "wpforms[submit]",
+        "id": "wpforms-submit-127560",
+        "class": "wpforms-submit"
+      },
+      "box": [
+        1089,
+        744,
+        121,
+        41
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "low confidence"
+    },
+    {
+      "index": 8,
+      "xpath": "//*[@id=\"wpforms-form-127560\"]",
+      "dom_type": "form",
+      "attributes": {
+        "id": "wpforms-form-127560",
+        "class": "wpforms-validate wpforms-form wpforms-ajax-form"
+      },
+      "box": [
+        673,
+        734,
+        1,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 84.0,
+      "ocr_text": "l",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 9,
+      "xpath": "/html/body/div/div/div/div/section/div[2]/div/div/section/div/div[2]/div/div/div/div/form/div[2]",
+      "dom_type": "div",
+      "attributes": {
+        "class": "wpforms-field-container"
+      },
+      "box": [
+        932,
+        188,
+        0,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 75.5,
+      "ocr_text": "careers en",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 10,
+      "xpath": "//*[@id=\"wpforms-127560-field_2-container\"]",
+      "dom_type": "div",
+      "attributes": {
+        "id": "wpforms-127560-field_2-container",
+        "class": "wpforms-field wpforms-field-text"
+      },
+      "box": [
+        932,
+        359,
+        0,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "low confidence"
+    }
+  ],
+  "yolo_detections": [],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": true,
+    "ocr_success": true,
+    "current_url": "https://10pearls.com/get-in-touch/",
+    "ocr_excerpt": "conf=85.7 text='forn as ro: bes lease see tie be ow. we’re the full package. naire email global digital engineering & example corp john@example.com innavatian nartnar (pearls company services platforms insights caree...'"
+  }
+}

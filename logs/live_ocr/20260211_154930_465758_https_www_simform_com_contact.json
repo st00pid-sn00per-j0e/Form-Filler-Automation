@@ -1,0 +1,203 @@
+{
+  "url": "https://www.simform.com/contact/",
+  "timestamp": "2026-02-11T15:49:08.138503",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_154915.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_154915_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_154922_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_154922_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_154928_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//*[@id=\"creference\"]",
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "reference",
+        "id": "creference",
+        "class": "label-input-field textarea",
+        "placeholder": "How Did You hear About Us?",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        719,
+        785,
+        132
+      ],
+      "source": "dom",
+      "ocr_confidence": 95.23076923076923,
+      "ocr_text": "3. where did you hear about us? how did you hear about us?",
+      "classified_as": "phone",
+      "classification_confidence": 66.66666666666667,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//*[@id=\"cdescription\"]",
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "projectDescription",
+        "id": "cdescription",
+        "class": "label-input-field textarea",
+        "placeholder": "Describe Your Project Briefly*",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        333,
+        785,
+        132
+      ],
+      "source": "dom",
+      "ocr_confidence": 94.08333333333333,
+      "ocr_text": "2. tell us more about your project describe your project briefly* the",
+      "classified_as": "message",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "//*[@id=\"cbudget\"]",
+      "dom_type": "select",
+      "attributes": {
+        "name": "budget",
+        "id": "cbudget",
+        "class": "label-input-field fill ",
+        "label_text": "",
+        "nearby_text": "Please Choose the Budget* $25K to $50K $50K to $200K $200K to $500K $500K + Not Sure"
+      },
+      "box": [
+        0,
+        485,
+        785,
+        55
+      ],
+      "source": "dom",
+      "ocr_confidence": 88.8,
+      "ocr_text": "| please choose the budget*",
+      "classified_as": "dropdown",
+      "classification_confidence": 95.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"cwebsite\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "website",
+        "id": "cwebsite",
+        "class": "label-input-field ",
+        "placeholder": "Company Name or Website",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        194,
+        785,
+        55
+      ],
+      "source": "dom",
+      "ocr_confidence": 95.75,
+      "ocr_text": "company name or website",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//*[@id=\"js-webinar-banner\"]",
+      "dom_type": "div",
+      "attributes": {
+        "id": "js-webinar-banner",
+        "class": "webinar-banner",
+        "label_text": "",
+        "nearby_text": "Webinar Accelerate Your Move to Azure Make your Azure migration deliver analytics, governance, and AI readiness Register Now Engineering Industries AI Accelerators Resources Why Simform About Us Contact Us What will happen next? We will get back to you within 24 hours You are a step closer to buildi"
+      },
+      "box": [
+        0,
+        44,
+        785,
+        55
+      ],
+      "source": "dom",
+      "ocr_confidence": 83.94444444444444,
+      "ocr_text": "to azure tion deliver analytics, governance, and al readiness industries al accelerators » resources whysimform + about us",
+      "classified_as": "name",
+      "classification_confidence": 77.77777777777779,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 5,
+      "xpath": "/html/body/header/div/nav/div/nav/ul/li[6]/a",
+      "dom_type": "a",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "About Us"
+      },
+      "box": [
+        405,
+        119,
+        380,
+        55
+      ],
+      "source": "dom",
+      "ocr_confidence": 66.4,
+      "ocr_text": "whysimform v about us, con",
+      "classified_as": "company",
+      "classification_confidence": 60.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 6,
+      "xpath": "/html/body/header/div/nav/div/nav/ul/li[3]/a",
+      "dom_type": "a",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "AI Accelerators"
+      },
+      "box": [
+        0,
+        119,
+        380,
+        55
+      ],
+      "source": "dom",
+      "ocr_confidence": 82.0,
+      "ocr_text": "industries al accelerators resources",
+      "classified_as": "phone",
+      "classification_confidence": 75.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "https://www.simform.com/contact/",
+    "ocr_excerpt": "conf=88.3 text='to azure register n deliver analytics, governance, and al readiness industries al accelerators v v us. ¢ 2. tell us more about your project hello, | would like to know more about your services. please...'"
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    399,
+    450
+  ],
+  "form_bbox": {
+    "x": 399.5,
+    "y": 450.0,
+    "width": 785.0,
+    "height": 1112.0
+  }
+}

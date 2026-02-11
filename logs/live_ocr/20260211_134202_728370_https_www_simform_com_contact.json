@@ -1,0 +1,120 @@
+{
+  "url": "https://www.simform.com/contact/",
+  "timestamp": "2026-02-11T13:41:40.841024",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_134149.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_134149_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_134155_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_134155_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_134159_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//*[@id=\"cwebsite\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "website",
+        "id": "cwebsite",
+        "class": "label-input-field ",
+        "placeholder": "Company Name or Website"
+      },
+      "box": [
+        399,
+        644,
+        785,
+        55
+      ],
+      "source": "dom",
+      "ocr_confidence": 96.0,
+      "ocr_text": "company name or website",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//*[@id=\"cname\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "name",
+        "id": "cname",
+        "class": "label-input-field",
+        "placeholder": "Your Name*"
+      },
+      "box": [
+        399,
+        494,
+        785,
+        55
+      ],
+      "source": "dom",
+      "ocr_confidence": 95.33333333333333,
+      "ocr_text": "1. tell us about your company",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "//*[@id=\"cphone\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "tel",
+        "name": "phone",
+        "id": "cphone",
+        "class": "label-input-field ",
+        "placeholder": "Your Phone Number"
+      },
+      "box": [
+        804,
+        569,
+        380,
+        55
+      ],
+      "source": "dom",
+      "ocr_confidence": 93.0,
+      "ocr_text": "your phone number",
+      "classified_as": "phone",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"cemail\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "email",
+        "id": "cemail",
+        "class": "label-input-field",
+        "placeholder": "Your Email*"
+      },
+      "box": [
+        399,
+        569,
+        380,
+        55
+      ],
+      "source": "dom",
+      "ocr_confidence": 66.5,
+      "ocr_text": "name er",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": true,
+    "current_url": "https://www.simform.com/contact/",
+    "ocr_excerpt": "conf=91.2 text='ha ppen next? get in touch to discuss your project, request a quote or even just to pick our brains. we will get back to you within 24 hours to apply for a job, visit the career page. you are a step c...'"
+  }
+}

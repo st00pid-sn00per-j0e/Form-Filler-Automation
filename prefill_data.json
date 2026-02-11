@@ -1,0 +1,13 @@
+
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "full_name": "John Doe",
+  "email": "john@example.com",
+  "phone": "+1234567890",
+  "company_name": "Example Corp",
+  "subject": "Business Inquiry",
+  "Country": "United States",
+  "Where did you hear about us" : "Google Search",
+  "message": "Hello, I would like to know more about your services."
+}

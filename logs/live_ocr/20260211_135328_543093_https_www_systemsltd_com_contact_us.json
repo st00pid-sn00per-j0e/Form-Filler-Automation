@@ -1,0 +1,166 @@
+{
+  "url": "https://www.systemsltd.com/contact-us",
+  "timestamp": "2026-02-11T13:53:08.272336",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_135319.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_135319_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_135323_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_135323_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_135326_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "/html/body/div[3]/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-consent-bar",
+        "label_text": "",
+        "nearby_text": "We value your privacy We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies. Customize Reject All Accept All"
+      },
+      "box": [
+        360,
+        771,
+        263,
+        52
+      ],
+      "source": "dom",
+      "ocr_confidence": 84.75,
+      "ocr_text": "“perience, serve personalized ads or and anal ies,",
+      "classified_as": "choice",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 1,
+      "xpath": "/html/body/div[3]/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-consent-bar",
+        "label_text": "",
+        "nearby_text": "We value your privacy We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies. Customize Reject All Accept All"
+      },
+      "box": [
+        73,
+        771,
+        263,
+        52
+      ],
+      "source": "dom",
+      "ocr_confidence": 89.57142857142857,
+      "ocr_text": "we use cookies to enhance your browsing experience, ‘accept all’, you ouruse of cookies.",
+      "classified_as": "choice",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 2,
+      "xpath": "/html/body/div[3]/div/div/p",
+      "dom_type": "p",
+      "attributes": {
+        "class": "cky-title",
+        "label_text": "",
+        "nearby_text": "We value your privacy We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies. Customize Reject All Accept All"
+      },
+      "box": [
+        360,
+        671,
+        263,
+        52
+      ],
+      "source": "dom",
+      "ocr_confidence": 86.42857142857143,
+      "ocr_text": "“perience, serve personalized ads or and anal",
+      "classified_as": "subject",
+      "classification_confidence": 90.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 3,
+      "xpath": "/html/body/div[3]/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-consent-bar",
+        "label_text": "",
+        "nearby_text": "We value your privacy We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies. Customize Reject All Accept All"
+      },
+      "box": [
+        73,
+        667,
+        263,
+        52
+      ],
+      "source": "dom",
+      "ocr_confidence": 95.66666666666667,
+      "ocr_text": "we value your privacy we use cookies to enhance your browsing experience,",
+      "classified_as": "choice",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 4,
+      "xpath": "//*[@id=\"edit-city\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "city",
+        "id": "edit-city",
+        "class": "form-control js-webform-counter webform-counter form-text required",
+        "placeholder": "City*",
+        "label_text": "",
+        "nearby_text": "20 character(s) remaining"
+      },
+      "box": [
+        360,
+        595,
+        263,
+        52
+      ],
+      "source": "dom",
+      "ocr_confidence": 57.0,
+      "ocr_text": "jie",
+      "classified_as": "dropdown",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 5,
+      "xpath": "//*[@id=\"edit-name\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "name",
+        "id": "edit-name",
+        "class": "form-control js-webform-counter webform-counter form-text required",
+        "placeholder": "Your name*",
+        "label_text": "",
+        "nearby_text": "50 character(s) remaining"
+      },
+      "box": [
+        73,
+        595,
+        263,
+        52
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "https://www.systemsltd.com/contact-us",
+    "ocr_excerpt": "conf=88.7 text='getintouch ~ careers investors q | | how he d you: please fill the form below e.g. +92 300 1234567 we value your privacy we use cookies to enhance your browsing experience. serve personalized ads or c...'"
+  }
+}

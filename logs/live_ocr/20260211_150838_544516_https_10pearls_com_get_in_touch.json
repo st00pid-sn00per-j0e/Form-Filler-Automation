@@ -1,0 +1,259 @@
+{
+  "url": "https://10pearls.com/get-in-touch/",
+  "timestamp": "2026-02-11T15:08:14.205147",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_150829.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_150829_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_150834_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_150834_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_150837_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//*[@id=\"wpforms-127560-field_5\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "wpforms[fields][5]",
+        "id": "wpforms-127560-field_5",
+        "class": "wpforms-field-large",
+        "label_text": "Message",
+        "nearby_text": "Message"
+      },
+      "box": [
+        0,
+        402,
+        537,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "message",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//*[@id=\"wpforms-127560-field_8\"]",
+      "dom_type": "select",
+      "attributes": {
+        "name": "wpforms[fields][8]",
+        "id": "wpforms-127560-field_8",
+        "class": "wpforms-field-large",
+        "label_text": "How can we help?",
+        "nearby_text": "How can we help? Services & Solutions Careers"
+      },
+      "box": [
+        0,
+        310,
+        537,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "dropdown",
+      "classification_confidence": 70.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 2,
+      "xpath": "//*[@id=\"wpforms-127560-field_2\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "wpforms[fields][2]",
+        "id": "wpforms-127560-field_2",
+        "class": "wpforms-field-large",
+        "label_text": "How did you hear about us?",
+        "nearby_text": "How did you hear about us?"
+      },
+      "box": [
+        0,
+        218,
+        537,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "low confidence"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"wpforms-127560-field_6\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "number",
+        "name": "wpforms[fields][6]",
+        "id": "wpforms-127560-field_6",
+        "class": "wpforms-field-large",
+        "label_text": "Phone Number",
+        "nearby_text": "Phone Number"
+      },
+      "box": [
+        279,
+        126,
+        258,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "phone",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//*[@id=\"wpforms-127560-field_1\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "wpforms[fields][1]",
+        "id": "wpforms-127560-field_1",
+        "class": "wpforms-field-large wpforms-field-required",
+        "label_text": "Company *",
+        "nearby_text": "Company *"
+      },
+      "box": [
+        0,
+        126,
+        258,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "company",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 5,
+      "xpath": "//*[@id=\"wpforms-127560-field_3\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "wpforms[fields][3]",
+        "id": "wpforms-127560-field_3",
+        "class": "wpforms-field-large wpforms-field-required",
+        "label_text": "Email *",
+        "nearby_text": "Email *"
+      },
+      "box": [
+        279,
+        34,
+        258,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 6,
+      "xpath": "//*[@id=\"wpforms-127560-field_4\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "wpforms[fields][4]",
+        "id": "wpforms-127560-field_4",
+        "class": "wpforms-field-large wpforms-field-required",
+        "label_text": "Name *",
+        "nearby_text": "Name *"
+      },
+      "box": [
+        0,
+        34,
+        258,
+        43
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 7,
+      "xpath": "/html/body/aside/div/div/div[2]",
+      "dom_type": "div",
+      "attributes": {
+        "class": "moove-gdpr-button-holder",
+        "label_text": "",
+        "nearby_text": "We use cookies to personalize content, to provide social media features, and to analyze our traffic. We also share information about your use of our site with our social media and analytics partners. Accept Manage Preferences Close GDPR Cookie Banner"
+      },
+      "box": [
+        416,
+        556,
+        121,
+        41
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "choice",
+      "classification_confidence": 85.71428571428572,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 8,
+      "xpath": "//*[@id=\"wpforms-form-127560\"]",
+      "dom_type": "form",
+      "attributes": {
+        "id": "wpforms-form-127560",
+        "class": "wpforms-validate wpforms-form wpforms-ajax-form",
+        "label_text": "",
+        "nearby_text": "Name * Email * Company * Phone Number How did you hear about us? How can we help? Services & Solutions Careers Phone Name can Message Send"
+      },
+      "box": [
+        0,
+        546,
+        1,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": true,
+    "ocr_success": false,
+    "current_url": "https://10pearls.com/get-in-touch/",
+    "ocr_excerpt": "ocr error: tesseract is not installed or it's not in your PATH. See README file for more information."
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    673,
+    188
+  ],
+  "form_bbox": {
+    "x": 673.5,
+    "y": 188.140625,
+    "width": 537.5,
+    "height": 556.0
+  }
+}

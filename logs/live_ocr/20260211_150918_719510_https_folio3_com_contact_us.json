@@ -1,0 +1,159 @@
+{
+  "url": "https://folio3.com/contact-us/",
+  "timestamp": "2026-02-11T15:08:59.188848",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_150910.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_150910_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_150915_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_150915_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_150918_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//input[@name=\"phone\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "phone",
+        "class": "wpcf7-form-control wpcf7-text wpcf7-validates-as-required teleNumber",
+        "placeholder": "Phone Number",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        276,
+        230,
+        270,
+        61
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "phone",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//input[@name=\"email\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "email",
+        "class": "wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email",
+        "placeholder": "Email Address",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        230,
+        270,
+        61
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "//input[@name=\"last_name\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "last_name",
+        "class": "wpcf7-form-control wpcf7-text wpcf7-validates-as-required",
+        "placeholder": "Last Name",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        276,
+        130,
+        270,
+        61
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "last_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//input[@name=\"full_name\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "full_name",
+        "class": "wpcf7-form-control wpcf7-text wpcf7-validates-as-required",
+        "placeholder": "First Name",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        0,
+        130,
+        270,
+        61
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "first_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "/html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div[3]/div/p/input",
+      "dom_type": "input",
+      "attributes": {
+        "type": "submit",
+        "class": "wpcf7-form-control wpcf7-submit has-spinner",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        177,
+        370,
+        119,
+        40
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "dropdown",
+      "classification_confidence": 71.42857142857143,
+      "status": "skipped",
+      "reason": "no prefill data"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "https://folio3.com/contact-us/",
+    "ocr_excerpt": "ocr error: tesseract is not installed or it's not in your PATH. See README file for more information."
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    665,
+    142
+  ],
+  "form_bbox": {
+    "x": 665.109375,
+    "y": 142.125,
+    "width": 546.390625,
+    "height": 449.5
+  }
+}

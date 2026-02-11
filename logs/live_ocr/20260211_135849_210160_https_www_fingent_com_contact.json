@@ -1,0 +1,221 @@
+{
+  "url": "https://www.fingent.com/contact/",
+  "timestamp": "2026-02-11T13:58:24.812933",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_135833.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_135833_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_135842_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_135842_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_135846_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//*[@id=\"description\"]",
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "your-message",
+        "id": "description",
+        "class": "wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control",
+        "placeholder": "Tell us a bit about your software requirement (*)",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        101,
+        273,
+        690,
+        77
+      ],
+      "source": "dom",
+      "ocr_confidence": 90.25,
+      "ocr_text": "tellus a bit about your software requirement (*)",
+      "classified_as": "message",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//input[@name=\"attach-file\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "file",
+        "name": "attach-file",
+        "class": "wpcf7-form-control wpcf7-file form-control",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        463,
+        549,
+        328,
+        44
+      ],
+      "source": "dom",
+      "ocr_confidence": 79.91666666666667,
+      "ocr_text": "upload project fle not exceeding & filetype: pdf choose file no fle",
+      "classified_as": "dropdown",
+      "classification_confidence": 100.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 2,
+      "xpath": "//select[@name=\"you-hear\"]",
+      "dom_type": "select",
+      "attributes": {
+        "name": "you-hear",
+        "class": "wpcf7-form-control wpcf7-select form-control",
+        "label_text": "",
+        "nearby_text": "- Select - Google Search Clutch LinkedIn Referral Email ChatGPT Other"
+      },
+      "box": [
+        101,
+        552,
+        328,
+        44
+      ],
+      "source": "dom",
+      "ocr_confidence": 89.5,
+      "ocr_text": "how did you hear about us?",
+      "classified_as": "email",
+      "classification_confidence": 90.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 3,
+      "xpath": "//select[@name=\"your-country\"]",
+      "dom_type": "select",
+      "attributes": {
+        "name": "your-country",
+        "class": "wpcf7-form-control wpcf7-select wpcf7-validates-as-required form-control",
+        "label_text": "",
+        "nearby_text": "Choose Country (*) Afghanistan Albania Algeria American Samoa Andorra Angola Anguilla Antigua & Barbuda Argentina Armenia Aruba Algeria Australia Austria Azerbaijan Bahamas Bahrain Bangladesh Barbados Belarus Belgium Belize Benin Bermuda Bhutan Bolivia Bonaire Bosnia & Herzegovina Botswana Brazil Br"
+      },
+      "box": [
+        463,
+        454,
+        328,
+        44
+      ],
+      "source": "dom",
+      "ocr_confidence": 70.85714285714286,
+      "ocr_text": "choose country ¢*) ‘upload project file nat exceeding @ mb. alowed fle type: pdf",
+      "classified_as": "dropdown",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 4,
+      "xpath": "//input[@name=\"your-phone\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "tel",
+        "name": "your-phone",
+        "class": "wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel phone form-control",
+        "placeholder": "Your Phone (*)",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        101,
+        454,
+        328,
+        44
+      ],
+      "source": "dom",
+      "ocr_confidence": 91.71428571428571,
+      "ocr_text": "how did you hear about us? v",
+      "classified_as": "phone",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 5,
+      "xpath": "//input[@name=\"your-email\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "your-email",
+        "class": "wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control businessemail",
+        "placeholder": "Your Business Email (*)",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        463,
+        380,
+        328,
+        44
+      ],
+      "source": "dom",
+      "ocr_confidence": 59.0,
+      "ocr_text": "| |",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 6,
+      "xpath": "//input[@name=\"first-name\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "first-name",
+        "class": "wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control",
+        "placeholder": "Full Name (*)",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        101,
+        380,
+        328,
+        44
+      ],
+      "source": "dom",
+      "ocr_confidence": 88.0,
+      "ocr_text": "|",
+      "classified_as": "first_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 7,
+      "xpath": "/html/body/div/div/div/section/div/div/div/section/div/div/div/div[2]/div/div/div/form/p/input",
+      "dom_type": "input",
+      "attributes": {
+        "type": "submit",
+        "class": "wpcf7-form-control wpcf7-submit has-spinner btn contact-us primary-btn mt-3",
+        "label_text": "",
+        "nearby_text": ""
+      },
+      "box": [
+        101,
+        632,
+        141,
+        52
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "phone",
+      "classification_confidence": 71.42857142857143,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "https://www.fingent.com/contact/",
+    "ocr_excerpt": "conf=86.1 text='@fingent servicesy industries» products~ = contactirep ~ = submit your rfp here | = | or drop us an email at: sales inquiries info@fingent.com © +1 (914) 615-9170 how did you hear about us? uplead pre...'"
+  }
+}

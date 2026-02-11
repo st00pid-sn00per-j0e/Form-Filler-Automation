@@ -1,0 +1,17 @@
+{
+  "url": "https://www.systemsltd.com/contact-us",
+  "timestamp": "2026-02-11T13:36:17.754274",
+  "captcha_detected": false,
+  "initial_screenshot": "",
+  "annotated_screenshot": "",
+  "post_submit_screenshot": "",
+  "fields": [],
+  "submit": {
+    "attempted": false,
+    "clicked": false,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "",
+    "ocr_excerpt": ""
+  }
+}

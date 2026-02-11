@@ -1,0 +1,280 @@
+{
+  "url": "https://httpbin.org/forms/post",
+  "timestamp": "2026-02-11T13:31:29.747077",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_133134.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_133134_annotated.png",
+  "post_submit_screenshot": "screenshots/20260211_133147_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//textarea[@name=\"comments\"]",
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "comments"
+      },
+      "box": [
+        151,
+        538,
+        170,
+        36
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "message",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//input[@name=\"custemail\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "custemail"
+      },
+      "box": [
+        111,
+        90,
+        177,
+        21
+      ],
+      "source": "dom",
+      "ocr_confidence": 74.0,
+      "ocr_text": "<7",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "//input[@name=\"custtel\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "tel",
+        "name": "custtel"
+      },
+      "box": [
+        82,
+        53,
+        177,
+        21
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "phone",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//input[@name=\"custname\"]",
+      "dom_type": "input",
+      "attributes": {
+        "name": "custname"
+      },
+      "box": [
+        117,
+        16,
+        177,
+        21
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//input[@name=\"delivery\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "time",
+        "name": "delivery"
+      },
+      "box": [
+        164,
+        498,
+        98,
+        24
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "low confidence"
+    },
+    {
+      "index": 5,
+      "xpath": "//input[@name=\"topping\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "checkbox",
+        "name": "topping"
+      },
+      "box": [
+        28,
+        437,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 74.25,
+      "ocr_text": "o onion o moshr",
+      "classified_as": "subject",
+      "classification_confidence": 80.0,
+      "status": "fill_failed",
+      "reason": "verification failed"
+    },
+    {
+      "index": 6,
+      "xpath": "//input[@name=\"topping\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "checkbox",
+        "name": "topping"
+      },
+      "box": [
+        28,
+        401,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 74.0,
+      "ocr_text": "o o onion o mushe",
+      "classified_as": "subject",
+      "classification_confidence": 80.0,
+      "status": "fill_failed",
+      "reason": "verification failed"
+    },
+    {
+      "index": 7,
+      "xpath": "//input[@name=\"topping\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "checkbox",
+        "name": "topping"
+      },
+      "box": [
+        28,
+        365,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 82.25,
+      "ocr_text": "bacon o o onion",
+      "classified_as": "subject",
+      "classification_confidence": 80.0,
+      "status": "fill_failed",
+      "reason": "verification failed"
+    },
+    {
+      "index": 8,
+      "xpath": "//input[@name=\"topping\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "checkbox",
+        "name": "topping"
+      },
+      "box": [
+        28,
+        329,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 86.75,
+      "ocr_text": "pizza top bacon o",
+      "classified_as": "subject",
+      "classification_confidence": 80.0,
+      "status": "fill_failed",
+      "reason": "verification failed"
+    },
+    {
+      "index": 9,
+      "xpath": "//input[@name=\"size\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "radio",
+        "name": "size"
+      },
+      "box": [
+        29,
+        241,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 78.2,
+      "ocr_text": "© mediu © large topy",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 10,
+      "xpath": "//input[@name=\"size\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "radio",
+        "name": "size"
+      },
+      "box": [
+        29,
+        205,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 77.83333333333333,
+      "ocr_text": "o small o mediu © large",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 11,
+      "xpath": "//input[@name=\"size\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "radio",
+        "name": "size"
+      },
+      "box": [
+        29,
+        169,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 85.66666666666667,
+      "ocr_text": "pizza size small",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": true,
+    "ocr_success": false,
+    "current_url": "https://httpbin.org/post",
+    "ocr_excerpt": "conf=74.8 text='( \"hello, i would like to know more about your services.\", “john \"41234567890\", \"delivery\": { “accept”: “text/html, image/avit, image/webp, \"gzip, deflate, “cache-control”: \"143\", “origin”: \"referer\":...'"
+  }
+}

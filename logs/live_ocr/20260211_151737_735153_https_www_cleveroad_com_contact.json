@@ -1,0 +1,235 @@
+{
+  "url": "https://www.cleveroad.com/contact/",
+  "timestamp": "2026-02-11T15:17:14.816021",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_151723.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_151723_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_151729_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_151729_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_151732_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//*[@id=\"5\"]",
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "projectDetails",
+        "id": "5",
+        "class": "hZ_7g v_mL",
+        "placeholder": " ",
+        "label_text": "About a project*",
+        "nearby_text": "About a project*"
+      },
+      "box": [
+        0,
+        194,
+        638,
+        29
+      ],
+      "source": "dom",
+      "ocr_confidence": 89.42857142857143,
+      "ocr_text": "about a project* @ send me nda",
+      "classified_as": "message",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "/html/body/div/div/div/main/div/section/div/div/section/div/div[2]/form/div[5]/button/span",
+      "dom_type": "span",
+      "attributes": {
+        "class": "d_bS d_bV d_b7 d_cw",
+        "label_text": "",
+        "nearby_text": "Send Message"
+      },
+      "box": [
+        422,
+        332,
+        216,
+        56
+      ],
+      "source": "dom",
+      "ocr_confidence": 95.0,
+      "ocr_text": "send message",
+      "classified_as": "message",
+      "classification_confidence": 90.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 2,
+      "xpath": "//*[@id=\"4\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "senderPhone",
+        "id": "4",
+        "class": "h0_7n h0_7q",
+        "placeholder": " ",
+        "label_text": "Your phone number",
+        "nearby_text": "Your phone number"
+      },
+      "box": [
+        335,
+        97,
+        303,
+        33
+      ],
+      "source": "dom",
+      "ocr_confidence": 95.33333333333333,
+      "ocr_text": "your phone number",
+      "classified_as": "phone",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"3\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "senderEmail",
+        "id": "3",
+        "class": "h0_7n h0_7q",
+        "placeholder": " ",
+        "label_text": "Your email address*",
+        "nearby_text": "Your email address*"
+      },
+      "box": [
+        0,
+        97,
+        303,
+        33
+      ],
+      "source": "dom",
+      "ocr_confidence": 91.0,
+      "ocr_text": "your email address* ye",
+      "classified_as": "email",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//*[@id=\"2\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "senderCompany",
+        "id": "2",
+        "class": "h0_7n h0_7q",
+        "placeholder": " ",
+        "label_text": "Company",
+        "nearby_text": "Company"
+      },
+      "box": [
+        335,
+        0,
+        303,
+        33
+      ],
+      "source": "dom",
+      "ocr_confidence": 95.0,
+      "ocr_text": "company",
+      "classified_as": "company",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 5,
+      "xpath": "//*[@id=\"1\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "senderName",
+        "id": "1",
+        "class": "h0_7n h0_7q",
+        "placeholder": " ",
+        "label_text": "Your full name*",
+        "nearby_text": "Your full name*"
+      },
+      "box": [
+        0,
+        0,
+        303,
+        33
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 6,
+      "xpath": "/html/body/div/div/div/main/div/section/div/div/section/div/div[2]/form/div[4]/label",
+      "dom_type": "label",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Send me NDA"
+      },
+      "box": [
+        4,
+        239,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 96.0,
+      "ocr_text": "about send",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 7,
+      "xpath": "//button[@name=\"file\"]",
+      "dom_type": "button",
+      "attributes": {
+        "type": "button",
+        "name": "file",
+        "class": "jH_bcB",
+        "label_text": "",
+        "nearby_text": "About a project*"
+      },
+      "box": [
+        629,
+        205,
+        0,
+        30
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "low confidence"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": true,
+    "current_url": "https://www.cleveroad.com/contact/",
+    "ocr_excerpt": "conf=91.8 text='cleveroad ° services industries expertise company portfolio blog e us a out thanks for contacting cleveroad! e x my name is ivan and i'm the head of yo r p roj ect marketing at cleveroad. there's some...'"
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    593,
+    190
+  ],
+  "form_bbox": {
+    "x": 593.5,
+    "y": 190.0,
+    "width": 638.0,
+    "height": 388.0
+  }
+}

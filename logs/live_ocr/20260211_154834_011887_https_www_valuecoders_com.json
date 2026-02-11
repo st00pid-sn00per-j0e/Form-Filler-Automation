@@ -1,0 +1,209 @@
+{
+  "url": "https://www.valuecoders.com/",
+  "timestamp": "2026-02-11T15:48:01.189778",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_154816.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_154816_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_154826_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_154826_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_154832_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//*[@id=\"user-req\"]",
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "user-req",
+        "id": "user-req",
+        "class": "input-field comment-input",
+        "placeholder": "Project Brief",
+        "label_text": "",
+        "nearby_text": "Your Requirements Error Message BROWSE | DROP FILES HERE"
+      },
+      "box": [
+        16,
+        442,
+        605,
+        70
+      ],
+      "source": "dom",
+      "ocr_confidence": 89.75,
+      "ocr_text": "your requirements project brief",
+      "classified_as": "message",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//*[@id=\"cont_country\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "user-country",
+        "id": "cont_country",
+        "class": "input-field input-skype",
+        "placeholder": "Country",
+        "label_text": "",
+        "nearby_text": "Select Country"
+      },
+      "box": [
+        336,
+        230,
+        336,
+        54
+      ],
+      "source": "dom",
+      "ocr_confidence": 86.0,
+      "ocr_text": "select country cam",
+      "classified_as": "dropdown",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "//*[@id=\"cont_email\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "user-email",
+        "id": "cont_email",
+        "class": "input-field",
+        "placeholder": "Email Address",
+        "label_text": "",
+        "nearby_text": "Email"
+      },
+      "box": [
+        336,
+        146,
+        336,
+        54
+      ],
+      "source": "dom",
+      "ocr_confidence": 86.2,
+      "ocr_text": "email email address select country",
+      "classified_as": "email",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"cont_name\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "user-name",
+        "id": "cont_name",
+        "class": "input-field",
+        "placeholder": "Full Name",
+        "label_text": "",
+        "nearby_text": "Full Name"
+      },
+      "box": [
+        0,
+        146,
+        316,
+        54
+      ],
+      "source": "dom",
+      "ocr_confidence": 70.66666666666667,
+      "ocr_text": "full name er full er se",
+      "classified_as": "name",
+      "classification_confidence": 92.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//*[@id=\"cont_phpne\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "user-phone",
+        "id": "cont_phpne",
+        "class": "input-field",
+        "placeholder": "Phone Number (Optional)",
+        "label_text": "",
+        "nearby_text": "United States+1United Kingdom+44Afghanistan (‫افغانستان‬‎)+93Albania (Shqipëri)+355Algeria (‫الجزائر‬‎)+213American Samoa+1Andorra+376Angola+244Anguilla+1Antigua and Barbuda+1Argentina+54Armenia (Հայաստան)+374Aruba+297Ascension Island+247Australia+61Austria (Österreich)+43Azerbaijan (Azərbaycan)+994"
+      },
+      "box": [
+        1,
+        231,
+        314,
+        54
+      ],
+      "source": "dom",
+      "ocr_confidence": 78.0,
+      "ocr_text": "phone no. se phone number (optional) select your service*",
+      "classified_as": "phone",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 5,
+      "xpath": "/html/body/div/div[2]/p/a",
+      "dom_type": "a",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "This website uses cookies to improve user experience. Read More"
+      },
+      "box": [
+        494,
+        661,
+        177,
+        51
+      ],
+      "source": "dom",
+      "ocr_confidence": 85.0,
+      "ocr_text": "experience, read more",
+      "classified_as": "phone",
+      "classification_confidence": 66.66666666666667,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 6,
+      "xpath": "/html/body/div/div[2]/p",
+      "dom_type": "p",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "This website uses cookies This website uses cookies to improve user experience. Read More Accept all Reject non-essential Preferences"
+      },
+      "box": [
+        179,
+        661,
+        60,
+        50
+      ],
+      "source": "dom",
+      "ocr_confidence": 89.2,
+      "ocr_text": "this website this website uses",
+      "classified_as": "phone",
+      "classification_confidence": 66.66666666666667,
+      "status": "skipped",
+      "reason": "non-fillable"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": true,
+    "ocr_success": false,
+    "current_url": "https://www.valuecoders.com/",
+    "ocr_excerpt": "conf=87.9 text='full name email john doe ° john@example.com ° phone no. select country biv +1234567890 united states select your service* please select from the dropdown v this your requirements hello, iwould like to...'"
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    519,
+    11064
+  ],
+  "form_bbox": {
+    "x": 519.5,
+    "y": 6488.125,
+    "width": 672.0,
+    "height": 712.0
+  }
+}

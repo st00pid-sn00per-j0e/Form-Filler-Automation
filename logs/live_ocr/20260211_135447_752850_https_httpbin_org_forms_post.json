@@ -1,0 +1,306 @@
+{
+  "url": "https://httpbin.org/forms/post",
+  "timestamp": "2026-02-11T13:54:33.514468",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_135438.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_135438_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_135444_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_135444_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_135446_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//textarea[@name=\"comments\"]",
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "comments",
+        "label_text": "Delivery instructions:",
+        "nearby_text": "Delivery instructions:"
+      },
+      "box": [
+        151,
+        538,
+        170,
+        36
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "message",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//input[@name=\"custemail\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "custemail",
+        "label_text": "E-mail address:",
+        "nearby_text": "E-mail address:"
+      },
+      "box": [
+        111,
+        90,
+        177,
+        21
+      ],
+      "source": "dom",
+      "ocr_confidence": 74.0,
+      "ocr_text": "<7",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "//input[@name=\"custtel\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "tel",
+        "name": "custtel",
+        "label_text": "Telephone:",
+        "nearby_text": "Telephone:"
+      },
+      "box": [
+        82,
+        53,
+        177,
+        21
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "phone",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//input[@name=\"custname\"]",
+      "dom_type": "input",
+      "attributes": {
+        "name": "custname",
+        "label_text": "Customer name:",
+        "nearby_text": "Customer name:"
+      },
+      "box": [
+        117,
+        16,
+        177,
+        21
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//input[@name=\"delivery\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "time",
+        "name": "delivery",
+        "label_text": "Preferred delivery time:",
+        "nearby_text": "Preferred delivery time:"
+      },
+      "box": [
+        164,
+        498,
+        98,
+        24
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "low confidence"
+    },
+    {
+      "index": 5,
+      "xpath": "//input[@name=\"topping\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "checkbox",
+        "name": "topping",
+        "label_text": "Mushroom",
+        "nearby_text": "Mushroom"
+      },
+      "box": [
+        28,
+        437,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 74.25,
+      "ocr_text": "o onion o moshr",
+      "classified_as": "choice",
+      "classification_confidence": 95.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 6,
+      "xpath": "//input[@name=\"topping\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "checkbox",
+        "name": "topping",
+        "label_text": "Onion",
+        "nearby_text": "Onion"
+      },
+      "box": [
+        28,
+        401,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 74.0,
+      "ocr_text": "o o onion o mushe",
+      "classified_as": "choice",
+      "classification_confidence": 95.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 7,
+      "xpath": "//input[@name=\"topping\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "checkbox",
+        "name": "topping",
+        "label_text": "Extra Cheese",
+        "nearby_text": "Extra Cheese"
+      },
+      "box": [
+        28,
+        365,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 82.25,
+      "ocr_text": "bacon o o onion",
+      "classified_as": "choice",
+      "classification_confidence": 95.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 8,
+      "xpath": "//input[@name=\"topping\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "checkbox",
+        "name": "topping",
+        "label_text": "Bacon",
+        "nearby_text": "Bacon"
+      },
+      "box": [
+        28,
+        329,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 86.75,
+      "ocr_text": "pizza top bacon o",
+      "classified_as": "choice",
+      "classification_confidence": 95.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 9,
+      "xpath": "//input[@name=\"size\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "radio",
+        "name": "size",
+        "label_text": "Large",
+        "nearby_text": "Large"
+      },
+      "box": [
+        29,
+        241,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 78.2,
+      "ocr_text": "© mediu © large topy",
+      "classified_as": "choice",
+      "classification_confidence": 95.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 10,
+      "xpath": "//input[@name=\"size\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "radio",
+        "name": "size",
+        "label_text": "Medium",
+        "nearby_text": "Medium"
+      },
+      "box": [
+        29,
+        205,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 77.83333333333333,
+      "ocr_text": "o small o mediu © large",
+      "classified_as": "choice",
+      "classification_confidence": 95.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    },
+    {
+      "index": 11,
+      "xpath": "//input[@name=\"size\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "radio",
+        "name": "size",
+        "label_text": "Small",
+        "nearby_text": "Small"
+      },
+      "box": [
+        29,
+        169,
+        13,
+        13
+      ],
+      "source": "dom",
+      "ocr_confidence": 85.66666666666667,
+      "ocr_text": "pizza size small",
+      "classified_as": "choice",
+      "classification_confidence": 95.0,
+      "status": "skipped",
+      "reason": "non-fillable"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": true,
+    "ocr_success": false,
+    "current_url": "https://httpbin.org/post",
+    "ocr_excerpt": "conf=74.0 text='( \"hello, i would like to know more about your services.\", “john \"41234567890\", \"delivery\": { “accept”: “text/html, image/avit, image/webp, \"gzip, deflate, “cache-control”: \"143\", “origin”: \"referer\":...'"
+  }
+}

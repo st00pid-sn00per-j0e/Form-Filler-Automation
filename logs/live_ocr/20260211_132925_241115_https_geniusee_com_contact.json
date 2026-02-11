@@ -1,0 +1,18 @@
+{
+  "url": "https://geniusee.com/#contact",
+  "timestamp": "2026-02-11T13:29:19.777843",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_132924.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_132924_annotated.png",
+  "post_submit_screenshot": "",
+  "fields": [],
+  "yolo_detections": [],
+  "submit": {
+    "attempted": false,
+    "clicked": false,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "",
+    "ocr_excerpt": ""
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "url": "https://www.systemsltd.com/contact-us",
+  "timestamp": "2026-02-11T13:22:49.078344",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_132300.png",
+  "post_submit_screenshot": "screenshots/20260211_132308_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "/html/body/div[3]/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-consent-bar"
+      },
+      "ocr_confidence": 84.75,
+      "ocr_text": "“perience, serve personalized ads or and anal ies,",
+      "classified_as": "message",
+      "classification_confidence": 71.42857142857143,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 1,
+      "xpath": "/html/body/div[3]/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-consent-bar"
+      },
+      "ocr_confidence": 89.57142857142857,
+      "ocr_text": "we use cookies to enhance your browsing experience, ‘accept all’, you ouruse of cookies.",
+      "classified_as": "message",
+      "classification_confidence": 71.42857142857143,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 2,
+      "xpath": "/html/body/div[3]/div/div/p",
+      "dom_type": "p",
+      "attributes": {
+        "class": "cky-title"
+      },
+      "ocr_confidence": 86.42857142857143,
+      "ocr_text": "“perience, serve personalized ads or and anal",
+      "classified_as": "subject",
+      "classification_confidence": 90.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 3,
+      "xpath": "/html/body/div[3]/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-consent-bar"
+      },
+      "ocr_confidence": 95.66666666666667,
+      "ocr_text": "we value your privacy we use cookies to enhance your browsing experience,",
+      "classified_as": "message",
+      "classification_confidence": 71.42857142857143,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 4,
+      "xpath": "//*[@id=\"edit-city\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "city",
+        "id": "edit-city",
+        "class": "form-control js-webform-counter webform-counter form-text required",
+        "placeholder": "City*"
+      },
+      "ocr_confidence": 57.0,
+      "ocr_text": "jie",
+      "classified_as": "dropdown",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 5,
+      "xpath": "//*[@id=\"edit-name\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "name",
+        "id": "edit-name",
+        "class": "form-control js-webform-counter webform-counter form-text required",
+        "placeholder": "Your name*"
+      },
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "https://www.systemsltd.com/contact-us",
+    "ocr_excerpt": "conf=88.7 text='getintouch ~ careers investors q | | how he d you: please fill the form below e.g. +92 300 1234567 we value your privacy we use cookies to enhance your browsing experience. serve personalized ads or c...'"
+  }
+}

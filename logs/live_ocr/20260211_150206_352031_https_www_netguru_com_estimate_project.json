@@ -1,0 +1,454 @@
+{
+  "url": "https://www.netguru.com/estimate-project",
+  "timestamp": "2026-02-11T15:01:35.629002",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_150150.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_150150_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_150202_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_150202_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_150205_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//*[@id=\"short_description_of_idea-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "textarea",
+      "attributes": {
+        "name": "short_description_of_idea",
+        "id": "short_description_of_idea-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input hs-fieldtype-textarea",
+        "label_text": "Tell us more about your project*",
+        "nearby_text": "Tell us more about your project*"
+      },
+      "box": [
+        0,
+        233,
+        767,
+        93
+      ],
+      "source": "dom",
+      "ocr_confidence": 91.57142857142857,
+      "ocr_text": "tell us more about your project* de “4 what can we help you with?",
+      "classified_as": "dropdown",
+      "classification_confidence": 83.33333333333334,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 1,
+      "xpath": "//*[@id=\"lastname-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "lastname",
+        "id": "lastname-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input",
+        "label_text": "Last Name*",
+        "nearby_text": "Last Name*"
+      },
+      "box": [
+        399,
+        27,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 87.83333333333333,
+      "ocr_text": "last name* en company name he",
+      "classified_as": "last_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "//*[@id=\"email-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "email",
+        "id": "email-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input",
+        "label_text": "Email*",
+        "nearby_text": "Email*"
+      },
+      "box": [
+        797,
+        27,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 93.0,
+      "ocr_text": "email* how did you hear about us?*",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//*[@id=\"phone-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "tel",
+        "name": "phone",
+        "id": "phone-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input",
+        "label_text": "Phone Number",
+        "nearby_text": "Phone Number"
+      },
+      "box": [
+        0,
+        130,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 93.5,
+      "ocr_text": "phone number tell us more about your project*",
+      "classified_as": "phone",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//*[@id=\"company-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "company",
+        "id": "company-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input",
+        "label_text": "Company name",
+        "nearby_text": "Company name"
+      },
+      "box": [
+        399,
+        130,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 95.75,
+      "ocr_text": "company name he de",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 5,
+      "xpath": "//*[@id=\"source__declared_-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "source__declared_",
+        "id": "source__declared_-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input",
+        "label_text": "How did you hear about us?*",
+        "nearby_text": "How did you hear about us?*"
+      },
+      "box": [
+        797,
+        130,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 94.16666666666667,
+      "ocr_text": "how did you hear about us?* do you need an nda first?",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 6,
+      "xpath": "//*[@id=\"firstname-655014f4-16d1-423d-89e3-8f26b4c43c94_7083\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "firstname",
+        "id": "firstname-655014f4-16d1-423d-89e3-8f26b4c43c94_7083",
+        "class": "hs-input",
+        "label_text": "First Name*",
+        "nearby_text": "First Name*"
+      },
+      "box": [
+        0,
+        27,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 88.16666666666667,
+      "ocr_text": "first name* la phone number ce",
+      "classified_as": "first_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 7,
+      "xpath": "/html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[6]/div/div/ul/li[2]/label/span",
+      "dom_type": "span",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Mobile Development"
+      },
+      "box": [
+        199,
+        389,
+        13,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 87.0,
+      "ocr_text": "with? ant mob",
+      "classified_as": "phone",
+      "classification_confidence": 90.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 8,
+      "xpath": "/html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[7]/div/div/div/div/div/ul/li/label/span",
+      "dom_type": "span",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "I agree to receive email marketing communications from Netguru."
+      },
+      "box": [
+        -1,
+        544,
+        13,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 53.0,
+      "ocr_text": "mar",
+      "classified_as": "email",
+      "classification_confidence": 90.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 9,
+      "xpath": "/html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[5]/div/div/ul/li[2]/label/span",
+      "dom_type": "span",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "No"
+      },
+      "box": [
+        886,
+        239,
+        13,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 95.0,
+      "ocr_text": "need an nda no",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 10,
+      "xpath": "/html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[5]/div/div/ul/li/label/span",
+      "dom_type": "span",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Yes"
+      },
+      "box": [
+        804,
+        239,
+        13,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 90.5,
+      "ocr_text": "do you ne yes",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 11,
+      "xpath": "/html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[6]/div/div/ul/li[3]/label/span",
+      "dom_type": "span",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "UX / UI Design"
+      },
+      "box": [
+        407,
+        389,
+        13,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 71.0,
+      "ocr_text": "ant ux/",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 12,
+      "xpath": "/html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[6]/div/div/ul/li[4]/label/span",
+      "dom_type": "span",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Generative AI Development"
+      },
+      "box": [
+        7,
+        436,
+        13,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 82.0,
+      "ocr_text": "web",
+      "classified_as": "message",
+      "classification_confidence": 71.42857142857143,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 13,
+      "xpath": "/html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[6]/div/div/ul/li[5]/label/span",
+      "dom_type": "span",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "MVP"
+      },
+      "box": [
+        264,
+        436,
+        13,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 74.0,
+      "ocr_text": "mobile ant",
+      "classified_as": "phone",
+      "classification_confidence": 100.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 14,
+      "xpath": "/html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[6]/div/div/ul/li[6]/label/span",
+      "dom_type": "span",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Staff Augmentation"
+      },
+      "box": [
+        356,
+        436,
+        13,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 76.0,
+      "ocr_text": "vp staff",
+      "classified_as": "dropdown",
+      "classification_confidence": 75.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 15,
+      "xpath": "/html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[6]/div/div/ul/li[7]/label/span",
+      "dom_type": "span",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Rapid Prototyping"
+      },
+      "box": [
+        556,
+        436,
+        13,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 82.5,
+      "ocr_text": "jon ropi",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 16,
+      "xpath": "/html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[6]/div/div/ul/li[8]/label/span",
+      "dom_type": "span",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Other"
+      },
+      "box": [
+        7,
+        483,
+        13,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 72.0,
+      "ocr_text": "‘othe",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 17,
+      "xpath": "/html/body/main/span/div/section/div/div[2]/div/div/form/fieldset[6]/div/div/ul/li/label/span",
+      "dom_type": "span",
+      "attributes": {
+        "label_text": "",
+        "nearby_text": "Web Development"
+      },
+      "box": [
+        7,
+        389,
+        13,
+        1
+      ],
+      "source": "dom",
+      "ocr_confidence": 91.66666666666667,
+      "ocr_text": "what car web",
+      "classified_as": "message",
+      "classification_confidence": 71.42857142857143,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "https://www.netguru.com/estimate-project",
+    "ocr_excerpt": "conf=90.1 text='nj netguru services industries phone number company name how did you hear about us?* +1234567890 john doe please complete this field. tell us more about your do you need an nda first? yes no 4 please ...'"
+  },
+  "screenshot_mode": "form",
+  "screenshot_origin_px": [
+    48,
+    563
+  ],
+  "form_bbox": {
+    "x": 48.875,
+    "y": 563.921875,
+    "width": 1165.25,
+    "height": 656.25
+  }
+}

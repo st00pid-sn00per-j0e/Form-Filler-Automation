@@ -1,0 +1,145 @@
+{
+  "url": "https://www.netguru.com/estimate-project",
+  "timestamp": "2026-02-11T13:27:20.245574",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_132734.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_132734_annotated.png",
+  "post_submit_screenshot": "",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "/html/body/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-overlay"
+      },
+      "box": [
+        48,
+        590,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 88.6,
+      "ocr_text": "first name* phone number c",
+      "classified_as": "first_name",
+      "classification_confidence": 100.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 1,
+      "xpath": "/html/body/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-overlay"
+      },
+      "box": [
+        447,
+        590,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 91.16666666666667,
+      "ocr_text": "last name* e company name h",
+      "classified_as": "last_name",
+      "classification_confidence": 100.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 2,
+      "xpath": "/html/body/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-overlay"
+      },
+      "box": [
+        845,
+        590,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 91.14285714285714,
+      "ocr_text": "email* how did you hear about us?*",
+      "classified_as": "email",
+      "classification_confidence": 100.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 3,
+      "xpath": "/html/body/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-overlay"
+      },
+      "box": [
+        48,
+        693,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 93.0,
+      "ocr_text": "phone number c tell us more about your project*",
+      "classified_as": "phone",
+      "classification_confidence": 100.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 4,
+      "xpath": "/html/body/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-overlay"
+      },
+      "box": [
+        447,
+        693,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 94.0,
+      "ocr_text": "company name h d",
+      "classified_as": "name",
+      "classification_confidence": 100.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    },
+    {
+      "index": 5,
+      "xpath": "/html/body/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "cky-overlay"
+      },
+      "box": [
+        845,
+        693,
+        368,
+        46
+      ],
+      "source": "dom",
+      "ocr_confidence": 92.16666666666667,
+      "ocr_text": "how did you hear about us?* do you need an nda first?",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    }
+  ],
+  "yolo_detections": [],
+  "submit": {
+    "attempted": false,
+    "clicked": false,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "",
+    "ocr_excerpt": ""
+  }
+}

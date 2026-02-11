@@ -1,0 +1,19 @@
+{
+  "url": "https://geniusee.com/#contact",
+  "timestamp": "2026-02-11T13:57:06.856885",
+  "captcha_detected": false,
+  "initial_screenshot": "screenshots/20260211_135711.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_135711_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_135711_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_135711_post_fill_post_fill.png",
+  "post_submit_screenshot": "",
+  "fields": [],
+  "submit": {
+    "attempted": false,
+    "clicked": false,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "",
+    "ocr_excerpt": ""
+  }
+}

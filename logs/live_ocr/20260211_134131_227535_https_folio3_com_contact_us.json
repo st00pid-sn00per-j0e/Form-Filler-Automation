@@ -1,0 +1,162 @@
+{
+  "url": "https://folio3.com/contact-us/",
+  "timestamp": "2026-02-11T13:41:07.679547",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_134118.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_134118_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_134125_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_134125_post_fill_post_fill.png",
+  "post_submit_screenshot": "screenshots/20260211_134128_post_submit.png",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "//input[@name=\"phone\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "phone",
+        "class": "wpcf7-form-control wpcf7-text wpcf7-validates-as-required teleNumber",
+        "placeholder": "Phone Number"
+      },
+      "box": [
+        941,
+        372,
+        270,
+        61
+      ],
+      "source": "dom",
+      "ocr_confidence": 96.0,
+      "ocr_text": "phone number",
+      "classified_as": "phone",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 1,
+      "xpath": "//input[@name=\"email\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "email",
+        "name": "email",
+        "class": "wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email",
+        "placeholder": "Email Address"
+      },
+      "box": [
+        665,
+        372,
+        270,
+        61
+      ],
+      "source": "dom",
+      "ocr_confidence": 90.66666666666667,
+      "ocr_text": "email address ph",
+      "classified_as": "email",
+      "classification_confidence": 95.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 2,
+      "xpath": "//input[@name=\"last_name\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "last_name",
+        "class": "wpcf7-form-control wpcf7-text wpcf7-validates-as-required",
+        "placeholder": "Last Name"
+      },
+      "box": [
+        941,
+        272,
+        270,
+        61
+      ],
+      "source": "dom",
+      "ocr_confidence": 95.0,
+      "ocr_text": "last name",
+      "classified_as": "last_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 3,
+      "xpath": "//input[@name=\"full_name\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "full_name",
+        "class": "wpcf7-form-control wpcf7-text wpcf7-validates-as-required",
+        "placeholder": "First Name"
+      },
+      "box": [
+        665,
+        272,
+        270,
+        61
+      ],
+      "source": "dom",
+      "ocr_confidence": 90.33333333333333,
+      "ocr_text": "first name la",
+      "classified_as": "first_name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 4,
+      "xpath": "//input[@name=\"full_name\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "text",
+        "name": "full_name",
+        "class": "wpcf7-form-control wpcf7-text wpcf7-validates-as-required",
+        "placeholder": "Name"
+      },
+      "box": [
+        763,
+        720,
+        326,
+        31
+      ],
+      "source": "dom",
+      "ocr_confidence": 92.5,
+      "ocr_text": "name email",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "filled",
+      "reason": "dom verification passed"
+    },
+    {
+      "index": 5,
+      "xpath": "/html/body/div/div/div[2]/div/div/div/div/div/div/form/div[2]/div[3]/div/p/input",
+      "dom_type": "input",
+      "attributes": {
+        "type": "submit",
+        "class": "wpcf7-form-control wpcf7-submit has-spinner"
+      },
+      "box": [
+        842,
+        512,
+        119,
+        40
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "dropdown",
+      "classification_confidence": 71.42857142857143,
+      "status": "skipped",
+      "reason": "no prefill data"
+    }
+  ],
+  "submit": {
+    "attempted": true,
+    "clicked": true,
+    "dom_success": false,
+    "ocr_success": true,
+    "current_url": "https://folio3.com/contact-us/",
+    "ocr_excerpt": "conf=88.0 text='folio3 = * required fields drop us a line we'll lelp your personal information con get to the john doe ‘one or more fields have an error. please check and try again. contact us whether you are a large...'"
+  }
+}

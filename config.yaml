@@ -1,0 +1,50 @@
+# Production Configuration
+system:
+  max_concurrent_tabs: 1
+  headless: false
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  viewport_width: 1280
+  viewport_height: 800
+
+detection:
+  min_element_width: 30
+  min_element_height: 20
+  detection_method: "hybrid"  # cv, dom, hybrid
+  iou_threshold: 0.3
+  confidence_threshold: 0.6
+
+ocr:
+  language: "eng"
+  min_confidence: 50
+  preprocessing: true
+  context_margin: 50
+  live_trace: true
+  live_trace_preview_chars: 120
+
+processing:
+  delay_between_sites: 2
+  max_retries_per_field: 2
+  max_attempts_per_url: 1
+  timeout_seconds: 60
+
+captcha:
+  auto_detect: true
+  stop_on_captcha: true
+  log_captcha_urls: true
+
+output:
+  results_file: "results.csv"
+  screenshots_dir: "screenshots"
+  logs_dir: "logs"
+  live_ocr_dir: "logs/live_ocr"
+  save_annotated_screenshots: true
+  annotated_screenshots_dir: "logs/annotated_screenshots"
+  save_screenshots: true
+  generate_report: true
+
+advanced:
+  cache_xpaths: true
+  adaptive_learning: false
+  debug_mode: false
+  use_minilm: true          # Semantic field classification (MiniLM embeddings)
+  log_unknown_patterns: true  # Log unknown patterns to logs/unknown_patterns.jsonl

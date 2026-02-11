@@ -1,0 +1,91 @@
+{
+  "url": "https://www.valuecoders.com/",
+  "timestamp": "2026-02-11T14:48:10.916331",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_144822.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_144822_annotated.png",
+  "post_fill_screenshot": "screenshots/20260211_144832_post_fill.png",
+  "annotated_post_fill_screenshot": "logs/annotated_screenshots\\20260211_144832_post_fill_post_fill.png",
+  "post_submit_screenshot": "",
+  "fields": [
+    {
+      "index": 0,
+      "xpath": "/html/body/section[16]/div/div/div[2]/form/div[2]/div[5]/div/div",
+      "dom_type": "div",
+      "attributes": {
+        "class": "nice-select wide selectize  ",
+        "label_text": "",
+        "nearby_text": "Select Your Service* Please Select From The Dropdown Add Engineers To My Team (Staff Augmentation) Set Up A Dedicated Team / ODC Build A New Product / MVP Modernize Or Rebuild Existing Systems AI, Data & Automation Projects Cloud, DevOps & Enterprise Platforms QA & Testing (Quality Engineering) Cybe"
+      },
+      "box": [
+        535,
+        11901,
+        605,
+        70
+      ],
+      "source": "dom",
+      "ocr_confidence": 81.5,
+      "ocr_text": "|,000,000+ 700+ clutch 4ours of development experts on ‘staff can,",
+      "classified_as": "dropdown",
+      "classification_confidence": 90.0,
+      "status": "skipped",
+      "reason": "no prefill data"
+    },
+    {
+      "index": 1,
+      "xpath": "//*[@id=\"submitButton\"]",
+      "dom_type": "input",
+      "attributes": {
+        "type": "submit",
+        "id": "submitButton",
+        "class": "cta-button",
+        "label_text": "",
+        "nearby_text": "5 + 4 ="
+      },
+      "box": [
+        1013,
+        12245,
+        177,
+        51
+      ],
+      "source": "dom",
+      "ocr_confidence": 0.0,
+      "ocr_text": "",
+      "classified_as": "unknown",
+      "classification_confidence": 0.0,
+      "status": "skipped",
+      "reason": "low confidence"
+    },
+    {
+      "index": 2,
+      "xpath": "/html/body/section[16]/div/div/div[2]/form/div[2]",
+      "dom_type": "div",
+      "attributes": {
+        "class": "form-inner dis-flex",
+        "label_text": "",
+        "nearby_text": "Book Free Consultation Guaranteed response within 8 business hours. Full Name Email Phone No. Select Country Select Your Service* Please Select From The Dropdown Add Engineers To My Team (Staff Augmentation) Set Up A Dedicated Team / ODC Build A New Product / MVP Modernize Or Rebuild Existing System"
+      },
+      "box": [
+        704,
+        12190,
+        60,
+        50
+      ],
+      "source": "dom",
+      "ocr_confidence": 73.5,
+      "ocr_text": "svelopers evelopers",
+      "classified_as": "name",
+      "classification_confidence": 90.0,
+      "status": "fill_failed",
+      "reason": "fill action failed"
+    }
+  ],
+  "submit": {
+    "attempted": false,
+    "clicked": false,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "",
+    "ocr_excerpt": ""
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "url": "https://www.valuecoders.com/",
+  "timestamp": "2026-02-11T13:28:37.322135",
+  "captcha_detected": true,
+  "initial_screenshot": "screenshots/20260211_132846.png",
+  "annotated_screenshot": "logs/annotated_screenshots\\20260211_132846_annotated.png",
+  "post_submit_screenshot": "",
+  "fields": [],
+  "yolo_detections": [],
+  "submit": {
+    "attempted": false,
+    "clicked": false,
+    "dom_success": false,
+    "ocr_success": false,
+    "current_url": "",
+    "ocr_excerpt": ""
+  }
+}
